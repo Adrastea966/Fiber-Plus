@@ -19,52 +19,81 @@ function toggleMode() {
   }
 }
 
-//Submenu 
+//Submenu
 
-const link1 = document.querySelector('.link1');
-const link2 = document.querySelector('.link2');
-const submenu1 = document.querySelector('.submenu1');
-const submenu2 = document.querySelector('.submenu2');
+let timeoutId;
+let isSubMenu1Visible = false;
 
-link1.addEventListener('mouseenter', function() {
-  submenu1.style.maxHeight = '500px';
-  submenu1.style.opacity = '1';
-});
+function showSubMenu1() {
+  const submenu1 = document.querySelector('.submenu1');
+  clearTimeout(timeoutId);
+  if (!isSubMenu1Visible) {
+    submenu1.classList.add('show');
+    isSubMenu1Visible = true;
+  }
+}
 
-link1.addEventListener('mouseleave', function() {
-  submenu1.style.maxHeight = '0';
-  submenu1.style.opacity = '0';
-});
+function hideSubMenu1() {
+  const submenu1 = document.querySelector('.submenu1');
+  clearTimeout(timeoutId);
+  if (isSubMenu1Visible) {
+    timeoutId = setTimeout(() => {
+      submenu1.classList.remove('show');
+      isSubMenu1Visible = false;
+    }, 100);
+  }
+}
 
-link2.addEventListener('mouseenter', function() {
-  submenu2.style.maxHeight = '500px';
-  submenu2.style.opacity = '1';
-});
+function cancelHideSubMenu1() {
+  clearTimeout(timeoutId);
+}
 
-link2.addEventListener('mouseleave', function() {
-  submenu2.style.maxHeight = '0';
-  submenu2.style.opacity = '0';
-});
+let timeoutId2;
+let isSubMenu1Visible2 = false;
+
+function showSubMenu2() {
+  const submenu2 = document.querySelector('.submenu2');
+  clearTimeout(timeoutId2);
+  if (!isSubMenu1Visible2) {
+    submenu2.classList.add('show2');
+    isSubMenu1Visible2 = true;
+  }
+}
+
+function hideSubMenu2() {
+  const submenu2 = document.querySelector('.submenu2');
+  clearTimeout(timeoutId2);
+  if (isSubMenu1Visible2) {
+    timeoutId2 = setTimeout(() => {
+      submenu2.classList.remove('show2');
+      isSubMenu1Visible2 = false;
+    }, 100);
+  }
+}
+
+function cancelHideSubMenu2() {
+  clearTimeout(timeoutId2);
+}
 
 //Botón scroll arriba
 
 function scrollToTop() {
   window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+    top: 0,
+    behavior: 'smooth'
   });
 }
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   let nosotrosSection = document.getElementById('nosotros');
   let scrollTopButton = document.querySelector('.scroll-top-button');
 
   let nosotrosSectionPosition = nosotrosSection.getBoundingClientRect().top;
 
   if (nosotrosSectionPosition <= 0) {
-      scrollTopButton.classList.add('show');
+    scrollTopButton.classList.add('show');
   } else {
-      scrollTopButton.classList.remove('show');
+    scrollTopButton.classList.remove('show');
   }
 });
 
@@ -75,7 +104,7 @@ const whatsappButton = document.querySelector('.whatsapp-button');
 const delay = 200;
 
 setTimeout(() => {
-    whatsappButton.classList.add('animate-appear');
+  whatsappButton.classList.add('animate-appear');
 }, delay);
 
 //animacion escritura 

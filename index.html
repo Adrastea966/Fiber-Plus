@@ -57,23 +57,26 @@
         </div>
         <nav class="navbar">
             <div class="links">
-                <a href="#nosotros" class="link1">Nosotros</a>
-                <div class="submenu1">
-                    <a href="#">Valores</a>
-                    <a href="#">Memorials</a>
-                    <a href="#">Corporativa</a>
-                    <a href="#">Equipo</a>
-                </div>
-                <a href="#servicios" class="link2">Servicios</a>
-                <div class="submenu2">
-                    <a href="#">Servicios básicos</a>
-                    <a href="#">Televisión</a>
-                    <a href="#">Fúnebres</a>
-                    <a href="#">Educación</a>
-                    <a href="#">Telefonía</a>
-                    <a href="#">Internet</a>
+                <a href="#" class="link">Inicio</a>
+                <a href="#nosotros" class="link1" onmouseenter="showSubMenu1()"
+                    onmouseleave="hideSubMenu1()">Nosotros</a>
+                <div class="submenu1" onmouseenter="cancelHideSubMenu1()" onmouseleave="hideSubMenu1()">
+                    <a href="/assets/pages/sobre-la-empresa.html#valores">Valores</a>
+                    <a href="/assets/pages/sobre-la-empresa.html#memorials">Memorials</a>
+                    <a href="/assets/pages/sobre-la-empresa.html#corporativa">Corporativa</a>
+                    <a href="/assets/pages/sobre-la-empresa.html#equipo">Equipo</a>
                 </div>
                 <a href="#programas" class="link3">Programas</a>
+                <a href="#servicios" class="link2" onmouseenter="showSubMenu2()"
+                    onmouseleave="hideSubMenu2()">Servicios</a>
+                <div class="submenu2" onmouseenter="showSubMenu2()" onmouseleave="hideSubMenu2()">
+                    <a href="/assets/pages/servicios-basicos.html">Servicios básicos</a>
+                    <a href="/assets/pages/television.html">Televisión</a>
+                    <a href="/assets/pages/servicios-funebres.html">Fúnebres</a>
+                    <a href="/assets/pages/educacion.html">Educación</a>
+                    <a href="/assets/pages/telefonia.html">Telefonía</a>
+                    <a href="/assets/pages/internet.html">Internet</a>
+                </div>
                 <a href="#contacto" class="link4">Contacto</a>
             </div>
         </nav>
@@ -91,7 +94,7 @@
                     laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="info">
-                    <button class="btn-info">Más info</button>
+                    <button class="btn-info"><a href="/assets/pages/sobre-la-empresa.html">Más info</a></button>
                 </div>
             </div>
             <div class="image-about">
@@ -137,103 +140,105 @@
     <!--end of why us section-->
     <!--service section-->
     <section class="servicios" id="servicios">
-        <h2>
-            Nuestros servicios
-        </h2>
-        <div class="container-servicios">
+        <div class="container-cards">
+
             <div class="circle circle-1"></div>
             <div class="circle circle-2"></div>
-            <div class="circle circle-3"></div>
-            <div class="circle circle-4"></div>
-            <div class="circle circle-5"></div>
+
             <div class="card">
-                <div class="top-card">
-                    <h3>Internet</h3>
-                    <i class="uil uil-wifi"></i>
+                <div class="cover-card">
+                    <img src="/assets/image/internet.jpg" alt="Imagen de una mujer viendo su computadora">
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consec
-                    tetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore
-                    magna aliqua.
-                </p>
-                <div class="services">
-                    <button class="btn-servicio">Ver servicio</button>
+                <h2>Internet</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sunt eius dolore pariatur. Error,
+                    provident et similique sunt voluptate odit eos facere expedita, culpa at officia magnam quia vel
+                    eius!</p>
+                <hr>
+                <div class="footer-card">
+                    <i class="uil uil-rss"></i>
+                    <div class="services">
+                        <button class="btn-servicio"><a href="/assets/pages/internet.html">Ver servicio</a></button>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="top-card">
-                    <h3>Telefonía</h3>
+                <div class="cover-card">
+                    <img src="/assets/image/telefonia.jpg" alt="Imagen de un chico sosteniendo un control remoto">
+                </div>
+                <h2>Telefonía</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sunt eius dolore pariatur. Error,
+                    provident et similique sunt voluptate odit eos facere expedita, culpa at officia magnam quia vel
+                    eius!</p>
+                <hr>
+                <div class="footer-card">
                     <i class="uil uil-phone"></i>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consec
-                    tetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore
-                    magna aliqua.
-                </p>
-                <div class="services">
-                    <button class="btn-servicio">Ver servicio</button>
+                    <div class="services">
+                        <button class="btn-servicio">Ver servicio</button>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="top-card">
-                    <h3>Educación</h3>
+                <div class="cover-card">
+                    <img src="/assets/image/educacion.jpg" alt="Imagen de una niña estudiando de forma virtual">
+                </div>
+                <h2>Educación</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sunt eius dolore pariatur. Error,
+                    provident et similique sunt voluptate odit eos facere expedita, culpa at officia magnam quia vel
+                    eius!</p>
+                <hr>
+                <div class="footer-card">
                     <i class="uil uil-graduation-cap"></i>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consec
-                    tetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore
-                    magna aliqua.
-                </p>
-                <div class="services">
-                    <button class="btn-servicio">Ver servicio</button>
+                    <div class="services">
+                        <button class="btn-servicio">Ver servicio</button>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="top-card">
-                    <h3>Televisión</h3>
+                <div class="cover-card">
+                    <img src="/assets/image/funebres.jpg" alt="Imagen de un cementerio">
+                </div>
+                <h2>Fúnebres</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sunt eius dolore pariatur. Error,
+                    provident et similique sunt voluptate odit eos facere expedita, culpa at officia magnam quia vel
+                    eius!</p>
+                <hr>
+                <div class="footer-card">
+                    <i class="uil uil-book-open"></i>
+                    <div class="services">
+                        <button class="btn-servicio">Ver servicio</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover-card">
+                    <img src="/assets/image/television.jpg" alt="Imagen de un niño sosteniendo un control remoto">
+                </div>
+                <h2>Televisión</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sunt eius dolore pariatur. Error,
+                    provident et similique sunt voluptate odit eos facere expedita, culpa at officia magnam quia vel
+                    eius!</p>
+                <hr>
+                <div class="footer-card">
                     <i class="uil uil-tv-retro"></i>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consec
-                    tetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore
-                    magna aliqua.
-                </p>
-                <div class="services">
-                    <button class="btn-servicio">Ver servicio</button>
+                    <div class="services">
+                        <button class="btn-servicio">Ver servicio</button>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="top-card">
-                    <h3>Servicios fúnebres</h3>
-                    <i class="uil uil-book-alt"></i>
+                <div class="cover-card">
+                    <img src="/assets/image/servicios-basicos.jpg" alt="Imagen un campo con energía eólica y un molino">
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consec
-                    tetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore
-                    magna aliqua.
-                </p>
-                <div class="services">
-                    <button class="btn-servicio">Ver servicio</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="top-card">
-                    <h3>Agua, gas y electricidad</h3>
+                <h2>Agua, luz y electricidad</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sunt eius dolore pariatur. Error,
+                    provident et similique sunt voluptate odit eos facere expedita, culpa at officia magnam quia vel
+                    eius!</p>
+                <hr>
+                <div class="footer-card">
                     <i class="uil uil-water"></i>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consec
-                    tetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore
-                    magna aliqua.
-                </p>
-                <div class="services">
-                    <button class="btn-servicio">Ver servicio</button>
+                    <div class="services">
+                        <button class="btn-servicio">Ver servicio</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -272,11 +277,10 @@
     <!--end of program section-->
     <!--testimonials section-->
     <section class="testimonios" id="testimonios">
-        <div class="circle circle-1"></div>
-        <div class="circle circle-2"></div>
-        <div class="circle circle-3"></div>
-        <div class="circle circle-4"></div>
-        <div class="circle circle-5"></div>
+
+        <div class="circlee circle-3"></div>
+        <div class="circlee circle-4"></div>
+
         <div class="container-testimonios">
             <div class="titulo-testimonio">
                 <h2>Testimonios de nuestros clientes</h2>
@@ -321,23 +325,41 @@
     <!--end of testimonials section-->
     <!--contact section-->
     <section class="contacto" id="contacto">
-        <div class="btn-maps">Google maps</div>
-        <div class="ubication"><i class="uil uil-map-marker"></i></div>
-        <div class="point"></div>
-        <div class="ubication2"><span id="typed-text">¡Estamos aquí!</span></div>
-        <div class="contacto-container">
-            <div id="form" action="" class="form">
-                <h3>Contactanos</h3>
-                <div class="form-group">
-                    <label class="correo" for="email">Correo electrónico <span>*</span></label>
-                    <input type="email" name="text" id="email" required placeholder="Tu email">
+        <div class="container-general">
+            <div class="contacto-container">
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1331.8010206993063!2d-58.382409683430254!3d-34.60371785860061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1687812180939!5m2!1ses!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="form-group">
-                    <label class="message" for="message">Tu mensaje</label>
-                    <textarea id="message" name="message" cols="30" rows="10"></textarea>
+                <div class="direccion">
+                    <div class="datos-ubicacion">
+                        <div class="icono-ubication">
+                            <i class="uil uil-map-marker"></i>
+                        </div>
+                        <div class="ubication2"><span id="typed-text">¡Estamos aquí!</span></div>
+                    </div>
+                    <div class="direccion-texto">
+                        <p>Obelisco, Avenida 9 de Julio, Buenos Aires</p>
+                    </div>
                 </div>
-                <div class="btn-submit">
-                    <button type="submit">Enviar</button>
+            </div>
+
+            <div class="contacto-formulario">
+                <div id="form" action="" class="form">
+                    <h3>Contactanos</h3>
+                    <div class="form-group1">
+                        <label class="correo" for="email">Correo electrónico <span>*</span></label>
+                        <input class="input-email" type="email" name="text" id="email" required placeholder="Tu email">
+                    </div>
+                    <div class="form-group2">
+                        <label class="message" for="message">Tu mensaje</label>
+                        <textarea id="message" name="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="btn-submit">
+                        <button type="submit">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -428,10 +450,16 @@
                     <a href="#" class="icon2 icon-mail2"><i class="uil uil-envelope"></i></a>
                 </div>
             </div>
-            <p class="designed-by">Sitio desarrollado por Liu</p>
-            <p class="copyright">
-                © 2023 FiberPlus. Todos los derechos reservados.
-            </p>
+        </div>
+        <div class="container-footer-bottom">
+            <div class="designed">
+                <p class="designed-by">Sitio desarrollado por Liu</p>
+            </div>
+            <div class="container-copy">
+                <p class="copyright">
+                    © 2023 FiberPlus. Todos los derechos reservados.
+                </p>
+            </div>
         </div>
     </section>
     <button class="scroll-top-button" onclick="scrollToTop()"><i class="uil uil-angle-up"></i></button>
