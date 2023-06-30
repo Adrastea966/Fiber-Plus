@@ -1408,15 +1408,15 @@ ul {
     border-radius: 1rem;
 }
 
-.fotografia{
+.fotografia {
     position: relative;
 }
 
-.pop-up{
+.pop-up {
     position: absolute;
-    top:78%;
+    top: 78%;
     left: 20%;
-    display:flex;
+    display: flex;
     padding: 1rem;
     flex-direction: row;
     justify-content: center;
@@ -1435,21 +1435,23 @@ ul {
 
 @keyframes dropIn {
     0% {
-      opacity: 0;
-      transform: translateY(-100%);
+        opacity: 0;
+        transform: translateY(-100%);
     }
+
     50% {
-      visibility: visible;
-      transform: translateY(10%);
+        visibility: visible;
+        transform: translateY(10%);
     }
+
     100% {
-      visibility: visible;
-      transform: translateY(0);
+        visibility: visible;
+        transform: translateY(0);
     }
-  }
+}
 
 
-.pop-up p{
+.pop-up p {
     font-size: 1.8em;
     color: #ffffff9d;
     font-weight: 200;
@@ -1481,6 +1483,7 @@ ul {
     0% {
         width: 0;
     }
+
     100% {
         width: 100%;
     }
@@ -1516,7 +1519,7 @@ ul {
 
 .evento4 {
     position: absolute;
-    bottom:4%;
+    bottom: 4%;
     left: 70%;
     border-right: 2px solid #ffffff;
 }
@@ -1687,27 +1690,27 @@ ul {
     padding-left: 20rem;
 }
 
-.titulo-memorials{
+.titulo-memorials {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.encabezado1{
-    display:flex;
+.encabezado1 {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    gap:2rem;
+    gap: 2rem;
     font-size: 4em;
     color: #0f1211c1;
 }
 
-.encabezado2 h3{
+.encabezado2 h3 {
     font-size: 2.5em;
     color: #74ffe17a;
 }
 
-.encabezado2 p{
+.encabezado2 p {
     padding-top: 3rem;
     width: 500px;
     font-size: 1.6em;
@@ -1810,10 +1813,10 @@ ul {
 /* PÁGINA INTERNET */
 /*seccion planes*/
 
-.planes{
+.planes {
     max-width: 150rem;
     height: 100vh;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .circle-7 {
@@ -1828,22 +1831,22 @@ ul {
     background-color: #74ffe17a;
 }
 
-.planes-container{
+.planes-container {
     margin: 0 auto;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 10rem;
 }
 
-.titulo-planes h2{
+.titulo-planes h2 {
     font-size: 3em;
     color: #fff;
     padding-bottom: 3rem;
 }
 
-.cards-planes{
+.cards-planes {
     padding: 0 5rem;
     display: flex;
     flex-direction: row;
@@ -1853,16 +1856,16 @@ ul {
     gap: 4rem;
 }
 
-.card-planes{
+.card-planes {
     width: 350px;
     height: 500px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.card-planes:hover{
+.card-planes:hover {
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgb(255, 255, 255);
@@ -1871,92 +1874,92 @@ ul {
     -webkit-backdrop-filter: blur(10px);
 }
 
-.top-card-planes{
-    display:flex;
+.top-card-planes {
+    display: flex;
     flex-direction: column;
 }
 
-.top-card-planes h2{
+.top-card-planes h2 {
     font-size: 4.5em;
     color: #74ffe1cf;
-    padding-top: 6rem ;
+    padding-top: 6rem;
     padding-left: 2rem;
 }
 
-.textos{
+.textos {
     font-size: 1.5em;
     padding: 1rem;
     color: #ffffff9d;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.textos .megas{
+.textos .megas {
     color: #74ffe1cf;
 }
 
-.bottom-card-planes{
-    display:flex;
+.bottom-card-planes {
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.bottom-card-planes h3{
+.bottom-card-planes h3 {
     padding-left: 6rem;
     font-size: 2em;
     color: #fff;
     padding-bottom: 3rem;
 }
 
-.bottom-card-planes ul{
+.bottom-card-planes ul {
     font-size: 1.6em;
     color: #fff;
     padding-left: 5rem;
     padding-bottom: 3rem;
 }
 
-.bottom-card-planes li{
+.bottom-card-planes li {
     padding-bottom: 2rem;
 }
 
-.btn-planes{
-    display:flex;
+.btn-planes {
+    display: flex;
     justify-content: flex-end;
     padding-right: 2rem;
 }
 
 /*Help section*/
 
-.help{
+.help {
     max-width: 150rem;
     height: 110rem;
-    margin: 0 auto; 
+    margin: 0 auto;
     overflow: hidden;
 }
 
-.container-help{
-    display:flex;
+.container-help {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     padding: 10rem 0 0 4rem;
 }
 
-.phone-help{
+.phone-help {
     position: relative;
 }
 
-.phone-help img{
+.phone-help img {
     width: 700px;
     height: 800px;
 }
 
-.descripcion-help{
-    display:flex;
+.descripcion-help {
+    display: flex;
     flex-direction: column;
 }
 
-.funcionamiento h3{
+.funcionamiento h3 {
     font-size: 2.5em;
     color: #74ffe1cf;
     padding-bottom: 2rem;
@@ -1969,7 +1972,7 @@ ul {
     padding-bottom: 5rem;
 }
 
-.tips-no-funciona h3{
+.tips-no-funciona h3 {
     font-size: 2.5em;
     color: #74ffe1cf;
     padding-bottom: 2rem;
@@ -1987,7 +1990,7 @@ ul {
     padding-bottom: 2rem;
 }
 
-.dialogo1{
+.dialogo1 {
     position: absolute;
     top: 16%;
     right: 26%;
@@ -2001,7 +2004,7 @@ ul {
     animation: dropInWsp 1s ease-in-out 1s forwards;
 }
 
-.dialogo2{
+.dialogo2 {
     position: absolute;
     top: 25%;
     left: 26%;
@@ -2015,7 +2018,7 @@ ul {
     animation: dropInWsp 1s ease-in-out 2s forwards;
 }
 
-.dialogo3{
+.dialogo3 {
     position: absolute;
     top: 36%;
     right: 26%;
@@ -2029,7 +2032,7 @@ ul {
     animation: dropInWsp 1s ease-in-out 3s forwards;
 }
 
-.dialogo4{
+.dialogo4 {
     position: absolute;
     top: 47%;
     left: 26%;
@@ -2043,7 +2046,7 @@ ul {
     animation: dropInWsp 1s ease-in-out 4s forwards;
 }
 
-.dialogo5{
+.dialogo5 {
     position: absolute;
     top: 68%;
     left: 26%;
@@ -2058,38 +2061,38 @@ ul {
     cursor: pointer;
 }
 
-.dialogo1 p{
+.dialogo1 p {
     font-size: 1.8em;
     color: #000;
     font-weight: 200;
 }
 
-.dialogo2 p{
+.dialogo2 p {
     font-size: 1.8em;
     color: #000;
     font-weight: 200;
 }
 
-.dialogo3 p{
+.dialogo3 p {
     font-size: 1.8em;
     color: #000;
     font-weight: 200;
 }
 
-.dialogo4 p{
+.dialogo4 p {
     font-size: 1.8em;
     color: #000;
     font-weight: 200;
 }
 
-.dialogo5 a{
+.dialogo5 a {
     font-size: 1.8em;
     color: #000;
     font-weight: 600;
 }
 
-.medidor{
-    display:flex;
+.medidor {
+    display: flex;
     flex-direction: row;
     font-size: 1.6em;
     color: #ffffff7b;
@@ -2099,16 +2102,246 @@ ul {
 @keyframes dropInWsp {
     0% {
         opacity: 0;
-      transform: translateY(-100%);
+        transform: translateY(-100%);
     }
+
     50% {
-      visibility: visible;
-      transform: translateY(10%);
+        visibility: visible;
+        transform: translateY(10%);
     }
+
     100% {
-      visibility: visible;
-      transform: translateY(0);
+        visibility: visible;
+        transform: translateY(0);
     }
+}
+
+/* PÁGINA TELEFONÍA */
+/*seccion planes*/
+
+.planes-tel {
+    max-width: 150rem;
+    height: 130rem;
+    margin: 0 auto;
+}
+
+/* PÁGINA EDUCACION */
+/*seccion educacion*/
+
+.educacion {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.circle-9 {
+    top: 80%;
+    right: 10%;
+    background-color: #74ffe1b0;
+}
+
+.dialogo6 {
+    position: absolute;
+    top: 80%;
+    right: 15%;
+    padding: 1rem;
+    width: 20rem;
+    height: 7rem;
+    border-radius: 1rem;
+    background-color: #74ffe1b0;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
+    visibility: hidden;
+    animation: dropInWsp 1s ease-in-out 1s forwards;
+}
+
+.dialogo6 p {
+    font-size: 1.8em;
+    color: #000;
+    font-weight: 200;
+}
+
+.dialogo7 {
+    position: absolute;
+    top: 92%;
+    right: 22%;
+    padding: 1rem;
+    width: 20rem;
+    height: 7rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
+    visibility: hidden;
+    animation: dropInWsp 1s ease-in-out 2s forwards;
+}
+
+.dialogo7 a {
+    font-size: 1.8em;
+    color: #000;
+    font-weight: 200;
+}
+
+.educacion-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 150rem;
+    margin: 0 auto;
+    padding-top: 20rem;
+    padding-left: 10rem;
+}
+
+.educacion-container h2 {
+    font-size: 3em;
+    color: #74ffe1b0;
+    padding-bottom: 5rem;
+}
+
+.descripciones {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+.edu-descrip {
+    display: flex;
+    flex-direction: column;
+}
+
+.edu-descrip h3 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.edu-descrip p {
+    font-size: 1.5em;
+    color: #ffffff83;
+    width: 30rem;
+}
+
+/*seccion planes*/
+.planes-ed {
+    position: relative;
+    max-width: 150rem;
+    height: 130rem;
+    margin: 0 auto;
+}
+
+.circle-7 {
+    top: 25%;
+    left: -10%;
+    background-color: #74ffe1b0;
+}
+
+.circle-8 {
+    top: 70%;
+    right: -10%;
+    background-color: #74ffe17a;
+}
+
+.planes-ed i {
+    font-size: 2em;
+}
+
+.planes-ed h3 {
+    font-size: 3.5em;
+    padding: 0 2rem;
+    color: #74ffe1;
+}
+
+.texto-modulo {
+    padding: 2rem 2rem 3rem 2rem;
+    padding-top: 2rem;
+    font-size: 1.5em;
+    color: #ffffff83;
+}
+
+.pdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.pdf p {
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* PÁGINA FÚNEBRES */
+/*seccion sepelio*/
+
+.sepelio {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+}
+
+.container-sepelio{
+    padding-left: 5rem;
+}
+
+.container-slider{
+    position: relative;
+    width: 650px;
+    height: 500px;
+    background-color: #e8e8e8;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.slider-sepelio{
+    width: 300%;
+    height: 100%;
+    display:flex;
+}
+
+.slider-img{
+    width: calc(100% / 3 );
+    height: 100%;
+}
+
+.slider-sepelio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.btn-left,
+.btn-right{
+    display:flex;
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    padding: 0 5px 0 5px;
+    background-color: transparent;
+    border-radius: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    color:#ffffff82;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-left{
+    left: 10px;
+}
+
+.btn-right{
+    right: 10px;
+}
+
+.btn-left:hover,
+.btn-right:hover{
+    background-color: #333333e7;
+    color: #fff;
 }
 
 /*MEDIA QUERYS*/
@@ -2336,48 +2569,65 @@ ul {
     }
 
     /*Seccion internet*/
-    .help{
+    .help {
         height: 170rem;
     }
 
-    .container-help{
-        display:flex;
+    .container-help {
+        display: flex;
         justify-content: center;
     }
 
-    .phone-help{
+    .phone-help {
         padding-top: 6rem;
     }
 
-    .dialogo1{
+    .dialogo1 {
         top: 25%;
     }
-    
-    .dialogo2{
+
+    .dialogo2 {
         top: 32.5%;
     }
-    
-    .dialogo3{
+
+    .dialogo3 {
         top: 42%;
     }
-    
-    .dialogo4{
+
+    .dialogo4 {
         top: 52%;
     }
 
-    .dialogo5{
+    .dialogo5 {
         top: 72%;
     }
-    
+
+    /* página telefonía - seccion planes */
+
+    .planes-tel {
+        height: 210rem;
+    }
 }
 
-/*Pantallas medias 840 - seccion help*/
-@media screen and (max-width:839px){
+/*Pantallas medias 840 - seccion help - INTERNET Y TELEFONÍA*/
+@media screen and (max-width:839px) {
+
     /* help */
-    .help{
+    .help {
         height: 230rem;
         max-width: 120rem;
         padding-top: 60rem;
+    }
+
+    .planes-tel {
+        height: 230rem;
+    }
+
+    /* página educacion - seccion educacion*/
+
+    .dialogo6,
+    .dialogo7 {
+        display: none;
     }
 }
 
@@ -2562,5 +2812,11 @@ ul {
 
     .copyright {
         font-size: 2em;
+    }
+
+    /*Página EDUCACIÓN - planes*/
+
+    .planes-ed {
+        height: 250rem;
     }
 }
