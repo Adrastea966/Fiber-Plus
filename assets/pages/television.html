@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisión| planes</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <h2 class="logotipo">
+            FiberPlus
+        </h2>
+        <div class="miembros">
+            <button class="btn-miembro modal">Miembros</button>
+        </div>
+        <div class="mode">
+            <label class="switch">
+                <input type="checkbox" onchange="toggleMode()">
+                <span class="slider round"></span>
+                <div class="icon-container">
+                    <i class="uil uil-moon"></i>
+                    <i class="uil uil-sun"></i>
+                </div>
+            </label>
+        </div>
+    </header>
+    <!--end of header-->
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="links">
+            <a href="../../index.html" class="link">Inicio</a>
+            <a href="../../index.html#nosotros" class="link1" onmouseenter="showSubMenu1()"
+                onmouseleave="hideSubMenu1()">Nosotros</a>
+            <div class="submenu1" onmouseenter="cancelHideSubMenu1()" onmouseleave="hideSubMenu1()">
+                <a href="/assets/pages/sobre-la-empresa.html#valores">Valores</a>
+                <a href="/assets/pages/sobre-la-empresa.html#memorials">Memorials</a>
+                <a href="/assets/pages/sobre-la-empresa.html#corporativa">Corporativa</a>
+                <a href="/assets/pages/sobre-la-empresa.html#equipo">Equipo</a>
+            </div>
+            <a href="../../index.html#programas" class="link3">Programas</a>
+            <a href="../../index.html#servicios" class="link2" onmouseenter="showSubMenu2()"
+                onmouseleave="hideSubMenu2()">Servicios</a>
+            <div class="submenu2" onmouseenter="showSubMenu2()" onmouseleave="hideSubMenu2()">
+                <a href="/assets/pages/servicios-basicos.html">Servicios básicos</a>
+                <a href="#">Televisión</a>
+                <a href="/assets/pages/servicios-funebres.html">Fúnebres</a>
+                <a href="/assets/pages/educacion.html">Educación</a>
+                <a href="/assets/pages/telefonia.html">Telefonía</a>
+                <a href="/assets/pages/internet.html">Internet</a>
+            </div>
+            <a href="../../index.html#contacto" class="link4">Contacto</a>
+        </div>
+    </nav>
+    <!--end of navbar-->
+    <section class="television">
+        <!--seccion que se ve inicialmente-->
+        <div class="seccion-sin-codigo">
+            <h2 class="texto-sin-codigo">Ingresá con tu código de membresía para <br> ver nuestra grilla de programación
+            </h2>
+            <div class="container-btn">
+                <div class="btn-ingresar">
+                    <button class="btn-servicio modal">Ingresar</button>
+                </div>
+                <div class="info2">
+                    <button class="btn-info2">Pedí tu código</button>
+                </div>
+            </div>
+        </div>
+        <!--seccion que se ve solo con código de ingreso-->
+        <div class="seccion-con-codigo" style="display: none;">
+            <section class="planes">
+                <div class="circle circle-7"></div>
+                <div class="circle circle-8"></div>
+                <div class="planes-container">
+                    <div class="titulo-planes">
+                        <h2>Nuestros planes</h2>
+                    </div>
+                    <div class="cards-planes">
+                        <div class="card-planes">
+                            <div class="top-card-planes">
+                                <div class="textos">
+                                    <p>Básico</p>
+                                    <p class="megas">15 Megas</p>
+                                </div>
+                                <h2>$600.64/mes</h2>
+                            </div>
+                            <div class="bottom-card-planes">
+                                <h3>¿Qué ofrece este plan?</h3>
+                                <ul>
+                                    <li><i class="uil uil-check"></i>Lorem ipsum dolor sit, amet.</li>
+                                    <li><i class="uil uil-check"></i>Lorem ipsum dolor sit, amet.</li>
+                                    <li><i class="uil uil-check"></i>Lorem ipsum dolor sit, amet.</li>
+                                    <li><i class="uil uil-check"></i>Lorem ipsum dolor sit, amet.</li>
+                                </ul>
+                                <div class="btn-planes">
+                                    <button class="btn-servicio">Contratar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-planes">
+                            <div class="top-card-planes">
+                                <div class="textos">
+                                    <p>Estándar</p>
+                                    <p class="megas">50 Megas</p>
+                                </div>
+                                <h2>$750/mes</h2>
+                            </div>
+                            <div class="bottom-card-planes">
+                                <h3>¿Qué ofrece este plan?</h3>
+                                <ul>
+                                    <li><i class="uil uil-check"></i>Lorem ipsum dolor sit, amet.</li>
+                                    <li><i class="uil uil-check"></i>Lorem ipsum dolor sit, amet.</li>
+                                    <li><i class="uil uil-check"></i>Lorem ipsum dolor sit, amet.</li>
+                                    <li><i class="uil uil-check"></i>Lorem ipsum dolor sit, amet.</li>
+                                </ul>
+                                <div class="btn-planes">
+                                    <button class="btn-servicio">Contratar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-planes">
+                            <div class="top-card-planes">
+                                <div class="textos">
+                                    <p>Premium</p>
+                                    <p class="megas">100 Megas</p>
+                                </div>
+                                <h2>$1000/mes</h2>
+                            </div>
+                            <div class="bottom-card-planes">
+                                <h3>¿Qué ofrece este plan?</h3>
+                                <ul>
+                                    <li><i class="uil uil-check"></i>Lorem ipsum dolor sit, amet.</li>
+                                    <li><i class="uil uil-check"></i>Lorem ipsum dolor sit, amet.</li>
+                                    <li><i class="uil uil-check"></i>Lorem ipsum dolor sit, amet.</li>
+                                    <li><i class="uil uil-check"></i>Lorem ipsum dolor sit, amet.</li>
+                                </ul>
+                                <div class="btn-planes">
+                                    <button class="btn-servicio">Contratar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slider-marcas">
+                <div class="slider-track">
+                    <div class="slide-img">
+                        <img src="/assets/image/direct.svg" alt="Logo de DirectTv">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/espn.svg" alt="Logo de ESPN">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/fox.svg" alt="Logo de FOX">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/hbo.svg" alt="Logo de HBO">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/tyc.svg" alt="Logo de TyC sports">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/tnt.svg" alt="Logo de TNT sports">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/universal.svg" alt="Logo de universal">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/direct.svg" alt="Logo de DirectTv">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/espn.svg" alt="Logo de ESPN">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/fox.svg" alt="Logo de FOX">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/hbo.svg" alt="Logo de HBO">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/tyc.svg" alt="Logo de TyC sports">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/tnt.svg" alt="Logo de TNT sports">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/universal.svg" alt="Logo de universal">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/direct.svg" alt="Logo de DirectTv">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/espn.svg" alt="Logo de ESPN">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/fox.svg" alt="Logo de FOX">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/hbo.svg" alt="Logo de HBO">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/tyc.svg" alt="Logo de TyC sports">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/tnt.svg" alt="Logo de TNT sports">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/assets/image/universal.svg" alt="Logo de universal">
+                    </div>
+                </div>
+            </div>
+            <div class="grillas">
+                <div class="grilla-analoga">
+                    <h3>Grilla análoga</h3>
+                    <p>Contamos con 100 canales text of the printing and typesetting industry.</p>
+                    <div class="btn-grilla">
+                        <div class="ver-grilla">
+                            <button class="btn-ver">Ver grilla</button>
+                        </div>
+                        <div class="descargar-grilla">
+                            <button class="btn-descargar">Descargar grilla</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grilla-digital">
+                    <h3>Grilla digital</h3>
+                    <p>Contamos con 100 canales text of the printing and typesetting industry.</p>
+                    <div class="btn-grilla">
+                        <div class="ver-grilla">
+                            <button class="btn-ver">Ver grilla</button>
+                        </div>
+                        <div class="descargar-grilla">
+                            <button class="btn-descargar">Descargar grilla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <section class="footer">
+        <div class="section-footer">
+            <div class="div1">
+                <div class="top-footer">
+                    <div>
+                        <h3>FiberPlus</h3>
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consec
+                            tetur adipiscing elit, sed do eiusmod
+                            Lorem ipsum dolor sit amet, consec
+                            tetur adipiscing elit, sed do eiusmod
+                        </p>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div>
+                        <h3>Fundadores</h3>
+                    </div>
+                    <div class="container-fundadores">
+                        <div class="info-fundadores">
+                            <div class="img-fundadores">
+                                <img src="/assets/image/fundador.png" alt="Imagen del fundador 1 de la empresa">
+                            </div>
+                            <div>
+                                <p><strong>Christian Rodrídrez</strong></p>
+                            </div>
+                            <div>
+                                <p>Fundador número 1</p>
+                            </div>
+                        </div>
+                        <div class="info-fundadores">
+                            <div class="img-fundadores">
+                                <img src="/assets/image/fundador2.png" alt="Imagen del fundador 2 de la empresa">
+                            </div>
+                            <div>
+                                <p><strong>Sebtastían Gutierrez</strong></p>
+                                <div>
+                                    <p>Fundador número 2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-fundadores">
+                            <div class="img-fundadores">
+                                <img src="/assets/image/fundador3.png" alt="Imagen del fundador 3 de la empresa">
+                            </div>
+                            <div>
+                                <p><strong>Guillermo Gutierrez</strong></p>
+                            </div>
+                            <div>
+                                <p>Fundador número 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div2">
+                <div>
+                    <h3>Teléfonos útiles</h3>
+                </div>
+                <div class="tel cel">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 54 9 1100-0000</span>
+                </div>
+                <div class="cel">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 54 9 1100-0000</span>
+                </div>
+                <div class="cel">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 54 9 1100-0000</span>
+                </div>
+            </div>
+            <div class="div3">
+                <div>
+                    <h3>Nuestras redes</h3>
+                </div>
+                <div class="redes2">
+                    <a href="#" class="icon2 icon-ig2"><i class="uil uil-instagram"></i></a>
+                    <a href="#" class="icon2 icon-wsp2"><i class="uil uil-whatsapp"></i></a>
+                    <a href="#" class="icon2 icon-mail2"><i class="uil uil-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer-bottom">
+            <div class="designed">
+                <p class="designed-by">Sitio desarrollado por Liu</p>
+            </div>
+            <div class="container-copy">
+                <p class="copyright">
+                    © 2023 FiberPlus. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--end of footer-->
+    <div>
+        <a href="#" target="_blank" class="whatsapp-button">
+            <i class="uil uil-whatsapp"></i>
+        </a>
+    </div>
+    <script src="../../index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

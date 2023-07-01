@@ -2277,15 +2277,24 @@ ul {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    display:flex;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    gap: 5rem;
+    background-color: #27302e;
 }
 
-.container-sepelio{
+.sepelio .sepelio-titulo {
+    font-size: 3em;
+    color: #74ffe1;
+    padding: 0 0 1rem 0;
+}
+
+.container-sepelio {
     padding-left: 5rem;
 }
 
-.container-slider{
+.container-slider {
     position: relative;
     width: 650px;
     height: 500px;
@@ -2295,18 +2304,18 @@ ul {
     overflow: hidden;
 }
 
-.slider-sepelio{
+.slider-sepelio {
     width: 300%;
     height: 100%;
-    display:flex;
+    display: flex;
 }
 
-.slider-img{
-    width: calc(100% / 3 );
+.slider-img {
+    width: calc(100% / 3);
     height: 100%;
 }
 
-.slider-sepelio img{
+.slider-sepelio img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2314,8 +2323,8 @@ ul {
 }
 
 .btn-left,
-.btn-right{
-    display:flex;
+.btn-right {
+    display: flex;
     position: absolute;
     top: 50%;
     font-size: 3rem;
@@ -2324,25 +2333,458 @@ ul {
     border-radius: 100%;
     font-weight: 600;
     cursor: pointer;
-    color:#ffffff82;
+    color: #ffffff82;
     transform: translate(0, -50%);
     transition: .5s ease;
     user-select: none;
 }
 
-.btn-left{
+.btn-left {
     left: 10px;
 }
 
-.btn-right{
+.btn-right {
     right: 10px;
 }
 
 .btn-left:hover,
-.btn-right:hover{
+.btn-right:hover {
     background-color: #333333e7;
     color: #fff;
 }
+
+.descripcion-sepelio {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 1rem 0 1rem;
+}
+
+.items-servicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.item-servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.item-servicio h3 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 200;
+}
+
+.item-servicio i {
+    font-size: 3em;
+    color: #fff;
+}
+
+.item-servicio p {
+    font-size: 1.5em;
+    color: #ffffff83;
+    text-align: center;
+}
+
+.reseva-turno-sepelio {
+    padding-top: 4rem;
+    width: 550px;
+    font-size: 1.5em;
+    color: #0f1211c1;
+    font-weight: 600;
+}
+
+/* asesoria section*/
+
+.asesoria {
+    width: 100%;
+    height: 120rem;
+}
+
+.imagen-asesoria {
+    width: 100%;
+    height: 400px;
+    background-image: url('/assets/image/apoyo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: center;
+}
+
+.imagen-asesoria::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.imagen-asesoria h3 {
+    position: relative;
+    font-size: 3.5em;
+    width: 700px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.texto-asesoramiento {
+    font-size: 2em;
+    width: 700px;
+    text-align: center;
+    color: #ffffff83;
+}
+
+.asesoramiento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+.asesoramiento h2 {
+    font-size: 3em;
+    color: #74ffe17a;
+    padding-bottom: 2rem;
+}
+
+.asesoramiento-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10rem 0 0;
+    gap: 10rem;
+}
+
+.ase-item h3 {
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 200;
+    width: 300px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.ase-item p {
+    font-size: 1.5em;
+    color: #ffffff83;
+    width: 300px;
+    text-align: center;
+}
+
+/* PÁGINA SERVICIOS BÁSICOS */
+/*seccion planes*/
+
+.planes-servicios-basicos {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.planes-container-servicios {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.planes-agua {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.titulo-agua {
+    font-size: 3em;
+    color: #fff;
+    padding: 5rem 0 2rem 0;
+}
+
+/* PÁGINA TELEVISIÓN */
+/*seccion tv*/
+
+.television {
+    width: 100%;
+}
+
+.seccion-sin-codigo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.texto-sin-codigo {
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 2rem;
+}
+
+.slider-marcas {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    padding: 10rem 0 10rem 0;
+}
+
+.slider-track {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    animation: scroll 50s linear infinite;
+    -webkit-animation: scroll 50s linear infinite;
+    width: calc(150px * 28);
+}
+
+.slide-img {
+    width: 150px;
+}
+
+.slide-img img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100%));
+    }
+}
+
+.grillas {
+    display: flex;
+}
+
+.grilla-analoga {
+    width: 50%;
+    height: 80rem;
+    background-image: url('/assets/image/grilla-analogica.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.grilla-analoga::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.914);
+    backdrop-filter: blur(4px);
+    transition: backdrop-filter 0.3s;
+}
+
+.grilla-analoga:hover {
+    filter: brightness(100%);
+    transform: scale(1.02);
+}
+
+.grilla-analoga:hover::before {
+    backdrop-filter: blur(1px);
+}
+
+.grilla-analoga h3 {
+    position: absolute;
+    font-size: 3em;
+    color: #fff;
+    z-index: 1;
+}
+
+.grilla-analoga p {
+    padding-top: 15rem;
+    position: absolute;
+    font-size: 1.8em;
+    color: #ffffff83;
+    text-align: center;
+    width: 300px;
+}
+
+.grilla-digital {
+    width: 50%;
+    height: 80rem;
+    background-image: url('/assets/image/grilla-analogica.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.grilla-digital::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.914);
+    backdrop-filter: blur(4px);
+    transition: backdrop-filter 0.3s;
+}
+
+.grilla-digital:hover {
+    filter: brightness(100%);
+    transform: scale(1.02);
+}
+
+.grilla-digital:hover::before {
+    backdrop-filter: blur(1px);
+}
+
+.grilla-digital h3 {
+    position: absolute;
+    font-size: 3em;
+    color: #fff;
+    z-index: 1;
+}
+
+.grilla-digital p {
+    padding-top: 15rem;
+    position: absolute;
+    font-size: 1.8em;
+    color: #ffffff83;
+    text-align: center;
+    width: 300px;
+}
+
+.btn-grilla{
+    display:flex;
+    padding-top: 28rem;
+    padding-right: 15rem;
+    gap: 13rem;
+}
+
+.btn-descargar{
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: solid 2px #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.8em;
+    background-image: linear-gradient(to right, #fff 0%, #fff 0%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.6s;
+}
+
+.btn-descargar:hover {
+    background-size: 100% 100%;
+    border: solid 2px #fff;
+    color: #000;
+    font-weight: 600;
+}
+
+.btn-ver {
+    position: absolute;
+    background-color: #fff;
+    color: #000000;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: 2px solid #ffffff00;
+    cursor: pointer;
+    font-size: 1.8em;
+    transition-property: outline-offset;
+    transition-duration: .10s;
+}
+
+.btn-ver:hover {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    transition: ease-in-out 0.2s;
+}
+
+/*Modal*/
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+.modal-content input {
+    margin-bottom: 10px;
+}
+
+.btn-modal-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-modal-close {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 /*MEDIA QUERYS*/
 /* Pantallas grandes - 1280px */
@@ -2818,5 +3260,18 @@ ul {
 
     .planes-ed {
         height: 250rem;
+    }
+
+    /*Página SERVICIOS BÁSICOS - planes*/
+
+    .planes-agua {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo-agua {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

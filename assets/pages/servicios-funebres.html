@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
     <!--header-->
     <header class="header">
@@ -15,7 +17,7 @@
             FiberPlus
         </h2>
         <div class="miembros">
-            <button class="btn-miembro">Miembros</button>
+            <button class="btn-miembro modal">Miembros</button>
         </div>
         <div class="mode">
             <label class="switch">
@@ -59,6 +61,7 @@
     <!--sepelio section-->
     <section class="sepelio">
         <div class="container-sepelio">
+            <h2 class="sepelio-titulo">Nuestras instalaciones</h2>
             <div class="container-slider">
                 <div class="slider-sepelio" id="slideer">
                     <div class="slider-img"><img src="/assets/image/imagen1.jpg" alt="Imagen de cementerio1"></div>
@@ -69,10 +72,81 @@
                 <div class="btn-right"><i class="uil uil-angle-right"></i></div>
             </div>
         </div>
-      </section>
-      
-      
+        <div class="descripcion-sepelio">
+            <div class="items-servicios">
+                <div class="item-servicio" data-aos="fade-down" data-aos-delay="100">
+                    <i class="uil uil-diamond"></i>
+                    <h3>Salas exclusivas</h3>
+                    <p>Usted puede elegir entre la gran variedad de salas.</p>
+                </div>
+                <div class="item-servicio" data-aos="fade-down" data-aos-delay="200">
+                    <i class="uil uil-ambulance"></i>
+                    <h3>Traslados en ambulancia</h3>
+                    <p>Contamos con una amplia flota de ambulancias propias.</p>
+                </div>
+                <div class="item-servicio" data-aos="fade-down" data-aos-delay="300">
+                    <i class="uil uil-fire"></i>
+                    <h3>Cremación</h3>
+                    <p>Ofrecemos distintos tipos de cremaciones.</p>
+                </div>
+                <div class="item-servicio" data-aos="fade-down" data-aos-delay="400">
+                    <i class="uil uil-flower"></i>
+                    <h3>Ofrendas florales</h3>
+                    <p>Puede elegir entre una gran variedad de ofrendas florales.
+                        Nos encargamos del envío
+                    </p>
+                </div>
+                <div class="item-servicio" data-aos="fade-down" data-aos-delay="500">
+                    <i class="uil uil-users-alt"></i>
+                    <h3>Atención personalizada</h3>
+                    <p>Estamos para acompañarlo y ayudarlo.</p>
+                </div>
+                <div class="item-servicio" data-aos="fade-down" data-aos-delay="600">
+                    <i class="uil uil-usd-circle"></i>
+                    <h3>Aranceles de acuerdo a cada necesidad</h3>
+                    <p>Tenemos muchísimas opciones que usted podrá evaluar y elegir. </p>
+                </div>
+            </div>
+            <div class="reseva-turno-sepelio">
+                <p>Para una atención más personalizada o para más información sobre los servicios que ofrecemos, por
+                    favor, póngase en contacto con nosotros utilizando este número: +54 9 11 2401-3978</p>
+            </div>
+        </div>
+    </section>
     <!--end of sepelio section-->
+    <!--asesoria section-->
+    <section class="asesoria">
+        <div class="imagen-asesoria">
+            <h3 data-aos="fade-up">CONTENSIÓN Y AYUDA EN EL MOMENTO QUE MÁS LO NECESITA</h3>
+        </div>
+        <div class="asesoramiento">
+            <h2 data-aos="fade-up" data-aos-delay="100">Asesoramiento</h2>
+            <p class="texto-asesoramiento" data-aos="fade-up" data-aos-delay="200">Contamos también con asesoría para todo de tipo de gestiones relacionada con las dificultades
+                administrativas que dejan muchas veces estos acontecimientos. Estamos para ayudar y asesorar a que usted
+                tome la mejor desición.</p>
+            <div class="asesoramiento-items">
+                <div class="ase-item">
+                    <h3 data-aos="fade-up" data-aos-delay="300">Asesoramiento en intervenciones judiciales</h3>
+                    <p data-aos="fade-up" data-aos-delay="350">Presentaciones gratuitas mediante nuestros letrados a cargo de Casa Redondo Scherma ante el
+                        juzgado por muerte del fallecido de forma traumática para pedidos especiales por intervención
+                        policial.</p>
+                </div>
+                <div class="ase-item">
+                    <h3 data-aos="fade-up" data-aos-delay="400">Asesoramiento gratuito en sucesiones</h3>
+                    <p data-aos="fade-up" data-aos-delay="450">A nuestros clientes que confíen en nosotros sus tramites de sucesión; se les proporcionará un
+                        voucher con el 100% de bonificación del servicio de sepelio contratado. Para ellos también una
+                        tasa preferencial en la sucesión.</p>
+                </div>
+                <div class="ase-item">
+                    <h3 data-aos="fade-up" data-aos-delay="500">Custodia de títulos de bóvedas</h3>
+                    <p data-aos="fade-up" data-aos-delay="550">Muchas veces los papeles se pueden perder u olvidarnos donde están. Contamos con archivo de
+                        custodia de Bóveda desde hace muchos años para aquellos que necesiten despreocuparse por el
+                        ordenamiento y ubicación de sus títulos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of asesoria section-->
     <!--Footer-->
     <section class="footer">
         <div class="section-footer">
@@ -182,4 +256,5 @@
         AOS.init();
     </script>
 </body>
+
 </html>

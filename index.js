@@ -1,3 +1,13 @@
+//wsp animacion 
+
+const whatsappButton = document.querySelector('.whatsapp-button');
+
+const delay = 200;
+
+setTimeout(() => {
+  whatsappButton.classList.add('animate-appear');
+}, delay);
+
 // Dark-light mode
 
 function toggleMode() {
@@ -97,16 +107,6 @@ window.addEventListener('scroll', function () {
   }
 });
 
-//wsp animacion 
-
-const whatsappButton = document.querySelector('.whatsapp-button');
-
-const delay = 200;
-
-setTimeout(() => {
-  whatsappButton.classList.add('animate-appear');
-}, delay);
-
 // carrusel
 
 const btnLeft = document.querySelector(".btn-left"),
@@ -154,37 +154,4 @@ function moveToLeft(){
     slideer.style.transition = "all ease .6s"
 }
 
-//animacion escritura 
-
-const typedText = document.getElementById('typed-text');
-const textToType = '¡Estamos aquí!';
-const typingDelay = 100; // Retraso entre cada caracter
-const erasingDelay = 50; // Retraso después de completar el texto
-const newTextDelay = 2000; // Retraso antes de empezar a escribir de nuevo
-
-let textIndex = 0;
-let isDeleting = false;
-
-function type() {
-  const currentText = typedText.textContent;
-  const length = currentText.length;
-
-  if (isDeleting) {
-    typedText.textContent = currentText.slice(0, length - 1);
-  } else {
-    typedText.textContent = textToType.slice(0, length + 1);
-  }
-
-  if (!isDeleting && typedText.textContent === textToType) {
-    isDeleting = true;
-    setTimeout(type, newTextDelay);
-  } else if (isDeleting && typedText.textContent === '') {
-    isDeleting = false;
-    textIndex = 0;
-    setTimeout(type, typingDelay);
-  } else {
-    setTimeout(type, isDeleting ? erasingDelay : typingDelay);
-  }
-}
-
-type();
+// codigo acceso
