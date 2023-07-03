@@ -107,55 +107,6 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// carrusel
-
-const btnLeft = document.querySelector(".btn-left"),
-btnRight = document.querySelector(".btn-right"),
-slideer = document.querySelector("#slideer"),
-sliderImg = document.querySelectorAll(".slider-img");
-
-
-if (btnLeft && btnRight && slideer && sliderImg) {
-  btnLeft.addEventListener("click", e => moveToLeft())     
-  btnRight.addEventListener("click", e => moveToRight())
-
-  setInterval(() => {
-      moveToRight()
-  }, 3000);
-
-  let operation = 0,
-      counter = 0,
-      widthImg = 100 / sliderImg.length;
-
-  function moveToRight(){
-      if (counter >= sliderImg.length-1){
-        counter= 0;
-        operation= 0;
-        slideer.style.transform = `translate(-${operation}%)`
-        slideer.style.transition = "none";
-        return;
-      }
-      counter++;
-      operation = operation + widthImg;
-      slideer.style.transform = `translate(-${operation}%)`
-      slideer.style.transition = "all ease .6s" 
-  }
-
-  function moveToLeft(){
-      counter--;
-      if( counter < 0 ){
-        counter = sliderImg.length-1;
-        operation= widthImg * (sliderImg.length-1)
-        slideer.style.transform = `translate(-${operation}%)`
-        slideer.style.transition = "none";
-        return;
-      }
-      operation = operation - widthImg;
-      slideer.style.transform = `translate(-${operation}%)`
-      slideer.style.transition = "all ease .6s"
-  }
-}
-
 // codigo acceso
 
 const btn = document.getElementById('btn');
