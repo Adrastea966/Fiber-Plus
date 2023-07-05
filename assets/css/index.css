@@ -47,28 +47,27 @@ ul {
 
 /* Principal */
 .principal {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     overflow: hidden;
+    position: relative;
+}
+
+.principal video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(60%);
 }
 
 .container-principal {
     max-width: 170rem;
     margin: 0 auto;
-}
-
-.principal video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    filter: brightness(60%);
+    overflow: hidden;
 }
 
 .logotipo {
@@ -2999,7 +2998,7 @@ input::-webkit-input-placeholder {
     .container-about{
         padding-top: 30rem;
     }
-
+    
     /* Servicios */
     .servicios {
         height: 190rem;
