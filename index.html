@@ -20,14 +20,11 @@
                     FiberPlus
                 </h2>
                 <div class="mode">
-                    <label class="switch">
-                        <input type="checkbox" onchange="toggleMode()">
-                        <span class="slider round"></span>
-                        <div class="icon-container">
-                            <i class="uil uil-moon"></i>
-                            <i class="uil uil-sun"></i>
-                        </div>
-                    </label>
+                    <div class="circle-mode"></div>
+                    <div class="icons">
+                        <i class="uil uil-moon"></i>
+                        <i class="uil uil-sun"></i>
+                    </div>
                 </div>
             </header>
             <div class="paragraph">
@@ -77,6 +74,76 @@
                 <a href="#contacto" class="link4">Contacto</a>
             </div>
         </nav>
+        <div class="navbar-responsive">
+            <i class="uil uil-arrow-left arrow-in"></i>
+            <ul class="list">
+                <li class="list-item">
+                    <div class="list-button">
+                        <i class="uil uil-estate list-icon"></i>
+                        <a href="#" class="nav-link">Inicio</a>
+                    </div>
+                </li>
+                <li class="list-item list-item-click">
+                    <div class="list-button list-button-click">
+                        <i class="uil uil-users-alt list-icon"></i>
+                        <a href="#nosotros" class="nav-link">Nosotros</a>
+                        <i class="uil uil-angle-right list-arrow"></i>
+                    </div>
+                    <ul class="list-show">
+                        <li class="list-inside">
+                            <a href="/assets/pages/sobre-la-empresa.html" class="nav-link nav-link-inside">Equipo</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="/assets/pages/sobre-la-empresa.html" class="nav-link nav-link-inside">Corporativa</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="/assets/pages/sobre-la-empresa.html" class="nav-link nav-link-inside">Memorials</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="/assets/pages/sobre-la-empresa.html" class="nav-link nav-link-inside">Valores</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-item">
+                    <div class="list-button">
+                        <i class="uil uil-tv-retro list-icon"></i>
+                        <a href="#programas" class="nav-link">Programas</a>
+                    </div>
+                </li>
+                <li class="list-item list-item-click">
+                    <div class="list-button list-button-click">
+                        <i class="uil uil-file-landscape list-icon"></i>
+                        <a href="#servicios" class="nav-link">Servicios</a>
+                        <i class="uil uil-angle-right list-arrow"></i>
+                    </div>
+                    <ul class="list-show">
+                        <li class="list-inside">
+                            <a href="/assets/pages/internet.html" class="nav-link nav-link-inside">Internet</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="/assets/pages/telefonia.html" class="nav-link nav-link-inside">Telefonía</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="/assets/pages/educacion.html" class="nav-link nav-link-inside">Educación</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="/assets/pages/servicios-funebres.html" class="nav-link nav-link-inside">Fúnebres</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="/assets/pages/television.html" class="nav-link nav-link-inside">Televisión</a>
+                        </li>
+                        <li class="list-inside">
+                            <a href="/assets/pages/servicios-basicos.html" class="nav-link nav-link-inside">Servicios básicos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-item">
+                    <div class="list-button">
+                        <i class="uil uil-message list-icon"></i>
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
     <!--end of principal section-->
@@ -200,7 +267,8 @@
                 <div class="footer-card">
                     <i class="uil uil-book-open"></i>
                     <div class="services">
-                        <button class="btn-servicio"><a href="/assets/pages/servicios-funebres.html">Ver servicio</a></button>
+                        <button class="btn-servicio"><a href="/assets/pages/servicios-funebres.html">Ver
+                                servicio</a></button>
                     </div>
                 </div>
             </div>
@@ -232,7 +300,8 @@
                 <div class="footer-card">
                     <i class="uil uil-water"></i>
                     <div class="services">
-                        <button class="btn-servicio"><a href="/assets/pages/servicios-basicos.html">Ver servicio</a></button>
+                        <button class="btn-servicio"><a href="/assets/pages/servicios-basicos.html">Ver
+                                servicio</a></button>
                     </div>
                 </div>
             </div>
@@ -333,7 +402,9 @@
                         <div class="icono-ubication">
                             <i class="uil uil-map-marker"></i>
                         </div>
-                        <div class="ubication2"><span id="typed-text">¡Estamos aquí!</span></div>
+                        <div class="ubication2">
+                            <h3 id="typed-text">¡Estamos aquí!.<span>&#160;</span></h3>
+                        </div>
                     </div>
                     <div class="direccion-texto">
                         <p>Obelisco, Avenida 9 de Julio, Buenos Aires</p>

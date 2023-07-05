@@ -1,36 +1,21 @@
-//wsp animacion 
-
-const whatsappButton = document.querySelector('.whatsapp-button');
-
-const delay = 200;
-
-setTimeout(() => {
-  whatsappButton.classList.add('animate-appear');
-}, delay);
-
 // Dark-light mode
-
-function toggleMode() {
-  const body = document.body;
-  const iconContainer = document.querySelector('.icon-container');
+window.addEventListener('DOMContentLoaded', () => {
+  const slider = document.querySelector('.mode');
   const moonIcon = document.querySelector('.uil-moon');
   const sunIcon = document.querySelector('.uil-sun');
 
-  body.classList.toggle('dark-mode');
-
-  if (iconContainer.classList.contains('left')) {
-    iconContainer.classList.remove('left');
-    moonIcon.style.color = '#000';
-    sunIcon.style.color = '#fff';
-  } else {
-    iconContainer.classList.add('left');
-    moonIcon.style.color = '#fff';
-    sunIcon.style.color = '#000';
-  }
-}
+  slider.addEventListener('click', () => {
+      if (moonIcon.style.display === 'none') {
+          moonIcon.style.display = 'block';
+          sunIcon.style.display = 'none';
+      } else {
+          moonIcon.style.display = 'none';
+          sunIcon.style.display = 'block';
+      }
+  });
+});
 
 //Submenu
-
 let timeoutId;
 let isSubMenu1Visible = false;
 
@@ -85,8 +70,56 @@ function cancelHideSubMenu2() {
   clearTimeout(timeoutId2);
 }
 
-//Botón scroll arriba
+//navbar-responsive 
 
+let listElements = document.querySelectorAll('.list-button-click');
+let arrowIn = document.querySelector('.arrow-in');
+let navResponsive = document.querySelector('.navbar-responsive');
+let navLinks = document.querySelectorAll('.nav-link');
+let arrows = document.querySelectorAll('.list-arrow');
+let menuResponsive = document.querySelector('.list')
+
+listElements.forEach(listElement => {
+    listElement.addEventListener('click', () => {
+
+        listElement.classList.toggle('arrow');
+
+        let height = 0;
+        let menu = listElement.nextElementSibling;
+        if (menu.clientHeight == "0") {
+            height = menu.scrollHeight;
+        }
+
+        menu.style.height = `${height}px`;
+
+    })
+});
+
+arrowIn.addEventListener('click', () => {
+    if (navResponsive.style.width === '300px') {
+        navResponsive.style.width = '50px';
+        menuResponsive.style.visibility='hidden';
+        navLinks.forEach(link => {
+            link.style.opacity = '0';
+        });
+        arrows.forEach(arrow => {
+            arrow.style.display = 'none';
+        });
+        arrowIn.classList.remove('rotate');
+    } else {
+        navResponsive.style.width = '300px';
+        menuResponsive.style.visibility='visible';
+        navLinks.forEach(link => {
+            link.style.opacity = '1';
+        });
+        arrows.forEach(arrow => {
+            arrow.style.display = 'block';
+        });
+        arrowIn.classList.add('rotate');
+    }
+});
+
+//Botón scroll arriba
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -107,13 +140,3 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// codigo acceso
-
-const btn = document.getElementById('btn');
-const seccionSinCodigo = document.querySelector('.seccion-sin-codigo');
-const seccionConCodigo = document.querySelector('.seccion-con-codigo');
-
-btn.addEventListener('click', function() {
-    seccionSinCodigo.style.display = seccionSinCodigo.style.display === 'none' ? 'block' : 'none';
-    seccionConCodigo.style.display = seccionConCodigo.style.display === 'none' ? 'block' : 'none';
-});
