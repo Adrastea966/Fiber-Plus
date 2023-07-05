@@ -2783,7 +2783,7 @@ ul {
         justify-content: center;
         flex-direction: column-reverse;
         align-items: center;
-        padding-top: 5rem;
+        padding-top: 10rem;
     }
 
     .decoration {
@@ -2852,9 +2852,8 @@ ul {
     }
 
     /* Servicios */
-    .container-cards {
-        margin-top: 20rem;
-        padding-bottom: 20rem;
+    .servicios {
+        height: 120rem;
     }
 
     .servicios h2 {
@@ -2865,6 +2864,7 @@ ul {
     .container-programas {
         justify-content: center;
         flex-direction: column-reverse;
+        padding-top: 20rem;
     }
 
     .texto-programas h2 {
@@ -2903,6 +2903,7 @@ ul {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 10rem;
     }
 
     /* Footer */
@@ -2981,9 +2982,11 @@ ul {
     }
 
     /* Servicios */
-    .servicios {
-        margin-bottom: 70rem;
-        margin-top: 70rem;
+    .servicios{
+        height: 190rem;
+    }
+    .container-cards{
+        padding-top: 60rem;
     }
 
     .footer {
@@ -3023,8 +3026,11 @@ ul {
     }
 
     /* Nosotros */
+    .nosotros{
+        height: 100rem;
+    }
     .container-about {
-        padding-top: 20rem;
+        padding-top: 30rem;
         padding-bottom: 2rem;
     }
 
@@ -3101,8 +3107,8 @@ ul {
 
     /* Servicios */
     .servicios {
-        margin-bottom: 80rem;
-        margin-top: 100rem;
+        margin-bottom: 30rem;
+        margin-top: 30rem;
     }
 
     .servicios h2 {
@@ -3110,6 +3116,10 @@ ul {
     }
 
     /* Seccion programas */
+
+    .programas{
+        height: 100rem;
+    }
     .container-programas {
         flex-direction: column-reverse;
     }
@@ -3303,10 +3313,9 @@ ul {
 
     /* Servicios */
     .servicios {
-        margin-bottom: 170rem;
-        margin-top: 190rem;
+        margin-bottom: 120rem;
+        margin-top: 120rem;
     }
-
 }
 
 /* Pantallas chicas - 651px */
@@ -3318,8 +3327,9 @@ ul {
     }
 
     /* Nosotros */
-    .nosotros {
-        height: 90vh;
+    .nosotros{
+        padding-top: 10rem;
+        height: 90rem;
     }
 
     .container-about {
@@ -3378,26 +3388,16 @@ ul {
         r: 10%;
     }
 
-    /*seccion-why*/
-    .why {
-        height: 40vh;
-    }
-
-    .container-why {
-        padding-top: 2rem;
-    }
-
-    .texto-why {
-        width: 350px;
-        font-size: 2em;
-        text-align: center;
-    }
-
     /* redes */
     .redes {
         flex-direction: row;
         top: 85%;
         left: 50%;
+    }
+
+    /*why*/
+    .texto-why{
+        text-align: center;
     }
 
     .icon {
@@ -3433,8 +3433,8 @@ ul {
     }
 
     /* Seccion programas */
-    .container-programas {
-        height: 60vh;
+    .programas{
+        margin-bottom: 1rem;
     }
 
     .texto-programas h2 {
@@ -3476,7 +3476,8 @@ ul {
 
     /* Testimonios */
     .testimonios {
-        margin-bottom: 2rem;
+       height: 70rem;
+       padding-bottom: 10rem;
     }
 
     .titulo-testimonio {
@@ -3575,8 +3576,8 @@ ul {
     }
 }
 
-/* Pantallas chicas - 510px */
-@media screen and (max-width:510px) {
+/* Pantallas chicas - 531px */
+@media screen and (max-width:531px) {
 
     /* Principal */
     .paragraph{
@@ -3587,7 +3588,7 @@ ul {
     }
 
     .descripcion1{
-        font-size: 4em;
+        font-size: 2em;
         width: 360px;
     }
 
@@ -3597,6 +3598,20 @@ ul {
         align-items: center;
         width: 300px;
         font-size: 1.8em;
+    }
+
+    /*nosotros*/
+    .container-about{
+        padding-top: 10rem;
+    }
+
+    /*why*/
+    .why{
+        height: 90rem;
+    }
+
+    .container-why{
+        padding-top: 20rem;
     }
 
     /*mode*/
@@ -3609,9 +3624,14 @@ ul {
         font-size: 1.5em;
     }
 
+    /*servicios*/
+    .container-cards{
+        padding-top: 10rem;
+    }
+
     /* Seccion programas */
     .container-programas {
-        height: 30vh;
+        height: 100vh;
     }
 
     /* Testimonios */
@@ -3620,6 +3640,10 @@ ul {
     }
 
     /* Contacto */
+    .container-general{
+        padding-top: 10rem;
+    }
+
     .mapa iframe {
         width: 35rem;
         height: 30rem;
@@ -3631,6 +3655,6 @@ ul {
 
     /* Footer */
     .container-footer-bottom {
-        left: 9%;
+        left:0;
     }
 }
