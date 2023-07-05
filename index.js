@@ -71,7 +71,6 @@ function cancelHideSubMenu2() {
 }
 
 //navbar-responsive 
-
 let listElements = document.querySelectorAll('.list-button-click');
 let arrowIn = document.querySelector('.arrow-in');
 let navResponsive = document.querySelector('.navbar-responsive');
@@ -140,3 +139,15 @@ window.addEventListener('scroll', function () {
   }
 });
 
+//formulario de contacto
+const $form = document.querySelector('#form');
+const $buttonMailTo = document.querySelector('#mail-to')
+
+$form.addEventListener('submit', handleSubmit)
+
+function handleSubmit(event){
+    event.preventDefault()
+    const form = new FormData(this)
+    $buttonMailTo.setAttribute('href', `mailto:ballian.eliana@gmail.com?subject= Nombre: ${form.get('name')} Correo: ${form.get('email')}&body=${form.get('message')}`)
+    $buttonMailTo.click()
+}

@@ -229,7 +229,7 @@ ul {
 
 .list-icon {
     font-size: 2.5em;
-    color:var(--main-color-dark-mode);
+    color: var(--main-color-dark-mode);
 }
 
 .list-item {
@@ -291,6 +291,7 @@ ul {
 .rotate {
     transform: rotate(180deg);
 }
+
 /*fin navbar-responsive*/
 
 #menu-toggle {
@@ -1103,43 +1104,47 @@ ul {
     align-items: center;
 }
 
-.form {
+.form{
     color: var(--main-color-dark-mode);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .form h3 {
     font-size: 3em;
-    padding-bottom: 2rem;
 }
 
-.form-group1 {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.6em;
+.contacto-formulario{
+    width: 50rem;
+    padding-bottom: 20rem;
 }
 
-.input-email {
-    width: 40rem;
-    padding: 1rem;
+.form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    font-size: 1.8em;
 }
 
-.form-group2 {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.6em;
-    padding-bottom: 3rem;
+.form input,
+.form textarea {
+    width: 100%;
+    font-size: 1.5em;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid var(--second-color);
 }
 
-.form-group2 textarea {
-    height: 30rem;
+.form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+}
+
+input::-webkit-input-placeholder {
+    color: var(--second-color);
 }
 
 .btn-submit {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 .btn-submit button {
@@ -1162,6 +1167,10 @@ ul {
     outline: 2px solid var(--main-color-dark-mode);
     outline-offset: 4px;
     transition: ease-in-out 0.2s;
+}
+
+#mail-to {
+    opacity: 0;
 }
 
 /* Seccion footer */
@@ -2982,10 +2991,11 @@ ul {
     }
 
     /* Servicios */
-    .servicios{
+    .servicios {
         height: 190rem;
     }
-    .container-cards{
+
+    .container-cards {
         padding-top: 60rem;
     }
 
@@ -3026,9 +3036,10 @@ ul {
     }
 
     /* Nosotros */
-    .nosotros{
+    .nosotros {
         height: 100rem;
     }
+
     .container-about {
         padding-top: 30rem;
         padding-bottom: 2rem;
@@ -3116,10 +3127,10 @@ ul {
     }
 
     /* Seccion programas */
-
-    .programas{
+    .programas {
         height: 100rem;
     }
+
     .container-programas {
         flex-direction: column-reverse;
     }
@@ -3160,15 +3171,6 @@ ul {
 
     .mapa iframe {
         width: 60rem;
-    }
-
-    .input-email {
-        width: 60rem;
-        padding: 1.5rem;
-    }
-
-    .form-group1 {
-        padding-bottom: 3rem;
     }
 
     /* Footer */
@@ -3327,7 +3329,7 @@ ul {
     }
 
     /* Nosotros */
-    .nosotros{
+    .nosotros {
         padding-top: 10rem;
         height: 90rem;
     }
@@ -3396,7 +3398,7 @@ ul {
     }
 
     /*why*/
-    .texto-why{
+    .texto-why {
         text-align: center;
     }
 
@@ -3433,7 +3435,7 @@ ul {
     }
 
     /* Seccion programas */
-    .programas{
+    .programas {
         margin-bottom: 1rem;
     }
 
@@ -3476,8 +3478,8 @@ ul {
 
     /* Testimonios */
     .testimonios {
-       height: 70rem;
-       padding-bottom: 10rem;
+        height: 70rem;
+        padding-bottom: 10rem;
     }
 
     .titulo-testimonio {
@@ -3533,10 +3535,6 @@ ul {
         font-size: 2em;
     }
 
-    .input-email {
-        width: 50rem;
-    }
-
     /* Footer */
     .footer {
         height: 50rem;
@@ -3580,20 +3578,20 @@ ul {
 @media screen and (max-width:531px) {
 
     /* Principal */
-    .paragraph{
-        display:flex;
+    .paragraph {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .descripcion1{
+    .descripcion1 {
         font-size: 2em;
         width: 360px;
     }
 
     .descripcion {
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 300px;
@@ -3601,31 +3599,31 @@ ul {
     }
 
     /*nosotros*/
-    .container-about{
+    .container-about {
         padding-top: 10rem;
     }
 
     /*why*/
-    .why{
+    .why {
         height: 90rem;
     }
 
-    .container-why{
+    .container-why {
         padding-top: 20rem;
     }
 
     /*mode*/
-    .mode{
+    .mode {
         top: 3%;
-        left:4%;
+        left: 4%;
     }
 
-    .icons{
+    .icons {
         font-size: 1.5em;
     }
 
     /*servicios*/
-    .container-cards{
+    .container-cards {
         padding-top: 10rem;
     }
 
@@ -3640,7 +3638,7 @@ ul {
     }
 
     /* Contacto */
-    .container-general{
+    .container-general {
         padding-top: 10rem;
     }
 
@@ -3649,12 +3647,22 @@ ul {
         height: 30rem;
     }
 
-    .input-email {
+    .contacto-formulario{
         width: 30rem;
+        padding-bottom: 20rem;
+    }
+
+    .form label {
+        font-size: 1.5em;
+    }
+    
+    .form input,
+    .form textarea {
+        font-size: 1.2em;
     }
 
     /* Footer */
     .container-footer-bottom {
-        left:0;
+        left: 0;
     }
 }
