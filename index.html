@@ -92,17 +92,20 @@
                     </div>
                     <ul class="list-show">
                         <li class="list-inside">
-                            <a href="/assets/pages/sobre-la-empresa.html#equipo" class="nav-link nav-link-inside">Equipo</a>
+                            <a href="/assets/pages/sobre-la-empresa.html#equipo"
+                                class="nav-link nav-link-inside">Equipo</a>
                         </li>
                         <li class="list-inside">
                             <a href="/assets/pages/sobre-la-empresa.html#corporativa"
                                 class="nav-link nav-link-inside">Corporativa</a>
                         </li>
                         <li class="list-inside">
-                            <a href="/assets/pages/sobre-la-empresa.html#memorials" class="nav-link nav-link-inside">Memorials</a>
+                            <a href="/assets/pages/sobre-la-empresa.html#memorials"
+                                class="nav-link nav-link-inside">Memorials</a>
                         </li>
                         <li class="list-inside">
-                            <a href="/assets/pages/sobre-la-empresa.html#valores" class="nav-link nav-link-inside">Valores</a>
+                            <a href="/assets/pages/sobre-la-empresa.html#valores"
+                                class="nav-link nav-link-inside">Valores</a>
                         </li>
                     </ul>
                 </li>
@@ -436,7 +439,7 @@
                     <div class="btn-submit">
                         <button type="submit">Enviar</button>
                     </div>
-                  </form>
+                </form>
                 <a href="mailto:ballian.eliana@gmail.com" id="mail-to">mail</a>
             </div>
     </section>
@@ -543,6 +546,44 @@
     </section>
     <button class="scroll-top-button" onclick="scrollToTop()"><i class="uil uil-angle-up"></i></button>
     <!--end of footer section-->
+    <!--js local-->
+    <script>
+        //Botón scroll arriba
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        //formulario de contacto
+        const $form = document.querySelector('#form');
+        const $buttonMailTo = document.querySelector('#mail-to')
+
+        $form.addEventListener('submit', handleSubmit)
+
+        function handleSubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            $buttonMailTo.setAttribute('href',
+                `mailto:ballian.eliana@gmail.com?subject= Nombre: ${form.get('name')} Correo: ${form.get('email')}&body=${form.get('message')}`
+            )
+            $buttonMailTo.click()
+        }
+        //scroll seccion nosotros
+        window.addEventListener('scroll', function () {
+            let nosotrosSection = document.getElementById('nosotros');
+            let scrollTopButton = document.querySelector('.scroll-top-button');
+
+            let nosotrosSectionPosition = nosotrosSection.getBoundingClientRect().top;
+
+            if (nosotrosSectionPosition <= 0) {
+                scrollTopButton.classList.add('show');
+            } else {
+                scrollTopButton.classList.remove('show');
+            }
+        });
+    </script>
+    <!--end of js local-->
     <script src="index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

@@ -4020,3 +4020,257 @@ input::-webkit-input-placeholder {
         padding-right: 6rem;
     }
 }
+
+/* Pantallas chicas - 381px */
+@media screen and (max-width:381px){
+
+    /*principal*/
+    .descripcion1{
+        font-size: 1.8em;
+    }
+
+    .descripcion{
+        font-size: 1.5em;
+    }
+
+    .icon{
+        width: 35px;
+        height: 35px;
+    }
+
+    /*nosotros*/
+    .nosotros{
+        padding-top: 2rem;
+    }
+
+    .container-about{
+        padding-top: 5rem;
+    }
+
+    .container-about img{
+        width: 260px;
+        height: 190px;
+    }
+
+    .texto-about{
+        width: 260px;
+    }
+
+    .texto-about p{
+       width: 100%;
+    }
+
+    .texto-about h2{
+        font-size: 2em;
+    }
+
+    /*why*/
+    .container-why{
+        padding-top: 5rem;
+    }
+
+    .texto-why {
+        font-size: 1.8em;
+    }
+
+    /*programas*/
+    .image-about img{
+        width: 260px;
+        height: 190px;
+    }
+
+    .texto-programas{
+        width: 260px;
+    }
+
+    .texto-programas p{
+        width: 100%;
+    }
+
+    /*testimonios*/
+    .titulo-testimonio{
+        width: 250px;
+        font-size: 1.8em;
+    }
+
+    .test{
+        width: 25rem;
+    }
+
+    /*contacto*/
+    .mapa iframe {
+        width: 25rem;
+    }
+
+    .direccion{
+        width: 250px;
+    }
+
+    .ubication2 h3{
+        font-size: 1.5em;
+    }
+
+    .direccion-texto {
+        width: 250px;
+        font-size: 1.5em;
+    }
+
+    .contacto-formulario{
+        width: 25rem;
+        padding-bottom: 2rem;
+    }
+
+    /* Footer */
+    .footer{
+        height: 60rem;
+    }
+
+    .div1{
+        padding-left: 1rem;
+    }
+
+    .div2{
+        top:30%;
+    }
+
+    .div2 h3{
+        font-size: 1.5em;
+    }
+
+    .div3{
+        top: 70%;
+        left:4%;
+    }
+
+    .div3 h3{
+        font-size: 1.5em;
+    }
+
+    .icon2{
+        width: 30px;
+        height: 30px;
+    }
+
+    .top-footer h3 {
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    .top-footer p {
+        width: 25rem;
+        font-size: 1.2em;
+    }
+
+    .bottom-footer h3 {
+        font-size: 1.5em;
+        padding-top: 4rem;
+    }
+
+    .container-footer-bottom{
+        padding-top: 35rem;
+    }
+
+    .designed-by {
+        font-size: 1.2em;
+        padding-right: 30rem;
+    }
+
+    .copyright {
+        width: 600px;
+        font-size: 1em;
+        padding-left: 2rem;
+    }
+
+    /*PÁGINA SOBRE LA EMPRESA*/
+    /*seccion empresa*/
+    .descripcion-equipo {
+        width: 25rem;
+    }
+
+    .descripcion-equipo .p {
+        font-size: 1.2em;
+    }
+
+    .descripcion-equipo-h2{
+        font-size: 2.5em;
+    }
+
+    .descripcion-equipo-h3{
+        font-size: 1.8em;
+    }
+
+    .descripcion-timeline {
+        font-size: 1em;
+    }
+
+    .timeline{
+        margin: 1rem 1rem 1.5rem 4rem;
+    }
+
+    .pop-up {
+        top: 95%;
+        left: 2%;
+        padding: 1.5rem;
+        width: 25rem;
+        height: 5rem;
+    }
+
+    .fotografia img{
+        width: 260px;
+        height: 390px;
+    }
+
+    /*equipo*/
+    .container-equipo {
+        padding: 0 3rem 0 3rem;
+    }
+
+    .img-equipo{
+        width: 200px;
+    }
+
+    .content h3{
+        font-size: 1.8em;
+    }
+
+    .content p{
+        font-size: 1em;
+    }
+    
+    /*memorials*/
+    .imagenes-memorials {
+        height: 68rem;
+    }
+
+    .encabezado1 {
+        font-size: 1.8em;
+    }
+
+    .encabezado2 h3{
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    .encabezado2 p {
+        width: 250px;
+        font-size: 1.2em;
+    }
+
+    .persona1-memorials p {
+        width: 30rem;
+        font-size: 1.2em;
+        padding-left:1rem;
+    }
+
+    .persona2-memorials p {
+        width: 35rem;
+        font-size: 1.2em;
+        padding-left:1rem;
+    }
+
+    .persona3-memorials p {
+        width: 35rem;
+        font-size: 1.2em;
+        padding-left:1rem;
+    }
+}
