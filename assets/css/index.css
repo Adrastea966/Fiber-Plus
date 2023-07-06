@@ -12,14 +12,15 @@
 
 /*variables*/
 :root {
+    /*dark mode*/
     --main-color-dark-mode: #fff;
+    --accent-color-dark-mode: #74ffe1;
+    --accent-color-variable-dark-mode: #49a08d;
+    --main-background-color-dark-mode: #1a1a1a;
+    --background-color-variable: #1e2323;
+    /*light mode*/
     --main-color-light-mode: #000;
-    --second-color: #a2a2a2;
-    --accent-color-dark-mode: #74ffe1b0;
-    --acent-color-light-mode: #02dcadb8;
-    --accent-color-variable-dark-mode: #74ffe195;
-    --main-background-color-dark-mode: #161b1a;
-    --background-color-variable: #27302e;
+    --second-color: #878787;
 }
 
 /* Globals */
@@ -1108,7 +1109,7 @@ ul {
     align-items: center;
 }
 
-.form{
+.form {
     color: var(--main-color-dark-mode);
 }
 
@@ -1116,7 +1117,7 @@ ul {
     font-size: 3em;
 }
 
-.contacto-formulario{
+.contacto-formulario {
     width: 50rem;
     padding-bottom: 20rem;
 }
@@ -1362,6 +1363,7 @@ input::-webkit-input-placeholder {
     height: 90rem;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 10rem;
     padding-top: 5rem;
     align-items: center;
@@ -1394,17 +1396,25 @@ input::-webkit-input-placeholder {
     width: 50rem;
 }
 
-.descripcion-equipo h2 {
+.descripcion-equipo-h2,
+.descripcion-equipo-h3 {
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+}
+
+.descripcion-equipo-h2 {
     font-size: 3em;
     color: var(--accent-color-dark-mode);
     padding-bottom: 1rem;
+    animation-delay: 0.3s;
 }
 
-.descripcion-equipo h3 {
+.descripcion-equipo-h3 {
     font-size: 2.5em;
     font-weight: 500;
     color: var(--main-color-dark-mode);
     padding-bottom: 5rem;
+    animation-delay: 0.4s;
 }
 
 .descripcion-equipo .p {
@@ -1692,9 +1702,10 @@ input::-webkit-input-placeholder {
 .container-memorials {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    padding-left: 20rem;
+    align-items: center;
+    gap: 5rem;
+    padding-left: 5rem;
 }
 
 .titulo-memorials {
@@ -1708,7 +1719,7 @@ input::-webkit-input-placeholder {
     flex-direction: row;
     align-items: center;
     gap: 2rem;
-    font-size: 4em;
+    font-size: 3em;
     color: var(--main-color-dark-mode);
 }
 
@@ -1725,16 +1736,18 @@ input::-webkit-input-placeholder {
 }
 
 .imagenes-memorials {
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .persona1-memorials {
-    background-image: url(/assets/image/memorials1.jpg);
+    background-image: url(https://res.cloudinary.com/adrastea/image/upload/v1688572426/Fiber-plus/memorials1_rrue5t.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 24rem;
+    height: 100%;
     padding: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -1750,11 +1763,11 @@ input::-webkit-input-placeholder {
 }
 
 .persona2-memorials {
-    background-image: url(/assets/image/memorials2.jpg);
+    background-image: url(https://res.cloudinary.com/adrastea/image/upload/v1688572438/Fiber-plus/memorials2_g52ugn.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 24rem;
+    height: 100%;
     padding: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -1770,11 +1783,11 @@ input::-webkit-input-placeholder {
 }
 
 .persona3-memorials {
-    background-image: url(/assets/image/memorials3.jpg);
+    background-image: url(https://res.cloudinary.com/adrastea/image/upload/v1688572439/Fiber-plus/memorials3_yxdfsr.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 24rem;
+    height: 100%;
     padding: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -1794,7 +1807,7 @@ input::-webkit-input-placeholder {
     color: var(--main-color-dark-mode);
     font-style: italic;
     padding-top: 6rem;
-    padding-left: 20rem;
+    padding-left: 2rem;
     font-size: 1.8em;
 }
 
@@ -1803,7 +1816,7 @@ input::-webkit-input-placeholder {
     color: var(--main-color-dark-mode);
     font-style: italic;
     padding-top: 6rem;
-    padding-left: 20rem;
+    padding-left: 2rem;
     font-size: 1.8em;
 }
 
@@ -1812,7 +1825,7 @@ input::-webkit-input-placeholder {
     color: var(--main-color-dark-mode);
     font-style: italic;
     padding-top: 6rem;
-    padding-left: 20rem;
+    padding-left: 2cqh;
     font-size: 1.8em;
     visibility: visible;
 }
@@ -2995,10 +3008,10 @@ input::-webkit-input-placeholder {
     }
 
     /*Nosotros*/
-    .container-about{
+    .container-about {
         padding-top: 30rem;
     }
-    
+
     /* Servicios */
     .servicios {
         height: 190rem;
@@ -3013,8 +3026,126 @@ input::-webkit-input-placeholder {
     }
 
     /*programas*/
-    .container-programas{
+    .container-programas {
         padding-bottom: 20rem;
+    }
+
+    /*PÁGINA SOBRE LA EMPRESA*/
+    /*seccion empresa*/
+    .container-empresa {
+        height: 150rem;
+        display: flex;
+        padding-bottom: 10rem;
+        margin-top: 5rem;
+        padding-top: 5rem;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .descripcion-equipo {
+        width: 50rem;
+    }
+
+    .timeline{
+        margin-left: 8rem;
+    }
+
+    /*equipo*/
+    .container-equipo {
+        width: 100%;
+        height: 110rem;
+        gap: 2rem;
+    }
+
+    .content p {
+        font-size: 1.5em;
+    }
+
+    /*valores*/
+    .valores {
+        height: 110rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-valores {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6rem;
+    }
+
+    .items-valores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items-valores i {
+        font-size: 5em;
+        color: var(--accent-color-variable-dark-mode);
+    }
+
+    .items-valores p {
+        width: 200px;
+        font-size: 1.6em;
+        color: var(--main-color-dark-mode);
+    }
+
+    /*memorials*/
+    .memorials {
+        height: 110rem;
+    }
+
+    .container-memorials {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .titulo-memorials {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+
+    .encabezado1 {
+        font-size: 2.5em;
+    }
+
+    .encabezado2 p {
+        font-size: 1.5em;
+    }
+
+    .imagenes-memorials {
+        width: 100%;
+        height: 68rem;
+        flex-direction: column;
+    }
+
+    .persona1-memorials p {
+        width: 60rem;
+        padding-top: 6rem;
+        padding-left: 20rem;
+        font-size: 1.5em;
+    }
+
+    .persona2-memorials p {
+        width: 60rem;
+        padding-top: 6rem;
+        padding-left: 20rem;
+        font-size: 1.5em;
+    }
+
+    .persona3-memorials p {
+        width: 60rem;
+        padding-top: 6rem;
+        padding-left: 20rem;
+        font-size: 1.5em;
     }
 }
 
@@ -3586,6 +3717,33 @@ input::-webkit-input-placeholder {
         font-size: 1.2em;
         padding-left: 8rem;
     }
+
+    /*PÁGINA SOBRE LA EMPRESA*/
+    /*memorials*/
+    .imagenes-memorials {
+        height: 69rem;
+    }
+
+    .persona1-memorials p {
+        width: 40rem;
+        padding-top: 6rem;
+        padding-left: 10rem;
+        font-size: 1.5em;
+    }
+
+    .persona2-memorials p {
+        width: 40rem;
+        padding-top: 6rem;
+        padding-left: 10rem;
+        font-size: 1.5em;
+    }
+
+    .persona3-memorials p {
+        width: 40rem;
+        padding-top: 6rem;
+        padding-left: 10rem;
+        font-size: 1.5em;
+    }
 }
 
 /* Pantallas chicas - 531px */
@@ -3661,7 +3819,7 @@ input::-webkit-input-placeholder {
         height: 30rem;
     }
 
-    .contacto-formulario{
+    .contacto-formulario {
         width: 30rem;
         padding-bottom: 20rem;
     }
@@ -3669,7 +3827,7 @@ input::-webkit-input-placeholder {
     .form label {
         font-size: 1.5em;
     }
-    
+
     .form input,
     .form textarea {
         font-size: 1.2em;
@@ -3678,5 +3836,187 @@ input::-webkit-input-placeholder {
     /* Footer */
     .container-footer-bottom {
         left: 0;
+    }
+
+    /*PÁGINA SOBRE LA EMPRESA*/
+    /*seccion empresa*/
+    .container-empresa {
+        height: 150rem;
+        display: flex;
+        padding-bottom: 10rem;
+        margin-top: 5rem;
+        padding-top: 5rem;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .descripcion-equipo {
+        width: 40rem;
+    }
+
+    .descripcion-equipo .p {
+        font-size: 1.5em;
+    }
+
+    .descripcion-equipo-h2{
+        font-size: 2.5em;
+    }
+
+    .descripcion-equipo-h3{
+        font-size: 1.8em;
+    }
+
+    .fotografia img {
+        width: 350px;
+        height: 550px;
+        border-radius: 1rem;
+    }
+  
+    .pop-up {
+        /*  top: 78%;
+        left: 20%;*/
+        padding: 1rem;
+        width: 30rem;
+        height: 6rem;
+    }
+    
+    .pop-up p {
+        font-size: 1.5em;
+    }
+    
+    .pop-up i {
+        font-size: 2rem;
+    }
+    
+    .fecha {
+        font-size: 1.5em;
+    }
+    
+    .descripcion-timeline {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .timeline{
+        margin-left: 5rem;
+    }
+
+    /*equipo*/
+    .container-equipo {
+        width: 100%;
+        height: 110rem;
+        gap: 2rem;
+    }
+
+    .content p {
+        font-size: 1.2em;
+    }
+
+    /*valores*/
+    .items-valores i {
+        font-size: 3em;
+    }
+
+    .items-valores p {
+        text-align: center;
+        width: 200px;
+        font-size: 1.5em;
+    }
+
+    /*memorials*/
+    .imagenes-memorials {
+        height: 21rem;
+    }
+
+    .encabezado1 {
+        font-size: 2em;
+    }
+
+    .encabezado2 p {
+        width: 350px;
+        font-size: 1.5em;
+    }
+}
+
+/* Pantallas chicas - 460px */
+@media screen and (max-width:460px){
+    /*PÁGINA SOBRE LA EMPRESA*/
+    /*seccion empresa*/
+    .container-empresa {
+        height: 150rem;
+        display: flex;
+        padding-bottom: 10rem;
+        margin-top: 5rem;
+        padding-top: 5rem;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .descripcion-equipo {
+        width: 30rem;
+    }
+
+    .descripcion-equipo .p {
+        font-size: 1.5em;
+    }
+
+    .descripcion-equipo-h2{
+        font-size: 2.5em;
+    }
+
+    .descripcion-equipo-h3{
+        font-size: 1.8em;
+    }
+
+    .descripcion-timeline {
+        font-size: 1em;
+    }
+
+    /*equipo*/
+    .container-equipo {
+        width: 100%;
+        height: 110rem;
+        gap: 2rem;
+    }
+
+    .content p {
+        font-size: 1.2em;
+    }
+
+    /*valores*/
+    .valores{
+        height: 160rem;
+    }
+
+    /*memorials*/
+    .imagenes-memorials {
+        height: 63rem;
+    }
+
+    .encabezado1 {
+        font-size: 2em;
+    }
+
+    .encabezado2 p {
+        width: 350px;
+        font-size: 1.5em;
+    }
+
+    .persona1-memorials p {
+        width: 40rem;
+        font-size: 1.2em;
+        padding-right: 6rem;
+    }
+
+    .persona2-memorials p {
+        width: 40rem;
+        font-size: 1.2em;
+        padding-right: 6rem;
+    }
+
+    .persona3-memorials p {
+        width: 40rem;
+        font-size: 1.2em;
+        padding-right: 6rem;
     }
 }
