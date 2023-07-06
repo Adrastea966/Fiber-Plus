@@ -1836,23 +1836,25 @@ input::-webkit-input-placeholder {
     max-width: 150rem;
     height: 100vh;
     margin: 0 auto;
+    position: relative;
 }
 
 .circle-7 {
     top: 49%;
     left: -10%;
-    background-color: #74ffe1b0;
+    background-color: var(--accent-color-dark-mode);
 }
 
 .circle-8 {
     top: 49%;
     right: -10%;
-    background-color: #74ffe17a;
+    background-color: var(--accent-color-dark-mode);
 }
 
 .planes-container {
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -1861,7 +1863,7 @@ input::-webkit-input-placeholder {
 
 .titulo-planes h2 {
     font-size: 3em;
-    color: #fff;
+    color: var(--main-color-dark-mode);
     padding-bottom: 3rem;
 }
 
@@ -1872,7 +1874,7 @@ input::-webkit-input-placeholder {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .card-planes {
@@ -1880,7 +1882,6 @@ input::-webkit-input-placeholder {
     height: 500px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 1rem;
-    transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
@@ -1891,6 +1892,7 @@ input::-webkit-input-placeholder {
     border-radius: 1rem;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(10px);
+    transition: 0.1s ease-in-out;
 }
 
 .top-card-planes {
@@ -1900,22 +1902,21 @@ input::-webkit-input-placeholder {
 
 .top-card-planes h2 {
     font-size: 4.5em;
-    color: #74ffe1cf;
-    padding-top: 6rem;
-    padding-left: 2rem;
+    color: var(--accent-color-dark-mode);
+    text-align: center;
 }
 
 .textos {
     font-size: 1.5em;
     padding: 1rem;
-    color: #ffffff9d;
+    color: var(--second-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .textos .megas {
-    color: #74ffe1cf;
+    color: var(--accent-color-dark-mode);
 }
 
 .bottom-card-planes {
@@ -1925,17 +1926,17 @@ input::-webkit-input-placeholder {
 }
 
 .bottom-card-planes h3 {
-    padding-left: 6rem;
+    text-align: center;
     font-size: 2em;
-    color: #fff;
-    padding-bottom: 3rem;
+    color: var(--main-color-dark-mode);
+    padding-bottom: 5rem;
 }
 
 .bottom-card-planes ul {
     font-size: 1.6em;
-    color: #fff;
-    padding-left: 5rem;
-    padding-bottom: 3rem;
+    color: var(--main-color-dark-mode);
+    text-align: center;
+    padding-bottom: 6rem;
 }
 
 .bottom-card-planes li {
@@ -1960,7 +1961,10 @@ input::-webkit-input-placeholder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    padding: 10rem 0 0 4rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    gap: 10rem;
 }
 
 .phone-help {
@@ -1968,7 +1972,6 @@ input::-webkit-input-placeholder {
 }
 
 .phone-help img {
-    width: 700px;
     height: 800px;
 }
 
@@ -1979,27 +1982,27 @@ input::-webkit-input-placeholder {
 
 .funcionamiento h3 {
     font-size: 2.5em;
-    color: #74ffe1cf;
+    color: var(--accent-color-dark-mode);
     padding-bottom: 2rem;
 }
 
 .funcionamiento p {
     font-size: 1.6em;
-    color: #fff;
+    color: var(--main-color-dark-mode);
     width: 500px;
     padding-bottom: 5rem;
 }
 
 .tips-no-funciona h3 {
     font-size: 2.5em;
-    color: #74ffe1cf;
+    color: var(--accent-color-dark-mode);
     padding-bottom: 2rem;
 }
 
 .tips-no-funciona ol {
     font-size: 1.6em;
     padding-left: 2rem;
-    color: #fff;
+    color: var(--main-color-dark-mode);
     width: 500px;
     padding-bottom: 2rem;
 }
@@ -2011,12 +2014,12 @@ input::-webkit-input-placeholder {
 .dialogo1 {
     position: absolute;
     top: 16%;
-    right: 26%;
+    right: 9%;
     padding: 1rem;
     width: 22rem;
     height: 5rem;
     border-radius: 1rem;
-    background-color: #74ffe1;
+    background-color: var(--accent-color-dark-mode);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
     visibility: hidden;
     animation: dropInWsp 1s ease-in-out 1s forwards;
@@ -2024,13 +2027,13 @@ input::-webkit-input-placeholder {
 
 .dialogo2 {
     position: absolute;
-    top: 25%;
-    left: 26%;
+    top: 24%;
+    left: 9%;
     padding: 1rem;
     width: 22rem;
     height: 7rem;
     border-radius: 1rem;
-    background-color: #ffffff;
+    background-color: var(--main-color-dark-mode);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
     visibility: hidden;
     animation: dropInWsp 1s ease-in-out 2s forwards;
@@ -2038,13 +2041,13 @@ input::-webkit-input-placeholder {
 
 .dialogo3 {
     position: absolute;
-    top: 36%;
-    right: 26%;
+    top: 35%;
+    right: 9%;
     padding: 1rem;
     width: 22rem;
     height: 7rem;
     border-radius: 1rem;
-    background-color: #74ffe1;
+    background-color: var(--accent-color-dark-mode);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
     visibility: hidden;
     animation: dropInWsp 1s ease-in-out 3s forwards;
@@ -2052,13 +2055,13 @@ input::-webkit-input-placeholder {
 
 .dialogo4 {
     position: absolute;
-    top: 47%;
-    left: 26%;
+    top: 46%;
+    left: 9%;
     padding: 1rem;
     width: 22rem;
     height: 16rem;
     border-radius: 1rem;
-    background-color: #ffffff;
+    background-color: var(--main-color-dark-mode);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
     visibility: hidden;
     animation: dropInWsp 1s ease-in-out 4s forwards;
@@ -2066,46 +2069,31 @@ input::-webkit-input-placeholder {
 
 .dialogo5 {
     position: absolute;
-    top: 68%;
-    left: 26%;
+    top: 67%;
+    left: 9%;
     padding: 1rem;
     width: 20rem;
     height: 5rem;
     border-radius: 1rem;
-    background-color: #ffffff;
+    background-color: var(--main-color-dark-mode);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
     visibility: hidden;
     animation: dropInWsp 1s ease-in-out 5s forwards;
     cursor: pointer;
 }
 
-.dialogo1 p {
-    font-size: 1.8em;
-    color: #000;
-    font-weight: 200;
-}
-
-.dialogo2 p {
-    font-size: 1.8em;
-    color: #000;
-    font-weight: 200;
-}
-
-.dialogo3 p {
-    font-size: 1.8em;
-    color: #000;
-    font-weight: 200;
-}
-
+.dialogo1,
+.dialogo2,
+.dialogo3,
 .dialogo4 p {
     font-size: 1.8em;
-    color: #000;
+    color: var(--main-color-light-mode);
     font-weight: 200;
 }
 
 .dialogo5 a {
     font-size: 1.8em;
-    color: #000;
+    color: var(--main-color-light-mode);
     font-weight: 600;
 }
 
@@ -2113,7 +2101,7 @@ input::-webkit-input-placeholder {
     display: flex;
     flex-direction: row;
     font-size: 1.6em;
-    color: #ffffff7b;
+    color: var(--second-color);
     padding-bottom: 2rem;
 }
 
@@ -2136,38 +2124,37 @@ input::-webkit-input-placeholder {
 
 /* PÁGINA TELEFONÍA */
 /*seccion planes*/
-
 .planes-tel {
     max-width: 150rem;
     height: 130rem;
     margin: 0 auto;
+    position: relative;
 }
 
 /* PÁGINA EDUCACION */
 /*seccion educacion*/
-
 .educacion {
     width: 100%;
-    height: 100vh;
+    height: 90rem;
     margin: 0 auto;
     position: relative;
 }
 
 .circle-9 {
-    top: 80%;
+    top: 60%;
     right: 10%;
-    background-color: #74ffe1b0;
+    background-color: var(--accent-color-dark-mode);
 }
 
 .dialogo6 {
     position: absolute;
-    top: 80%;
+    top: 60%;
     right: 15%;
     padding: 1rem;
     width: 20rem;
     height: 7rem;
     border-radius: 1rem;
-    background-color: #74ffe1b0;
+    background-color: var(--accent-color-dark-mode);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
     visibility: hidden;
     animation: dropInWsp 1s ease-in-out 1s forwards;
@@ -2175,19 +2162,19 @@ input::-webkit-input-placeholder {
 
 .dialogo6 p {
     font-size: 1.8em;
-    color: #000;
+    color: var(--main-color-light-mode);
     font-weight: 200;
 }
 
 .dialogo7 {
     position: absolute;
-    top: 92%;
+    top: 70%;
     right: 22%;
     padding: 1rem;
     width: 20rem;
     height: 7rem;
     border-radius: 1rem;
-    background-color: #fff;
+    background-color: var(--main-color-dark-mode);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
     visibility: hidden;
     animation: dropInWsp 1s ease-in-out 2s forwards;
@@ -2195,7 +2182,7 @@ input::-webkit-input-placeholder {
 
 .dialogo7 a {
     font-size: 1.8em;
-    color: #000;
+    color: var(--main-color-light-mode);
     font-weight: 200;
 }
 
@@ -2211,7 +2198,7 @@ input::-webkit-input-placeholder {
 
 .educacion-container h2 {
     font-size: 3em;
-    color: #74ffe1b0;
+    color: var(--accent-color-dark-mode);
     padding-bottom: 5rem;
 }
 
@@ -2229,13 +2216,72 @@ input::-webkit-input-placeholder {
 
 .edu-descrip h3 {
     font-size: 2em;
-    color: #fff;
+    color: var(--main-color-dark-mode);
 }
 
 .edu-descrip p {
     font-size: 1.5em;
-    color: #ffffff83;
+    color: var(--second-color);
     width: 30rem;
+}
+
+/*Imagen educacion*/
+.container-imagen-educacion {
+    width: 100%;
+    height: 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imagen-educacion {
+    width: 100%;
+    height: 500px;
+    background-image: url('https://res.cloudinary.com/adrastea/image/upload/v1688666189/Fiber-plus/imagen-educacion_l4ifba.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    position: center;
+}
+
+.imagen-educacion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #234a42c7;
+}
+
+.imagen-educacion h3 {
+    position: relative;
+    font-size: 3.5em;
+    width: 700px;
+    text-align: center;
+    color: var(--main-color-dark-mode);
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.imagen-educacion .linea-blanca {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: white;
+}
+
+.imagen-educacion .btn-planes {
+    z-index: 1;
 }
 
 /*seccion planes*/
@@ -2246,16 +2292,20 @@ input::-webkit-input-placeholder {
     margin: 0 auto;
 }
 
+.planes-container {
+    padding-top: 2rem;
+}
+
 .circle-7 {
     top: 25%;
     left: -10%;
-    background-color: #74ffe1b0;
+    background-color: var(--accent-color-dark-mode);
 }
 
 .circle-8 {
     top: 70%;
     right: -10%;
-    background-color: #74ffe17a;
+    background-color: var(--accent-color-dark-mode);
 }
 
 .planes-ed i {
@@ -2265,14 +2315,14 @@ input::-webkit-input-placeholder {
 .planes-ed h3 {
     font-size: 3.5em;
     padding: 0 2rem;
-    color: #74ffe1;
+    color: var(--accent-color-dark-mode);
 }
 
 .texto-modulo {
     padding: 2rem 2rem 3rem 2rem;
     padding-top: 2rem;
     font-size: 1.5em;
-    color: #ffffff83;
+    color: var(--second-color);
 }
 
 .pdf {
@@ -2285,7 +2335,7 @@ input::-webkit-input-placeholder {
 .pdf p {
     padding-left: 2rem;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--main-color-dark-mode);
 }
 
 /* PÁGINA FÚNEBRES */
@@ -2309,65 +2359,6 @@ input::-webkit-input-placeholder {
 
 .container-sepelio {
     padding-left: 5rem;
-}
-
-.container-slider {
-    position: relative;
-    width: 650px;
-    height: 500px;
-    background-color: #e8e8e8;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.slider-sepelio {
-    width: 300%;
-    height: 100%;
-    display: flex;
-}
-
-.slider-img {
-    width: calc(100% / 3);
-    height: 100%;
-}
-
-.slider-sepelio img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.btn-left,
-.btn-right {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    font-size: 3rem;
-    padding: 0 5px 0 5px;
-    background-color: transparent;
-    border-radius: 100%;
-    font-weight: 600;
-    cursor: pointer;
-    color: #ffffff82;
-    transform: translate(0, -50%);
-    transition: .5s ease;
-    user-select: none;
-}
-
-.btn-left {
-    left: 10px;
-}
-
-.btn-right {
-    right: 10px;
-}
-
-.btn-left:hover,
-.btn-right:hover {
-    background-color: #333333e7;
-    color: #fff;
 }
 
 .descripcion-sepelio {
@@ -2955,43 +2946,47 @@ input::-webkit-input-placeholder {
         font-size: 1.5em;
     }
 
-    /*Seccion internet*/
-    .help {
-        height: 170rem;
-    }
-
-    .container-help {
-        display: flex;
-        justify-content: center;
-    }
-
-    .phone-help {
-        padding-top: 6rem;
-    }
-
-    .dialogo1 {
-        top: 25%;
-    }
-
-    .dialogo2 {
-        top: 32.5%;
-    }
-
-    .dialogo3 {
-        top: 42%;
-    }
-
-    .dialogo4 {
-        top: 52%;
-    }
-
-    .dialogo5 {
-        top: 72%;
-    }
-
-    /* página telefonía - seccion planes */
+    /*PÁGINA TELEFONÍA*/
+    /*seccion planes*/
     .planes-tel {
         height: 210rem;
+    }
+
+    /* PÁGINA EDUCACION */
+    /*seccion educacion*/
+    .educacion {
+        height: 90rem;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .circle-9 {
+        right: 8%;
+    }
+
+    .dialogo6 {
+        top: 60%;
+        right: 6%;
+    }
+
+    .dialogo7 {
+        top: 70%;
+        right: 13%;
+    }
+
+    /*Imagen educacion*/
+    .container-imagen-educacion {
+        width: 100%;
+        height: 80rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .imagen-educacion {
+        width: 100%;
+        height: 500px;
     }
 }
 
@@ -3046,7 +3041,7 @@ input::-webkit-input-placeholder {
         width: 50rem;
     }
 
-    .timeline{
+    .timeline {
         margin-left: 8rem;
     }
 
@@ -3146,6 +3141,39 @@ input::-webkit-input-placeholder {
         padding-top: 6rem;
         padding-left: 20rem;
         font-size: 1.5em;
+    }
+
+    /*PAGINA INTERNET*/
+    .planes {
+        height: 125rem;
+    }
+
+    .help {
+        height: 165rem;
+    }
+
+    /*PAGINA EDUCACION*/
+    .descripciones {
+        gap: 5rem;
+    }
+
+    .circle-9 {
+        top: 70%;
+    }
+
+    .dialogo6 {
+        top: 80%;
+        right: 6%;
+    }
+
+    .dialogo7 {
+        top: 90%;
+        right: 13%;
+    }
+
+    /*seccion planes*/
+    .planes-ed {
+        height: 170rem;
     }
 }
 
@@ -3415,11 +3443,6 @@ input::-webkit-input-placeholder {
 /* Pantallas medianas - 860px */
 @media screen and (max-width:860px) {
 
-    /*Página EDUCACIÓN - planes*/
-    .planes-ed {
-        height: 250rem;
-    }
-
     /*Página SERVICIOS BÁSICOS - planes*/
     .planes-agua {
         justify-content: center;
@@ -3447,11 +3470,13 @@ input::-webkit-input-placeholder {
         height: 230rem;
     }
 
-    /* página educacion - seccion educacion*/
+    /*PAGINA EDUCACION*/
+    .planes-ed {
+        height: 280rem;
+    }
 
-    .dialogo6,
-    .dialogo7 {
-        display: none;
+    .educacion-container {
+        padding-left: 2rem;
     }
 }
 
@@ -3462,6 +3487,70 @@ input::-webkit-input-placeholder {
     .servicios {
         margin-bottom: 120rem;
         margin-top: 120rem;
+    }
+
+    /*PAGINA EDUCACION*/
+    .imagen-educacion h3 {
+        font-size: 3.5em;
+        width: 500px;
+    }
+
+    .educacion-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10rem;
+    }
+
+    .educacion-container h2 {
+        width: 500px;
+        text-align: center;
+    }
+
+    .descripciones {
+        justify-content: center;
+    }
+
+    .educacion {
+        height: 150rem;
+    }
+
+    .circle-9 {
+        top: 70%;
+        right: 35%;
+    }
+
+    .dialogo6 {
+        top: 64%;
+        right: 25%;
+    }
+
+    .dialogo7 {
+        top: 70%;
+        right: 40%;
+    }
+}
+
+/* Pantallas medianas - 670px - ESPECÍFICO */
+@media screen and (max-width:670px){
+
+    /*PÁGINA EDUCACION*/
+    .circle-9 {
+        top: 30%;
+    }
+
+    .dialogo6 {
+        top: 30%;
+        right: 25%;
+    }
+
+    .dialogo7 {
+        top: 36%;
+        right: 40%;
+    }
+
+    .edu-descrip-especial{
+        padding-top: 20rem;
     }
 }
 
@@ -3858,11 +3947,11 @@ input::-webkit-input-placeholder {
         font-size: 1.5em;
     }
 
-    .descripcion-equipo-h2{
+    .descripcion-equipo-h2 {
         font-size: 2.5em;
     }
 
-    .descripcion-equipo-h3{
+    .descripcion-equipo-h3 {
         font-size: 1.8em;
     }
 
@@ -3871,7 +3960,7 @@ input::-webkit-input-placeholder {
         height: 550px;
         border-radius: 1rem;
     }
-  
+
     .pop-up {
         /*  top: 78%;
         left: 20%;*/
@@ -3879,25 +3968,25 @@ input::-webkit-input-placeholder {
         width: 30rem;
         height: 6rem;
     }
-    
+
     .pop-up p {
         font-size: 1.5em;
     }
-    
+
     .pop-up i {
         font-size: 2rem;
     }
-    
+
     .fecha {
         font-size: 1.5em;
     }
-    
+
     .descripcion-timeline {
         text-align: center;
         font-size: 1.2em;
     }
 
-    .timeline{
+    .timeline {
         margin-left: 5rem;
     }
 
@@ -3936,10 +4025,100 @@ input::-webkit-input-placeholder {
         width: 350px;
         font-size: 1.5em;
     }
+
+    /*PAGINA INTERNET*/
+    /*seccion planes*/
+    .phone-help img {
+        height: 600px;
+    }
+
+    .descripcion-help {
+        align-items: center;
+    }
+
+    .funcionamiento {
+        width: 400px;
+    }
+
+    .funcionamiento h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .funcionamiento p {
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .tips-no-funciona {
+        width: 400px;
+        align-items: center;
+    }
+
+    .tips-no-funciona h3 {
+        width: 100%;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .tips-no-funciona ol {
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .dialogo1 {
+        width: 20rem;
+        height: 4rem;
+    }
+
+    .dialogo2 {
+        top: 24%;
+        width: 20rem;
+        height: 7rem;
+    }
+
+    .dialogo3 {
+        top: 37%;
+        padding: 1rem;
+        width: 20rem;
+        height: 7rem;
+    }
+
+    .dialogo4 {
+        top: 50%;
+        padding: 1rem;
+        width: 20rem;
+        height: 13rem;
+    }
+
+    .dialogo5 {
+        top: 73%;
+        padding: 1rem;
+        width: 17rem;
+        height: 4rem;
+    }
+
+    .dialogo1,
+    .dialogo2,
+    .dialogo3,
+    .dialogo4 p {
+        font-size: 1.5em;
+    }
+
+    .dialogo5 a {
+        font-size: 1.5em;
+    }
+
+    .medidor {
+        align-items: center;
+        font-size: 1.5em;
+    }
 }
 
 /* Pantallas chicas - 460px */
-@media screen and (max-width:460px){
+@media screen and (max-width:460px) {
+
     /*PÁGINA SOBRE LA EMPRESA*/
     /*seccion empresa*/
     .container-empresa {
@@ -3960,11 +4139,11 @@ input::-webkit-input-placeholder {
         font-size: 1.5em;
     }
 
-    .descripcion-equipo-h2{
+    .descripcion-equipo-h2 {
         font-size: 2.5em;
     }
 
-    .descripcion-equipo-h3{
+    .descripcion-equipo-h3 {
         font-size: 1.8em;
     }
 
@@ -3984,7 +4163,7 @@ input::-webkit-input-placeholder {
     }
 
     /*valores*/
-    .valores{
+    .valores {
         height: 160rem;
     }
 
@@ -4019,53 +4198,140 @@ input::-webkit-input-placeholder {
         font-size: 1.2em;
         padding-right: 6rem;
     }
-}
 
-/* Pantallas chicas - 381px */
-@media screen and (max-width:381px){
+    /*PAGINA INTERNET*/
+    /*seccion help*/
+    .funcionamiento {
+        width: 250px;
+    }
 
-    /*principal*/
-    .descripcion1{
+    .help {
+        padding-top: 40rem;
+    }
+
+    .funcionamiento h3 {
+        font-size: 2.5em;
+    }
+
+    .tips-no-funciona {
+        width: 250px;
+    }
+
+    .tips-no-funciona h3 {
+        font-size: 2.5em;
+    }
+
+    .medidor {
+        flex-direction: column;
+    }
+
+    .container-help {
+        gap: 2rem;
+    }
+
+    /*seccion planes*/
+    .titulo-planes h2 {
+        font-size: 2.5em;
+        padding-top: 2rem;
+    }
+
+    .cards-planes {
+        padding: 0;
+    }
+
+    .card-planes {
+        width: 300px;
+        height: 450px;
+    }
+
+    .titulo-planes h2 {
+        font-size: 3em;
+    }
+
+    .top-card-planes h2 {
+        font-size: 3em;
+        padding-top: 3rem;
+    }
+
+    .textos {
+        font-size: 1.2em;
+    }
+
+    .bottom-card-planes h3 {
         font-size: 1.8em;
     }
 
-    .descripcion{
+    .bottom-card-planes ul {
+        font-size: 1.5em;
+        padding-bottom: 2rem;
+    }
+
+    /*PAGINA EDUCACION*/
+    .imagen-educacion h3 {
+        font-size: 3em;
+        width: 350px;
+    }
+
+    .educacion-container h2 {
+        width: 350px;
+        font-size: 3em;
+    }
+
+    .circle-9 {
+        right: 25%;
+    }
+
+    .titulo-planes h2{
+        width: 350px;
+        text-align: center;
+    }
+}
+
+/* Pantallas chicas - 381px */
+@media screen and (max-width:381px) {
+
+    /*principal*/
+    .descripcion1 {
+        font-size: 1.8em;
+    }
+
+    .descripcion {
         font-size: 1.5em;
     }
 
-    .icon{
+    .icon {
         width: 35px;
         height: 35px;
     }
 
     /*nosotros*/
-    .nosotros{
+    .nosotros {
         padding-top: 2rem;
     }
 
-    .container-about{
+    .container-about {
         padding-top: 5rem;
     }
 
-    .container-about img{
+    .container-about img {
         width: 260px;
         height: 190px;
     }
 
-    .texto-about{
+    .texto-about {
         width: 260px;
     }
 
-    .texto-about p{
-       width: 100%;
+    .texto-about p {
+        width: 100%;
     }
 
-    .texto-about h2{
+    .texto-about h2 {
         font-size: 2em;
     }
 
     /*why*/
-    .container-why{
+    .container-why {
         padding-top: 5rem;
     }
 
@@ -4074,26 +4340,26 @@ input::-webkit-input-placeholder {
     }
 
     /*programas*/
-    .image-about img{
+    .image-about img {
         width: 260px;
         height: 190px;
     }
 
-    .texto-programas{
+    .texto-programas {
         width: 260px;
     }
 
-    .texto-programas p{
+    .texto-programas p {
         width: 100%;
     }
 
     /*testimonios*/
-    .titulo-testimonio{
+    .titulo-testimonio {
         width: 250px;
         font-size: 1.8em;
     }
 
-    .test{
+    .test {
         width: 25rem;
     }
 
@@ -4102,11 +4368,11 @@ input::-webkit-input-placeholder {
         width: 25rem;
     }
 
-    .direccion{
+    .direccion {
         width: 250px;
     }
 
-    .ubication2 h3{
+    .ubication2 h3 {
         font-size: 1.5em;
     }
 
@@ -4115,38 +4381,38 @@ input::-webkit-input-placeholder {
         font-size: 1.5em;
     }
 
-    .contacto-formulario{
+    .contacto-formulario {
         width: 25rem;
         padding-bottom: 2rem;
     }
 
     /* Footer */
-    .footer{
+    .footer {
         height: 60rem;
     }
 
-    .div1{
+    .div1 {
         padding-left: 1rem;
     }
 
-    .div2{
-        top:30%;
+    .div2 {
+        top: 30%;
     }
 
-    .div2 h3{
+    .div2 h3 {
         font-size: 1.5em;
     }
 
-    .div3{
+    .div3 {
         top: 70%;
-        left:4%;
+        left: 4%;
     }
 
-    .div3 h3{
+    .div3 h3 {
         font-size: 1.5em;
     }
 
-    .icon2{
+    .icon2 {
         width: 30px;
         height: 30px;
     }
@@ -4166,7 +4432,7 @@ input::-webkit-input-placeholder {
         padding-top: 4rem;
     }
 
-    .container-footer-bottom{
+    .container-footer-bottom {
         padding-top: 35rem;
     }
 
@@ -4191,11 +4457,11 @@ input::-webkit-input-placeholder {
         font-size: 1.2em;
     }
 
-    .descripcion-equipo-h2{
+    .descripcion-equipo-h2 {
         font-size: 2.5em;
     }
 
-    .descripcion-equipo-h3{
+    .descripcion-equipo-h3 {
         font-size: 1.8em;
     }
 
@@ -4203,7 +4469,7 @@ input::-webkit-input-placeholder {
         font-size: 1em;
     }
 
-    .timeline{
+    .timeline {
         margin: 1rem 1rem 1.5rem 4rem;
     }
 
@@ -4215,7 +4481,7 @@ input::-webkit-input-placeholder {
         height: 5rem;
     }
 
-    .fotografia img{
+    .fotografia img {
         width: 260px;
         height: 390px;
     }
@@ -4225,18 +4491,18 @@ input::-webkit-input-placeholder {
         padding: 0 3rem 0 3rem;
     }
 
-    .img-equipo{
+    .img-equipo {
         width: 200px;
     }
 
-    .content h3{
+    .content h3 {
         font-size: 1.8em;
     }
 
-    .content p{
+    .content p {
         font-size: 1em;
     }
-    
+
     /*memorials*/
     .imagenes-memorials {
         height: 68rem;
@@ -4246,7 +4512,7 @@ input::-webkit-input-placeholder {
         font-size: 1.8em;
     }
 
-    .encabezado2 h3{
+    .encabezado2 h3 {
         text-align: center;
         font-size: 1.8em;
     }
@@ -4259,18 +4525,156 @@ input::-webkit-input-placeholder {
     .persona1-memorials p {
         width: 30rem;
         font-size: 1.2em;
-        padding-left:1rem;
+        padding-left: 1rem;
     }
 
     .persona2-memorials p {
         width: 35rem;
         font-size: 1.2em;
-        padding-left:1rem;
+        padding-left: 1rem;
     }
 
     .persona3-memorials p {
         width: 35rem;
         font-size: 1.2em;
-        padding-left:1rem;
+        padding-left: 1rem;
+    }
+
+    /*PAGINA INTERNET*/
+    /*seccion help*/
+    .help {
+        padding-top: 40rem;
+        height: 170rem;
+    }
+
+    .help img {
+        height: 400px;
+    }
+
+    .dialogo1 {
+        top: 13.5%;
+        right: 6%;
+        width: 15rem;
+        height: 3.5rem;
+    }
+
+    .dialogo2 {
+        top: 23%;
+        width: 15rem;
+        height: 5rem;
+    }
+
+    .dialogo3 {
+        top: 36%;
+        width: 15rem;
+        height: 5rem;
+    }
+
+    .dialogo4 {
+        top: 49%;
+        width: 17rem;
+        height: 10rem;
+    }
+
+    .dialogo5 {
+        top: 75%;
+        width: 13rem;
+        height: 2.8rem;
+    }
+
+    .dialogo1,
+    .dialogo2,
+    .dialogo3,
+    .dialogo4 p {
+        font-size: 1.2em;
+    }
+
+    .dialogo5 a {
+        font-size: 1em;
+    }
+
+    .funcionamiento h3 {
+        font-size: 2em;
+    }
+
+    .funcionamiento p {
+        font-size: 1.2em;
+    }
+
+    .tips-no-funciona h3 {
+        font-size: 2em;
+    }
+
+    .tips-no-funciona ol {
+        font-size: 1.2em;
+    }
+
+    .medidor {
+        font-size: 1.2em;
+        flex-direction: column;
+    }
+
+    /*seccion planes*/
+    .cards-planes {
+        padding: 0;
+    }
+
+    .card-planes {
+        width: 250px;
+        height: 450px;
+    }
+
+    .titulo-planes h2 {
+        font-size: 2.5em;
+    }
+
+    .top-card-planes h2 {
+        font-size: 3em;
+        padding-top: 3rem;
+    }
+
+    .textos {
+        font-size: 1.2em;
+    }
+
+    .bottom-card-planes h3 {
+        font-size: 1.8em;
+    }
+
+    .bottom-card-planes ul {
+        font-size: 1.5em;
+        padding-bottom: 2rem;
+    }
+
+    /*PAGINA EDUCACION*/
+    .titulo-planes h2{
+        width: 250px;
+    }
+
+    .imagen-educacion h3{
+        width: 250px;
+        font-size: 2.5em;
+    }
+
+    .educacion-container h2 {
+        width: 250px;
+        font-size: 2.5em;
+    }
+
+    .edu-descrip h3 {
+        font-size: 1.8em;
+    }
+
+    .edu-descrip p {
+        width: 250px;
+        font-size: 1.5em;
+    }
+
+    .dialogo6{
+        right: 15%;
+    }
+
+    .dialogo7{
+        right: 15%;
     }
 }

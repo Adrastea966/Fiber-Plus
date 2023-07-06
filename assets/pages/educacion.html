@@ -7,6 +7,9 @@
     <title>Educación | planes</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
@@ -16,9 +19,6 @@
         <h2 class="logotipo">
             FiberPlus
         </h2>
-        <div class="miembros">
-            <button class="btn-miembro modal">Miembros</button>
-        </div>
         <div class="mode">
             <div class="circle-mode"></div>
             <div class="icons">
@@ -31,8 +31,8 @@
     <!--navbar-->
     <nav class="navbar">
         <div class="links">
-            <a href="../../index.html" class="link">Inicio</a>
-            <a href="../../index.html#nosotros" class="link1" onmouseenter="showSubMenu1()"
+            <a href="/index.html" class="link">Inicio</a>
+            <a href="/index.html#nosotros" class="link1" onmouseenter="showSubMenu1()"
                 onmouseleave="hideSubMenu1()">Nosotros</a>
             <div class="submenu1" onmouseenter="cancelHideSubMenu1()" onmouseleave="hideSubMenu1()">
                 <a href="/assets/pages/sobre-la-empresa.html#valores">Valores</a>
@@ -40,8 +40,8 @@
                 <a href="/assets/pages/sobre-la-empresa.html#corporativa">Corporativa</a>
                 <a href="/assets/pages/sobre-la-empresa.html#equipo">Equipo</a>
             </div>
-            <a href="../../index.html#programas" class="link3">Programas</a>
-            <a href="../../index.html#servicios" class="link2" onmouseenter="showSubMenu2()"
+            <a href="/index.html#programas" class="link3">Programas</a>
+            <a href="/index.html#servicios" class="link2" onmouseenter="showSubMenu2()"
                 onmouseleave="hideSubMenu2()">Servicios</a>
             <div class="submenu2" onmouseenter="showSubMenu2()" onmouseleave="hideSubMenu2()">
                 <a href="/assets/pages/servicios-basicos.html">Servicios básicos</a>
@@ -51,9 +51,84 @@
                 <a href="/assets/pages/telefonia.html">Telefonía</a>
                 <a href="/assets/pages/internet.html">Internet</a>
             </div>
-            <a href="../../index.html#contacto" class="link4">Contacto</a>
+            <a href="/index.html#contacto" class="link4">Contacto</a>
         </div>
     </nav>
+    <div class="navbar-responsive">
+        <i class="uil uil-arrow-left arrow-in"></i>
+        <ul class="list">
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-estate list-icon"></i>
+                    <a href="/index.html" class="nav-link">Inicio</a>
+                </div>
+            </li>
+            <li class="list-item list-item-click">
+                <div class="list-button list-button-click">
+                    <i class="uil uil-users-alt list-icon"></i>
+                    <a href="/index.html#nosotros" class="nav-link">Nosotros</a>
+                    <i class="uil uil-angle-right list-arrow"></i>
+                </div>
+                <ul class="list-show">
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#equipo" class="nav-link nav-link-inside">Equipo</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#corporativa"
+                            class="nav-link nav-link-inside">Corporativa</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#memorials"
+                            class="nav-link nav-link-inside">Memorials</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#valores"
+                            class="nav-link nav-link-inside">Valores</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-tv-retro list-icon"></i>
+                    <a href="/index.html#programas" class="nav-link">Programas</a>
+                </div>
+            </li>
+            <li class="list-item list-item-click">
+                <div class="list-button list-button-click">
+                    <i class="uil uil-file-landscape list-icon"></i>
+                    <a href="/index.html#servicios" class="nav-link">Servicios</a>
+                    <i class="uil uil-angle-right list-arrow"></i>
+                </div>
+                <ul class="list-show">
+                    <li class="list-inside">
+                        <a href="/assets/pages/internet.html" class="nav-link nav-link-inside">Internet</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/telefonia.html" class="nav-link nav-link-inside">Telefonía</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="#" class="nav-link nav-link-inside">Educación</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/servicios-funebres.html" class="nav-link nav-link-inside">Fúnebres</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/television.html" class="nav-link nav-link-inside">Televisión</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/servicios-basicos.html" class="nav-link nav-link-inside">Servicios
+                            básicos</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-message list-icon"></i>
+                    <a href="/index.html#contacto" class="nav-link">Contacto</a>
+                </div>
+            </li>
+        </ul>
+    </div>
     <!--end of navbar-->
     <!--education section-->
     <section class="educacion" id="educacion">
@@ -62,7 +137,8 @@
             <p>Más info de los cursos!</p>
         </div>
         <div class="dialogo7">
-            <a href="https://wa.me/541124013978" target="_blank">Hola, chatea conmigo<i class="uil uil-arrow-up-right"></i></a>
+            <a href="https://wa.me/541124013978" target="_blank">Hola, chatea conmigo<i
+                    class="uil uil-arrow-up-right"></i></a>
         </div>
         <div class="educacion-container">
             <h2>¿Cómo funcionan nuestros cursos?</h2>
@@ -75,7 +151,7 @@
                         make a type specimen book.
                     </p>
                 </div>
-                <div class="edu-descrip" data-aos="fade-down" data-aos-delay="200">
+                <div class="edu-descrip edu-descrip-especial" data-aos="fade-down" data-aos-delay="200">
                     <h3>Tutores personales</h3>
                     <p>
                         of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
@@ -110,6 +186,15 @@
             </div>
     </section>
     <!--end of education section-->
+    <div class="container-imagen-educacion" id="imagen-educacion-section">
+        <div class="imagen-educacion">
+            <h3 data-aos="fade-down">Descargá nuestro módulo de estudio</h3>
+            <div class="btn-planes" data-aos="fade-up">
+                <button class="btn-servicio">Descargar PDF</button>
+            </div>
+            <span class="linea-blanca" data-scrollmagic></span>
+        </div>
+    </div>
     <!--planes section-->
     <section class="planes-ed">
         <div class="circle circle-7"></div>
@@ -119,7 +204,7 @@
                 <h2>Nuestros planes de estudio</h2>
             </div>
             <div class="cards-planes">
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Gastronomía</p>
@@ -130,10 +215,7 @@
                         <h3>Curso de gastronomía</h3>
                         <p class="texto-modulo">
                             Lis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic
-                        </p>
+                            industry's standard dummy text ever since the 1500s. Lis simply dummy text dummy text industry's 
                         <div class="pdf">
                             <p>Descargá nuestro módulo</p>
                             <div class="btn-planes">
@@ -142,7 +224,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up" data-aos-delay="100">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Manualidades</p>
@@ -153,9 +235,7 @@
                         <h3>Curso de manualidades</h3>
                         <p class="texto-modulo">
                             Lis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic
+                            industry's standard dummy text ever since the 1500s. Lis simply dummy text dummy text industry's 
                         </p>
                         <div class="pdf">
                             <p>Descargá nuestro módulo</p>
@@ -165,7 +245,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up" data-aos-delay="200">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Botánica</p>
@@ -176,9 +256,7 @@
                         <h3>Curso de botánica</h3>
                         <p class="texto-modulo">
                             Lis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic
+                            industry's standard dummy text ever since the 1500s. Lis simply dummy text dummy text industry's 
                         </p>
                         <div class="pdf">
                             <p>Descargá nuestro módulo</p>
@@ -188,7 +266,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up" data-aos-delay="300">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Música</p>
@@ -199,9 +277,7 @@
                         <h3>Curso de música y arte</h3>
                         <p class="texto-modulo">
                             Lis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic
+                            industry's standard dummy text ever since the 1500s. Lis simply dummy text dummy text industry's 
                         </p>
                         <div class="pdf">
                             <p>Descargá nuestro módulo</p>
@@ -211,7 +287,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up" data-aos-delay="400">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Música</p>
@@ -222,9 +298,7 @@
                         <h3>Curso de música y arte</h3>
                         <p class="texto-modulo">
                             Lis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic
+                            industry's standard dummy text ever since the 1500s. Lis simply dummy text dummy text industry's 
                         </p>
                         <div class="pdf">
                             <p>Descargá nuestro módulo</p>
@@ -262,7 +336,8 @@
                     <div class="container-fundadores">
                         <div class="info-fundadores">
                             <div class="img-fundadores">
-                                <img src="/assets/image/fundador.png" alt="Imagen del fundador 1 de la empresa">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572412/Fiber-plus/fundador_pcydtk.png"
+                                    alt="Imagen del fundador 1 de la empresa">
                             </div>
                             <div>
                                 <p><strong>Christian Rodrídrez</strong></p>
@@ -273,7 +348,8 @@
                         </div>
                         <div class="info-fundadores">
                             <div class="img-fundadores">
-                                <img src="/assets/image/fundador2.png" alt="Imagen del fundador 2 de la empresa">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador2_idfla4.png"
+                                    alt="Imagen del fundador 2 de la empresa">
                             </div>
                             <div>
                                 <p><strong>Sebtastían Gutierrez</strong></p>
@@ -284,7 +360,8 @@
                         </div>
                         <div class="info-fundadores">
                             <div class="img-fundadores">
-                                <img src="/assets/image/fundador3.png" alt="Imagen del fundador 3 de la empresa">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador3_biuc86.png"
+                                    alt="Imagen del fundador 3 de la empresa">
                             </div>
                             <div>
                                 <p><strong>Guillermo Gutierrez</strong></p>
@@ -336,12 +413,22 @@
         </div>
     </section>
     <!--end of footer-->
-    <div>
-        <a href="#" target="_blank" class="whatsapp-button">
-            <i class="uil uil-whatsapp"></i>
-        </a>
-    </div>
-    <script src="../../index.js"></script>
+    <script>
+        var controller = new ScrollMagic.Controller();
+        var scene = new ScrollMagic.Scene({
+                triggerElement: "#imagen-educacion-section",
+                triggerHook: "onEnter",
+                offset: 200 //offset
+            })
+            .setTween(".linea-blanca", {
+                opacity: 0,
+                x: "100%",
+                ease: "power4.out",
+                duration: 5 
+            })
+            .addTo(controller);
+    </script>
+    <script src="/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
