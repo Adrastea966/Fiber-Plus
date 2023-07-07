@@ -28,8 +28,8 @@
     <!--navbar-->
     <nav class="navbar">
         <div class="links">
-            <a href="../../index.html" class="link">Inicio</a>
-            <a href="../../index.html#nosotros" class="link1" onmouseenter="showSubMenu1()"
+            <a href="/index.html" class="link">Inicio</a>
+            <a href="/index.html#nosotros" class="link1" onmouseenter="showSubMenu1()"
                 onmouseleave="hideSubMenu1()">Nosotros</a>
             <div class="submenu1" onmouseenter="cancelHideSubMenu1()" onmouseleave="hideSubMenu1()">
                 <a href="/assets/pages/sobre-la-empresa.html#valores">Valores</a>
@@ -37,8 +37,8 @@
                 <a href="/assets/pages/sobre-la-empresa.html#corporativa">Corporativa</a>
                 <a href="/assets/pages/sobre-la-empresa.html#equipo">Equipo</a>
             </div>
-            <a href="../../index.html#programas" class="link3">Programas</a>
-            <a href="../../index.html#servicios" class="link2" onmouseenter="showSubMenu2()"
+            <a href="/index.html#programas" class="link3">Programas</a>
+            <a href="/index.html#servicios" class="link2" onmouseenter="showSubMenu2()"
                 onmouseleave="hideSubMenu2()">Servicios</a>
             <div class="submenu2" onmouseenter="showSubMenu2()" onmouseleave="hideSubMenu2()">
                 <a href="#">Servicios básicos</a>
@@ -46,11 +46,85 @@
                 <a href="/assets/pages/servicios-funebres.html">Fúnebres</a>
                 <a href="/assets/pages/educacion.html">Educación</a>
                 <a href="/assets/pages/telefonia.html">Telefonía</a>
-                <a href="#">Internet</a>
+                <a href="/assets/pages/internet.html">Internet</a>
             </div>
-            <a href="../../index.html#contacto" class="link4">Contacto</a>
+            <a href="/index.html#contacto" class="link4">Contacto</a>
         </div>
     </nav>
+    <div class="navbar-responsive">
+        <i class="uil uil-arrow-left arrow-in"></i>
+        <ul class="list">
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-estate list-icon"></i>
+                    <a href="/index.html" class="nav-link">Inicio</a>
+                </div>
+            </li>
+            <li class="list-item list-item-click">
+                <div class="list-button list-button-click">
+                    <i class="uil uil-users-alt list-icon"></i>
+                    <a href="/index.html#nosotros" class="nav-link">Nosotros</a>
+                    <i class="uil uil-angle-right list-arrow"></i>
+                </div>
+                <ul class="list-show">
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#equipo" class="nav-link nav-link-inside">Equipo</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#corporativa"
+                            class="nav-link nav-link-inside">Corporativa</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#memorials"
+                            class="nav-link nav-link-inside">Memorials</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#valores"
+                            class="nav-link nav-link-inside">Valores</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-tv-retro list-icon"></i>
+                    <a href="/index.html#programas" class="nav-link">Programas</a>
+                </div>
+            </li>
+            <li class="list-item list-item-click">
+                <div class="list-button list-button-click">
+                    <i class="uil uil-file-landscape list-icon"></i>
+                    <a href="/index.html#servicios" class="nav-link">Servicios</a>
+                    <i class="uil uil-angle-right list-arrow"></i>
+                </div>
+                <ul class="list-show">
+                    <li class="list-inside">
+                        <a href="#" class="nav-link nav-link-inside">Internet</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/telefonia.html" class="nav-link nav-link-inside">Telefonía</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/educacion.html" class="nav-link nav-link-inside">Educación</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/servicios-funebres.html" class="nav-link nav-link-inside">Fúnebres</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/television.html" class="nav-link nav-link-inside">Televisión</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="#" class="nav-link nav-link-inside">Servicios básicos</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-message list-icon"></i>
+                    <a href="/index.html#contacto" class="nav-link">Contacto</a>
+                </div>
+            </li>
+        </ul>
+    </div>
     <!--end of navbar-->
     <section class="planes-servicios-basicos">
         <div class="circle circle-7"></div>
@@ -58,7 +132,7 @@
         <div class="planes-container-servicios">
             <h2 class="titulo-agua">Nuestros planes de agua</h2>
             <div class="planes-agua">
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Básico</p>
@@ -79,7 +153,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up" data-aos-delay="100">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Estándar</p>
@@ -100,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up" data-aos-delay="200">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Premium</p>
@@ -124,7 +198,7 @@
             </div>
             <h2 class="titulo-agua">Nuestros planes de electricidad</h2>
             <div class="planes-agua">
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up" data-aos-delay="300">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Básico</p>
@@ -145,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up" data-aos-delay="400">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Estándar</p>
@@ -166,7 +240,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up" data-aos-delay="500">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Premium</p>
@@ -190,7 +264,7 @@
             </div>
             <h2 class="titulo-agua">Nuestros planes de gas</h2>
             <div class="planes-agua">
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up" data-aos-delay="600">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Básico</p>
@@ -211,7 +285,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up" data-aos-delay="700">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Estándar</p>
@@ -232,7 +306,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-planes">
+                <div class="card-planes" data-aos="fade-up" data-aos-delay="800">
                     <div class="top-card-planes">
                         <div class="textos">
                             <p>Premium</p>
@@ -280,7 +354,8 @@
                     <div class="container-fundadores">
                         <div class="info-fundadores">
                             <div class="img-fundadores">
-                                <img src="/assets/image/fundador.png" alt="Imagen del fundador 1 de la empresa">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572412/Fiber-plus/fundador_pcydtk.png"
+                                    alt="Imagen del fundador 1 de la empresa">
                             </div>
                             <div>
                                 <p><strong>Christian Rodrídrez</strong></p>
@@ -291,7 +366,8 @@
                         </div>
                         <div class="info-fundadores">
                             <div class="img-fundadores">
-                                <img src="/assets/image/fundador2.png" alt="Imagen del fundador 2 de la empresa">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador2_idfla4.png"
+                                    alt="Imagen del fundador 2 de la empresa">
                             </div>
                             <div>
                                 <p><strong>Sebtastían Gutierrez</strong></p>
@@ -302,7 +378,8 @@
                         </div>
                         <div class="info-fundadores">
                             <div class="img-fundadores">
-                                <img src="/assets/image/fundador3.png" alt="Imagen del fundador 3 de la empresa">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador3_biuc86.png"
+                                    alt="Imagen del fundador 3 de la empresa">
                             </div>
                             <div>
                                 <p><strong>Guillermo Gutierrez</strong></p>
@@ -354,11 +431,6 @@
         </div>
     </section>
     <!--end of footer-->
-    <div>
-        <a href="#" target="_blank" class="whatsapp-button">
-            <i class="uil uil-whatsapp"></i>
-        </a>
-    </div>
     <script src="../../index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

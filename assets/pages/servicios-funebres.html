@@ -7,6 +7,8 @@
     <title>Servicios fúnebres</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
@@ -28,8 +30,8 @@
     <!--navbar-->
     <nav class="navbar">
         <div class="links">
-            <a href="../../index.html" class="link">Inicio</a>
-            <a href="../../index.html#nosotros" class="link1" onmouseenter="showSubMenu1()"
+            <a href="/index.html" class="link">Inicio</a>
+            <a href="/index.html#nosotros" class="link1" onmouseenter="showSubMenu1()"
                 onmouseleave="hideSubMenu1()">Nosotros</a>
             <div class="submenu1" onmouseenter="cancelHideSubMenu1()" onmouseleave="hideSubMenu1()">
                 <a href="/assets/pages/sobre-la-empresa.html#valores">Valores</a>
@@ -37,8 +39,8 @@
                 <a href="/assets/pages/sobre-la-empresa.html#corporativa">Corporativa</a>
                 <a href="/assets/pages/sobre-la-empresa.html#equipo">Equipo</a>
             </div>
-            <a href="../../index.html#programas" class="link3">Programas</a>
-            <a href="../../index.html#servicios" class="link2" onmouseenter="showSubMenu2()"
+            <a href="/index.html#programas" class="link3">Programas</a>
+            <a href="/index.html#servicios" class="link2" onmouseenter="showSubMenu2()"
                 onmouseleave="hideSubMenu2()">Servicios</a>
             <div class="submenu2" onmouseenter="showSubMenu2()" onmouseleave="hideSubMenu2()">
                 <a href="/assets/pages/servicios-basicos.html">Servicios básicos</a>
@@ -48,92 +50,200 @@
                 <a href="/assets/pages/telefonia.html">Telefonía</a>
                 <a href="/assets/pages/internet.html">Internet</a>
             </div>
-            <a href="../../index.html#contacto" class="link4">Contacto</a>
+            <a href="/index.html#contacto" class="link4">Contacto</a>
         </div>
     </nav>
+    <div class="navbar-responsive">
+        <i class="uil uil-arrow-left arrow-in"></i>
+        <ul class="list">
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-estate list-icon"></i>
+                    <a href="/index.html" class="nav-link">Inicio</a>
+                </div>
+            </li>
+            <li class="list-item list-item-click">
+                <div class="list-button list-button-click">
+                    <i class="uil uil-users-alt list-icon"></i>
+                    <a href="/index.html#nosotros" class="nav-link">Nosotros</a>
+                    <i class="uil uil-angle-right list-arrow"></i>
+                </div>
+                <ul class="list-show">
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#equipo" class="nav-link nav-link-inside">Equipo</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#corporativa"
+                            class="nav-link nav-link-inside">Corporativa</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#memorials"
+                            class="nav-link nav-link-inside">Memorials</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#valores"
+                            class="nav-link nav-link-inside">Valores</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-tv-retro list-icon"></i>
+                    <a href="/index.html#programas" class="nav-link">Programas</a>
+                </div>
+            </li>
+            <li class="list-item list-item-click">
+                <div class="list-button list-button-click">
+                    <i class="uil uil-file-landscape list-icon"></i>
+                    <a href="/index.html#servicios" class="nav-link">Servicios</a>
+                    <i class="uil uil-angle-right list-arrow"></i>
+                </div>
+                <ul class="list-show">
+                    <li class="list-inside">
+                        <a href="/assets/pages/internet.html" class="nav-link nav-link-inside">Internet</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/telefonia.html" class="nav-link nav-link-inside">Telefonía</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/educacion.html" class="nav-link nav-link-inside">Educación</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="#" class="nav-link nav-link-inside">Fúnebres</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/television.html" class="nav-link nav-link-inside">Televisión</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/servicios-basicos.html" class="nav-link nav-link-inside">Servicios
+                            básicos</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-message list-icon"></i>
+                    <a href="/index.html#contacto" class="nav-link">Contacto</a>
+                </div>
+            </li>
+        </ul>
+    </div>
     <!--end of navbar-->
+    <!--cassuel-->
+    <section class="carrusel">
+        <div class="container-carrusel">
+            <div class="texto-carrusel">
+                <h3>Conoce nuestras instalaciones</h3>
+                <p>Nos adaptamos a cualquier tipo de necesidad requerida, contamos con salas de altisimo nivel como asi
+                    tambien salas que puedan adaptarse a sus necesidades.</p>
+            </div>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img
+                                src="https://res.cloudinary.com/adrastea/image/upload/v1688681551/Fiber-plus/sala1_qxhkym.jpg"
+                                alt="Imagen de la primer sala"></img></li>
+                        <li class="splide__slide"><img
+                                src="https://res.cloudinary.com/adrastea/image/upload/v1688681552/Fiber-plus/sala2_o3k8il.jpg"
+                                alt="Imagen de la segunda sala"></li>
+                        <li class="splide__slide"><img
+                                src="https://res.cloudinary.com/adrastea/image/upload/v1688681551/Fiber-plus/sala3_scpr4e.jpg"
+                                alt="Imagen de la tercera sala"></li>
+                        <li class="splide__slide"><img
+                                src="https://res.cloudinary.com/adrastea/image/upload/v1688681551/Fiber-plus/sala4_d22ikp.jpg"
+                                alt="Imagen de la cuarta sala"></li>
+                        <li class="splide__slide"><img
+                                src="https://res.cloudinary.com/adrastea/image/upload/v1688681552/Fiber-plus/sala5_ejnz1t.jpg"
+                                alt="Imagen de la quinta sala"></li>
+                        <li class="splide__slide"><img
+                                src="https://res.cloudinary.com/adrastea/image/upload/v1688681552/Fiber-plus/sala6_yeewk0.jpg"
+                                alt="Imagen de la sexta sala"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="my-slider-progress">
+                <div class="my-slider-progress-bar"></div>
+            </div>
+        </div>
+    </section>
+    <!--end of carrusel-->
     <!--sepelio section-->
     <section class="sepelio">
         <div class="container-sepelio">
-            <h2 class="sepelio-titulo">Nuestras instalaciones</h2>
-            <div class="container-slider">
-                <div class="slider-sepelio" id="slideer">
-                    <div class="slider-img"><img src="/assets/image/imagen1.jpg" alt="Imagen de cementerio1"></div>
-                    <div class="slider-img"><img src="/assets/image/imagen2.jpg" alt="Imagen de cementerio2"></div>
-                    <div class="slider-img"><img src="/assets/image/imagen3.jpg" alt="Imagen de cementerio3"></div>
+            <div class="descripcion-sepelio">
+                <div class="items-servicios">
+                    <div class="item-servicio" data-aos="fade-down" data-aos-delay="100">
+                        <i class="uil uil-diamond"></i>
+                        <h3>Salas exclusivas</h3>
+                        <p>Usted puede elegir entre la gran variedad de salas.</p>
+                    </div>
+                    <div class="item-servicio" data-aos="fade-down" data-aos-delay="200">
+                        <i class="uil uil-ambulance"></i>
+                        <h3>Traslados en ambulancia</h3>
+                        <p>Contamos con una amplia flota de ambulancias propias.</p>
+                    </div>
+                    <div class="item-servicio" data-aos="fade-down" data-aos-delay="300">
+                        <i class="uil uil-fire"></i>
+                        <h3>Cremación</h3>
+                        <p>Ofrecemos distintos tipos de cremaciones.</p>
+                    </div>
+                    <div class="item-servicio" data-aos="fade-down" data-aos-delay="400">
+                        <i class="uil uil-flower"></i>
+                        <h3>Ofrendas florales</h3>
+                        <p>Puede elegir entre una gran variedad de ofrendas florales.
+                            Nos encargamos del envío
+                        </p>
+                    </div>
+                    <div class="item-servicio" data-aos="fade-down" data-aos-delay="500">
+                        <i class="uil uil-users-alt"></i>
+                        <h3>Atención personalizada</h3>
+                        <p>Estamos para acompañarlo y ayudarlo.</p>
+                    </div>
+                    <div class="item-servicio" data-aos="fade-down" data-aos-delay="600">
+                        <i class="uil uil-usd-circle"></i>
+                        <h3>Aranceles de acuerdo a cada necesidad</h3>
+                        <p>Tenemos muchísimas opciones que usted podrá evaluar y elegir. </p>
+                    </div>
                 </div>
-                <div class="btn-left"><i class="uil uil-angle-left"></i></div>
-                <div class="btn-right"><i class="uil uil-angle-right"></i></div>
-            </div>
-        </div>
-        <div class="descripcion-sepelio">
-            <div class="items-servicios">
-                <div class="item-servicio" data-aos="fade-down" data-aos-delay="100">
-                    <i class="uil uil-diamond"></i>
-                    <h3>Salas exclusivas</h3>
-                    <p>Usted puede elegir entre la gran variedad de salas.</p>
-                </div>
-                <div class="item-servicio" data-aos="fade-down" data-aos-delay="200">
-                    <i class="uil uil-ambulance"></i>
-                    <h3>Traslados en ambulancia</h3>
-                    <p>Contamos con una amplia flota de ambulancias propias.</p>
-                </div>
-                <div class="item-servicio" data-aos="fade-down" data-aos-delay="300">
-                    <i class="uil uil-fire"></i>
-                    <h3>Cremación</h3>
-                    <p>Ofrecemos distintos tipos de cremaciones.</p>
-                </div>
-                <div class="item-servicio" data-aos="fade-down" data-aos-delay="400">
-                    <i class="uil uil-flower"></i>
-                    <h3>Ofrendas florales</h3>
-                    <p>Puede elegir entre una gran variedad de ofrendas florales.
-                        Nos encargamos del envío
-                    </p>
-                </div>
-                <div class="item-servicio" data-aos="fade-down" data-aos-delay="500">
-                    <i class="uil uil-users-alt"></i>
-                    <h3>Atención personalizada</h3>
-                    <p>Estamos para acompañarlo y ayudarlo.</p>
-                </div>
-                <div class="item-servicio" data-aos="fade-down" data-aos-delay="600">
-                    <i class="uil uil-usd-circle"></i>
-                    <h3>Aranceles de acuerdo a cada necesidad</h3>
-                    <p>Tenemos muchísimas opciones que usted podrá evaluar y elegir. </p>
+                <div class="reseva-turno-sepelio">
+                    <p>Para una atención más personalizada o para más información sobre los servicios que ofrecemos, por
+                        favor, póngase en contacto con nosotros utilizando este número: +54 9 11 2401-3978</p>
                 </div>
             </div>
-            <div class="reseva-turno-sepelio">
-                <p>Para una atención más personalizada o para más información sobre los servicios que ofrecemos, por
-                    favor, póngase en contacto con nosotros utilizando este número: +54 9 11 2401-3978</p>
-            </div>
-        </div>
     </section>
     <!--end of sepelio section-->
     <!--asesoria section-->
     <section class="asesoria">
+        <div class="circle circle-10"></div>
+        <div class="circle circle-11"></div>
         <div class="imagen-asesoria">
-            <h3 data-aos="fade-up">CONTENSIÓN Y AYUDA EN EL MOMENTO QUE MÁS LO NECESITA</h3>
+            <h3 data-aos="fade-up">Contensión y ayuda en el momento que más lo necesita</h3>
         </div>
         <div class="asesoramiento">
             <h2 data-aos="fade-up" data-aos-delay="100">Asesoramiento</h2>
-            <p class="texto-asesoramiento" data-aos="fade-up" data-aos-delay="200">Contamos también con asesoría para todo de tipo de gestiones relacionada con las dificultades
+            <p class="texto-asesoramiento" data-aos="fade-up" data-aos-delay="200">Contamos también con asesoría para
+                todo de tipo de gestiones relacionada con las dificultades
                 administrativas que dejan muchas veces estos acontecimientos. Estamos para ayudar y asesorar a que usted
                 tome la mejor desición.</p>
             <div class="asesoramiento-items">
                 <div class="ase-item">
                     <h3 data-aos="fade-up" data-aos-delay="300">Asesoramiento en intervenciones judiciales</h3>
-                    <p data-aos="fade-up" data-aos-delay="350">Presentaciones gratuitas mediante nuestros letrados a cargo de Casa Redondo Scherma ante el
+                    <p data-aos="fade-up" data-aos-delay="350">Presentaciones gratuitas mediante nuestros letrados a
+                        cargo de Casa Redondo Scherma ante el
                         juzgado por muerte del fallecido de forma traumática para pedidos especiales por intervención
                         policial.</p>
                 </div>
                 <div class="ase-item">
                     <h3 data-aos="fade-up" data-aos-delay="400">Asesoramiento gratuito en sucesiones</h3>
-                    <p data-aos="fade-up" data-aos-delay="450">A nuestros clientes que confíen en nosotros sus tramites de sucesión; se les proporcionará un
+                    <p data-aos="fade-up" data-aos-delay="450">A nuestros clientes que confíen en nosotros sus tramites
+                        de sucesión; se les proporcionará un
                         voucher con el 100% de bonificación del servicio de sepelio contratado. Para ellos también una
                         tasa preferencial en la sucesión.</p>
                 </div>
                 <div class="ase-item">
                     <h3 data-aos="fade-up" data-aos-delay="500">Custodia de títulos de bóvedas</h3>
-                    <p data-aos="fade-up" data-aos-delay="550">Muchas veces los papeles se pueden perder u olvidarnos donde están. Contamos con archivo de
+                    <p data-aos="fade-up" data-aos-delay="550">Muchas veces los papeles se pueden perder u olvidarnos
+                        donde están. Contamos con archivo de
                         custodia de Bóveda desde hace muchos años para aquellos que necesiten despreocuparse por el
                         ordenamiento y ubicación de sus títulos</p>
                 </div>
@@ -141,6 +251,61 @@
         </div>
     </section>
     <!--end of asesoria section-->
+    <!--servicios sepelio-->
+    <section class="servicios-sepelio">
+        <h2 class="titulo-servicios-sepelio">Nuestros servicios</h2>
+        <div class="container-cards">
+            <div class="card">
+                <div class="cover-card">
+                    <img src="https://res.cloudinary.com/adrastea/image/upload/v1688681552/Fiber-plus/parcela_g7kpvc.jpg"
+                        alt="Imagen de un parque con parcelas">
+                </div>
+                <h2>Parcelas</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sunt eius dolore pariatur. Error,
+                    provident et similique sunt voluptate odit eos facere expedita, culpa at officia magnam quia vel
+                    eius!</p>
+                <hr>
+                <div class="footer-card">
+                    <div class="services">
+                        <button class="btn-servicio"><a href="/assets/pages/internet.html">Adquirir</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover-card">
+                    <img src="https://res.cloudinary.com/adrastea/image/upload/v1688681554/Fiber-plus/bosque_ksrqgw.jpg"
+                        alt="Imagen de un bosque">
+                </div>
+                <h2>Bosque</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sunt eius dolore pariatur. Error,
+                    provident et similique sunt voluptate odit eos facere expedita, culpa at officia magnam quia vel
+                    eius!</p>
+                <hr>
+                <div class="footer-card">
+                    <div class="services">
+                        <button class="btn-servicio"><a href="/assets/pages/telefonia.html">Adquirir</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover-card">
+                    <img src="https://res.cloudinary.com/adrastea/image/upload/v1688681551/Fiber-plus/jardin-privado_r17grl.jpg"
+                        alt="Imagen de una niña estudiando de forma virtual">
+                </div>
+                <h2>Jardín privado</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sunt eius dolore pariatur. Error,
+                    provident et similique sunt voluptate odit eos facere expedita, culpa at officia magnam quia vel
+                    eius!</p>
+                <hr>
+                <div class="footer-card">
+                    <div class="services">
+                        <button class="btn-servicio"><a href="/assets/pages/educacion.html">Adquirir</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--servicios sepelio-->
     <!--Footer-->
     <section class="footer">
         <div class="section-footer">
@@ -165,7 +330,8 @@
                     <div class="container-fundadores">
                         <div class="info-fundadores">
                             <div class="img-fundadores">
-                                <img src="/assets/image/fundador.png" alt="Imagen del fundador 1 de la empresa">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572412/Fiber-plus/fundador_pcydtk.png"
+                                    alt="Imagen del fundador 1 de la empresa">
                             </div>
                             <div>
                                 <p><strong>Christian Rodrídrez</strong></p>
@@ -176,7 +342,8 @@
                         </div>
                         <div class="info-fundadores">
                             <div class="img-fundadores">
-                                <img src="/assets/image/fundador2.png" alt="Imagen del fundador 2 de la empresa">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador2_idfla4.png"
+                                    alt="Imagen del fundador 2 de la empresa">
                             </div>
                             <div>
                                 <p><strong>Sebtastían Gutierrez</strong></p>
@@ -187,7 +354,8 @@
                         </div>
                         <div class="info-fundadores">
                             <div class="img-fundadores">
-                                <img src="/assets/image/fundador3.png" alt="Imagen del fundador 3 de la empresa">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador3_biuc86.png"
+                                    alt="Imagen del fundador 3 de la empresa">
                             </div>
                             <div>
                                 <p><strong>Guillermo Gutierrez</strong></p>
@@ -239,12 +407,23 @@
         </div>
     </section>
     <!--end of footer-->
-    <script src="../../index.js"></script>
-    <div>
-        <a href="#" target="_blank" class="whatsapp-button">
-            <i class="uil uil-whatsapp"></i>
-        </a>
-    </div>
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            autoplay: true,
+            pagination: false
+        });
+        var bar = document.querySelector('.my-slider-progress-bar');
+
+        splide.on('mounted move', function () {
+            var end = splide.length;
+            var rate = Math.min((splide.index + 1) / end, 1);
+            bar.style.width = String(100 * rate) + '%';
+        });
+
+        splide.mount();
+    </script>
+    <script src="/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

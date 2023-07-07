@@ -2131,6 +2131,10 @@ input::-webkit-input-placeholder {
     position: relative;
 }
 
+.titulo-planes {
+    padding-top: 10rem;
+}
+
 /* PÁGINA EDUCACION */
 /*seccion educacion*/
 .educacion {
@@ -2242,13 +2246,12 @@ input::-webkit-input-placeholder {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
     align-items: center;
-    position: center;
+    gap: 2rem;
+    position: relative;
 }
 
 .imagen-educacion::before {
@@ -2345,16 +2348,11 @@ input::-webkit-input-placeholder {
     height: 100vh;
     overflow: hidden;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     gap: 5rem;
-    background-color: #27302e;
-}
-
-.sepelio .sepelio-titulo {
-    font-size: 3em;
-    color: #74ffe1;
-    padding: 0 0 1rem 0;
+    background-color: var(--background-color-variable);
 }
 
 .container-sepelio {
@@ -2364,11 +2362,14 @@ input::-webkit-input-placeholder {
 .descripcion-sepelio {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 5rem 1rem 0 1rem;
 }
 
 .items-servicios {
+    max-width: 90rem;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5rem;
@@ -2384,39 +2385,136 @@ input::-webkit-input-placeholder {
 .item-servicio h3 {
     text-align: center;
     font-size: 1.8em;
-    color: #fff;
+    color: var(--main-color-dark-mode);
     font-weight: 200;
 }
 
 .item-servicio i {
     font-size: 3em;
-    color: #fff;
+    color: var(--main-color-dark-mode);
 }
 
 .item-servicio p {
     font-size: 1.5em;
-    color: #ffffff83;
+    color: var(--second-color);
     text-align: center;
 }
 
 .reseva-turno-sepelio {
-    padding-top: 4rem;
-    width: 550px;
+    padding-top: 8rem;
+    width: 800px;
     font-size: 1.5em;
-    color: #0f1211c1;
-    font-weight: 600;
+    color: var(--main-color-dark-mode);
+    font-weight: 200;
+}
+
+/*carrusel*/
+.carrusel {
+    width: 100%;
+    height: 90rem;
+}
+
+.container-carrusel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.texto-carrusel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+    color: var(--main-color-dark-mode);
+    text-align: center;
+}
+
+.texto-carrusel h3 {
+    font-size: 4em;
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.texto-carrusel p {
+    font-size: 2em;
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.splide img {
+    width: 100%;
+    height: 90rem;
+    object-fit: cover;
+}
+
+.splide__slide img {
+    filter: brightness(60%); /* Aplicar un filtro de brillo */
+  }
+
+.my-slider-progress {
+    background: var(--second-color);
+}
+
+.my-slider-progress-bar {
+    background: var(--accent-color-dark-mode);
+    height: 3px;
+    transition: width 400ms ease;
+    width: 0;
+}
+
+.splide__arrow--next {
+    background-color: #ffffff29;
+    backdrop-filter: blur(1.5px);
+    font-size: 1.5rem;
+    border: none;
+}
+
+.splide__arrow--next svg {
+    fill:var(--main-color-dark-mode);
+}
+
+.splide__arrow--prev{
+    background-color: #ffffff3b;
+    backdrop-filter: blur(1.5px);
+    font-size: 1.5rem;
+    border: none;
+}
+
+.splide__arrow--prev svg{
+    fill:var(--main-color-dark-mode);
 }
 
 /* asesoria section*/
 .asesoria {
     width: 100%;
     height: 120rem;
+    position: relative;
+}
+
+.circle-10 {
+    top: 50%;
+    left: -10%;
+    background-color: var(--accent-color-variable-dark-mode);
+}
+
+.circle-11 {
+    top: 70%;
+    right: -10%;
+    background-color: var(--accent-color-variable-dark-mode);
 }
 
 .imagen-asesoria {
     width: 100%;
     height: 400px;
-    background-image: url('/assets/image/apoyo.jpg');
+    background-image: url('https://res.cloudinary.com/adrastea/image/upload/v1688690502/Fiber-plus/apoyo_snr6o0.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -2439,10 +2537,10 @@ input::-webkit-input-placeholder {
 
 .imagen-asesoria h3 {
     position: relative;
-    font-size: 3.5em;
+    font-size: 3em;
     width: 700px;
     text-align: center;
-    color: #fff;
+    color: var(--main-color-dark-mode);
     margin: 0 auto;
     z-index: 1;
 }
@@ -2451,7 +2549,7 @@ input::-webkit-input-placeholder {
     font-size: 2em;
     width: 700px;
     text-align: center;
-    color: #ffffff83;
+    color: var(--second-color);
 }
 
 .asesoramiento {
@@ -2464,7 +2562,7 @@ input::-webkit-input-placeholder {
 
 .asesoramiento h2 {
     font-size: 3em;
-    color: #74ffe17a;
+    color: var(--accent-color-variable-dark-mode);
     padding-bottom: 2rem;
 }
 
@@ -2478,7 +2576,7 @@ input::-webkit-input-placeholder {
 
 .ase-item h3 {
     font-size: 1.8em;
-    color: #fff;
+    color: var(--main-color-dark-mode);
     font-weight: 200;
     width: 300px;
     text-align: center;
@@ -2487,9 +2585,22 @@ input::-webkit-input-placeholder {
 
 .ase-item p {
     font-size: 1.5em;
-    color: #ffffff83;
+    color: var(--second-color);
     width: 300px;
     text-align: center;
+}
+
+/*Servicios sepelio*/
+.servicios-sepelio{
+    height: 100vh;
+    position: relative;
+    display:flex;
+    justify-content: center;
+}
+
+.servicios-sepelio .titulo-servicios-sepelio {
+    font-size: 3em;
+    color: var(--accent-color-variable-dark-mode);
 }
 
 /* PÁGINA SERVICIOS BÁSICOS */
@@ -2499,6 +2610,7 @@ input::-webkit-input-placeholder {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .planes-container-servicios {
@@ -2506,10 +2618,12 @@ input::-webkit-input-placeholder {
     flex-direction: column;
     padding-top: 10rem;
     padding-bottom: 10rem;
+    align-items: center;
 }
 
 .planes-agua {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem;
@@ -2517,7 +2631,7 @@ input::-webkit-input-placeholder {
 
 .titulo-agua {
     font-size: 3em;
-    color: #fff;
+    color: var(--main-color-light-mode);
     padding: 5rem 0 2rem 0;
 }
 
@@ -2539,7 +2653,7 @@ input::-webkit-input-placeholder {
 
 .texto-sin-codigo {
     font-size: 3em;
-    color: #fff;
+    color: var(--main-color-dark-mode);
     text-align: center;
     font-weight: 500;
 }
@@ -2629,7 +2743,7 @@ input::-webkit-input-placeholder {
 .grilla-analoga h3 {
     position: absolute;
     font-size: 3em;
-    color: #fff;
+    color: var(--main-color-dark-mode);
     z-index: 1;
 }
 
@@ -2637,7 +2751,7 @@ input::-webkit-input-placeholder {
     padding-top: 15rem;
     position: absolute;
     font-size: 1.8em;
-    color: #ffffff83;
+    color: var(--second-color);
     text-align: center;
     width: 300px;
 }
@@ -2680,7 +2794,7 @@ input::-webkit-input-placeholder {
 .grilla-digital h3 {
     position: absolute;
     font-size: 3em;
-    color: #fff;
+    color: var(--main-color-dark-mode);
     z-index: 1;
 }
 
@@ -2688,7 +2802,7 @@ input::-webkit-input-placeholder {
     padding-top: 15rem;
     position: absolute;
     font-size: 1.8em;
-    color: #ffffff83;
+    color: var(--second-color);
     text-align: center;
     width: 300px;
 }
@@ -2703,9 +2817,9 @@ input::-webkit-input-placeholder {
 .btn-descargar {
     position: absolute;
     background-color: transparent;
-    color: #fff;
+    color: var(--main-color-dark-mode);
     padding: 10px 20px;
-    border: solid 2px #fff;
+    border: solid 2px var(--main-color-dark-mode);
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.8em;
@@ -2717,15 +2831,15 @@ input::-webkit-input-placeholder {
 
 .btn-descargar:hover {
     background-size: 100% 100%;
-    border: solid 2px #fff;
-    color: #000;
+    border: solid 2px var(--main-color-dark-mode);
+    color: var(--main-color-light-mode);
     font-weight: 600;
 }
 
 .btn-ver {
     position: absolute;
-    background-color: #fff;
-    color: #000000;
+    background-color: var(--main-color-dark-mode);
+    color: var(--main-color-light-mode);
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 5px;
@@ -2737,7 +2851,7 @@ input::-webkit-input-placeholder {
 }
 
 .btn-ver:hover {
-    outline: 2px solid #ffffff;
+    outline: 2px solid var(--main-color-dark-mode);
     outline-offset: 4px;
     transition: ease-in-out 0.2s;
 }
@@ -3532,7 +3646,7 @@ input::-webkit-input-placeholder {
 }
 
 /* Pantallas medianas - 670px - ESPECÍFICO */
-@media screen and (max-width:670px){
+@media screen and (max-width:670px) {
 
     /*PÁGINA EDUCACION*/
     .circle-9 {
@@ -3549,7 +3663,7 @@ input::-webkit-input-placeholder {
         right: 40%;
     }
 
-    .edu-descrip-especial{
+    .edu-descrip-especial {
         padding-top: 20rem;
     }
 }
@@ -4281,9 +4395,15 @@ input::-webkit-input-placeholder {
         right: 25%;
     }
 
-    .titulo-planes h2{
+    .titulo-planes h2 {
         width: 350px;
         text-align: center;
+    }
+
+    /*PAGINA SERVICIOS BASICOS*/
+    .titulo-agua {
+        font-size: 2.5em;
+        width: 250px;
     }
 }
 
@@ -4647,11 +4767,11 @@ input::-webkit-input-placeholder {
     }
 
     /*PAGINA EDUCACION*/
-    .titulo-planes h2{
+    .titulo-planes h2 {
         width: 250px;
     }
 
-    .imagen-educacion h3{
+    .imagen-educacion h3 {
         width: 250px;
         font-size: 2.5em;
     }
@@ -4670,11 +4790,11 @@ input::-webkit-input-placeholder {
         font-size: 1.5em;
     }
 
-    .dialogo6{
+    .dialogo6 {
         right: 15%;
     }
 
-    .dialogo7{
+    .dialogo7 {
         right: 15%;
     }
 }
