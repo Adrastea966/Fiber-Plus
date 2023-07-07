@@ -3289,6 +3289,22 @@ input::-webkit-input-placeholder {
     .planes-ed {
         height: 170rem;
     }
+
+    /*PAGINA SERVICIOS FÚNEBRES*/
+    .asesoramiento-items{
+        display:flex;
+        justify-content: center;
+        gap:2rem;
+    }
+
+    .servicios-sepelio{
+        height: 130rem;
+        padding-top: 11rem;
+    }
+
+    .container-cards{
+        padding-top: 20rem;
+    }
 }
 
 /* Pantallas medianas - 901px */
@@ -3643,6 +3659,32 @@ input::-webkit-input-placeholder {
         top: 70%;
         right: 40%;
     }
+
+    /*PAGINA SERVICIOS FUNEBRES*/
+    .reseva-turno-sepelio{
+        width: 500px;
+    }
+    
+    .servicios-sepelio{
+        height: 190rem;
+        padding-top: 11rem;
+    }
+
+    .container-cards{
+        padding-top: 10rem;
+    }
+
+    .container-sepelio{
+        padding-left: 1rem;
+    }
+
+    .imagen-asesoria{
+        height: 300px;
+    }
+
+    .sepelio{
+        height: 110rem;
+    }
 }
 
 /* Pantallas medianas - 670px - ESPECÍFICO */
@@ -3665,6 +3707,53 @@ input::-webkit-input-placeholder {
 
     .edu-descrip-especial {
         padding-top: 20rem;
+    }
+
+    /*PAGINA SERVICIOS FUNEBRES*/
+    .texto-asesoramiento {
+        font-size: 1.8em;
+        width: 350px;
+    }
+
+    .texto-carrusel h3{
+        font-size: 3em;
+    }
+
+    .texto-carrusel p{
+        font-size: 1.8em;
+    }
+
+    .imagen-asesoria h3{
+        width: 250px;
+        font-size: 2em;
+    }
+
+    .asesoria{
+        height: 150rem;
+    }
+
+    .asesoramiento-items{
+        gap:6rem;
+    }
+
+    .reseva-turno-sepelio{
+        width: 350px;
+    }
+
+    .item-servicio{
+        width: 250px;
+    }
+
+    .item-servicio h3{
+        font-size:1.8em;
+    }
+
+    .item-servicio p{
+        font-size:1.5em;
+    }
+
+    .sepelio{
+        height: 130rem;
     }
 }
 
@@ -4796,5 +4885,60 @@ input::-webkit-input-placeholder {
 
     .dialogo7 {
         right: 15%;
+    }
+
+    /*PAGINA SERVICIOS FUNEBRES*/
+    .texto-asesoramiento {
+        font-size: 1.2em;
+        width: 250px;
+    }
+
+    .texto-carrusel h3{
+        font-size: 2em;
+    }
+
+    .texto-carrusel p{
+        font-size: 1.5em;
+    }
+
+    .imagen-asesoria h3{
+        width: 250px;
+        font-size: 2em;
+    }
+
+    .reseva-turno-sepelio{
+        width: 250px;
+    }
+
+    .reseva-turno-sepelio {
+        font-size: 1.2em;
+    }
+
+    .item-servicio{
+        width: 250px;
+    }
+
+    .item-servicio h3{
+        font-size:1.8em;
+    }
+
+    .item-servicio p{
+        font-size:1.5em;
+    }
+
+    .sepelio{
+        height: 130rem;
+    }
+
+    .ase-item h3{
+        width: 250px;
+    }
+
+    .ase-item p{
+        width: 250px;
+    }
+
+    .servicios-sepelio h2{
+        text-align: center;
     }
 }
