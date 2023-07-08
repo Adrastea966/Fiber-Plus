@@ -7,7 +7,7 @@
     <title>Televisión| planes</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 
 <body>
@@ -28,8 +28,8 @@
     <!--navbar-->
     <nav class="navbar">
         <div class="links">
-            <a href="../../index.html" class="link">Inicio</a>
-            <a href="../../index.html#nosotros" class="link1" onmouseenter="showSubMenu1()"
+            <a href="/index.html" class="link">Inicio</a>
+            <a href="/index.html#nosotros" class="link1" onmouseenter="showSubMenu1()"
                 onmouseleave="hideSubMenu1()">Nosotros</a>
             <div class="submenu1" onmouseenter="cancelHideSubMenu1()" onmouseleave="hideSubMenu1()">
                 <a href="/assets/pages/sobre-la-empresa.html#valores">Valores</a>
@@ -37,8 +37,8 @@
                 <a href="/assets/pages/sobre-la-empresa.html#corporativa">Corporativa</a>
                 <a href="/assets/pages/sobre-la-empresa.html#equipo">Equipo</a>
             </div>
-            <a href="../../index.html#programas" class="link3">Programas</a>
-            <a href="../../index.html#servicios" class="link2" onmouseenter="showSubMenu2()"
+            <a href="/index.html#programas" class="link3">Programas</a>
+            <a href="/index.html#servicios" class="link2" onmouseenter="showSubMenu2()"
                 onmouseleave="hideSubMenu2()">Servicios</a>
             <div class="submenu2" onmouseenter="showSubMenu2()" onmouseleave="hideSubMenu2()">
                 <a href="/assets/pages/servicios-basicos.html">Servicios básicos</a>
@@ -48,9 +48,84 @@
                 <a href="/assets/pages/telefonia.html">Telefonía</a>
                 <a href="/assets/pages/internet.html">Internet</a>
             </div>
-            <a href="../../index.html#contacto" class="link4">Contacto</a>
+            <a href="/index.html#contacto" class="link4">Contacto</a>
         </div>
     </nav>
+    <div class="navbar-responsive">
+        <i class="uil uil-arrow-left arrow-in"></i>
+        <ul class="list">
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-estate list-icon"></i>
+                    <a href="/index.html" class="nav-link">Inicio</a>
+                </div>
+            </li>
+            <li class="list-item list-item-click">
+                <div class="list-button list-button-click">
+                    <i class="uil uil-users-alt list-icon"></i>
+                    <a href="/index.html#nosotros" class="nav-link">Nosotros</a>
+                    <i class="uil uil-angle-right list-arrow"></i>
+                </div>
+                <ul class="list-show">
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#equipo" class="nav-link nav-link-inside">Equipo</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#corporativa"
+                            class="nav-link nav-link-inside">Corporativa</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#memorials"
+                            class="nav-link nav-link-inside">Memorials</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/sobre-la-empresa.html#valores"
+                            class="nav-link nav-link-inside">Valores</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-tv-retro list-icon"></i>
+                    <a href="/index.html#programas" class="nav-link">Programas</a>
+                </div>
+            </li>
+            <li class="list-item list-item-click">
+                <div class="list-button list-button-click">
+                    <i class="uil uil-file-landscape list-icon"></i>
+                    <a href="/index.html#servicios" class="nav-link">Servicios</a>
+                    <i class="uil uil-angle-right list-arrow"></i>
+                </div>
+                <ul class="list-show">
+                    <li class="list-inside">
+                        <a href="/assets/pages/internet.html" class="nav-link nav-link-inside">Internet</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/telefonia.html" class="nav-link nav-link-inside">Telefonía</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/educacion.html" class="nav-link nav-link-inside">Educación</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/servicios-funebres.html" class="nav-link nav-link-inside">Fúnebres</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="#" class="nav-link nav-link-inside">Televisión</a>
+                    </li>
+                    <li class="list-inside">
+                        <a href="/assets/pages/servicios-basicos.html" class="nav-link nav-link-inside">Servicios
+                            básicos</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <div class="list-button">
+                    <i class="uil uil-message list-icon"></i>
+                    <a href="/index.html#contacto" class="nav-link">Contacto</a>
+                </div>
+            </li>
+        </ul>
+    </div>
     <!--end of navbar-->
     <section class="television">
         <!--seccion que se ve inicialmente-->
@@ -59,16 +134,25 @@
             </h2>
             <div class="container-btn">
                 <div class="btn-ingresar">
-                    <button class="btn-servicio modal" id="btn">Ingresar</button>
+                    <button class="btn-servicio" id="btn">Ingresar</button>
                 </div>
                 <div class="info2">
                     <button class="btn-info2">Pedí tu código</button>
                 </div>
             </div>
+            <div class="modal">
+                <i class="uil uil-times-circle close"></i>
+                <div class="container-modal">
+                    <label for="access-code">Ingresa el código de acceso:</label>
+                    <input type="text" id="access-code">
+                    <button id="access-button">Acceder</button>
+                    <p id="error-message"></p>
+                </div>
+            </div>
         </div>
         <!--seccion que se ve solo con código de ingreso-->
         <div class="seccion-con-codigo" style="display: none;">
-            <section class="planes">
+            <section class="planes-tv">
                 <div class="circle circle-7"></div>
                 <div class="circle circle-8"></div>
                 <div class="planes-container">
@@ -76,7 +160,7 @@
                         <h2>Nuestros planes</h2>
                     </div>
                     <div class="cards-planes">
-                        <div class="card-planes">
+                        <div class="card-planes" data-aos="fade-up">
                             <div class="top-card-planes">
                                 <div class="textos">
                                     <p>Básico</p>
@@ -97,7 +181,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-planes">
+                        <div class="card-planes" data-aos="fade-up" data-aos-delay="100">
                             <div class="top-card-planes">
                                 <div class="textos">
                                     <p>Estándar</p>
@@ -118,7 +202,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-planes">
+                        <div class="card-planes" data-aos="fade-up" data-aos-delay="200">
                             <div class="top-card-planes">
                                 <div class="textos">
                                     <p>Premium</p>
@@ -145,94 +229,138 @@
             <div class="slider-marcas">
                 <div class="slider-track">
                     <div class="slide-img">
-                        <img src="/assets/image/direct.svg" alt="Logo de DirectTv">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/direct_bhequk.svg"
+                            alt="Logo de DirectTv">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/espn.svg" alt="Logo de ESPN">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572416/Fiber-plus/espn_eok1yx.svg"
+                            alt="Logo de ESPN">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/fox.svg" alt="Logo de FOX">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/fox_by6mav.svg"
+                            alt="Logo de FOX">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/hbo.svg" alt="Logo de HBO">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572409/Fiber-plus/hbo_kjcdxx.svg"
+                            alt="Logo de HBO">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/tyc.svg" alt="Logo de TyC sports">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/tyc_ggbm3t.svg"
+                            alt="Logo de TyC sports">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/tnt.svg" alt="Logo de TNT sports">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/tnt_rdjvbc.svg"
+                            alt="Logo de TNT sports">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/universal.svg" alt="Logo de universal">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572418/Fiber-plus/universal_p4dpqz.svg"
+                            alt="Logo de universal">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/direct.svg" alt="Logo de DirectTv">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/direct_bhequk.svg"
+                            alt="Logo de DirectTv">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/espn.svg" alt="Logo de ESPN">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572416/Fiber-plus/espn_eok1yx.svg"
+                            alt="Logo de ESPN">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/fox.svg" alt="Logo de FOX">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/fox_by6mav.svg"
+                            alt="Logo de FOX">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/hbo.svg" alt="Logo de HBO">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572409/Fiber-plus/hbo_kjcdxx.svg"
+                            alt="Logo de HBO">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/tyc.svg" alt="Logo de TyC sports">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/tyc_ggbm3t.svg"
+                            alt="Logo de TyC sports">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/tnt.svg" alt="Logo de TNT sports">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/tnt_rdjvbc.svg"
+                            alt="Logo de TNT sports">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/universal.svg" alt="Logo de universal">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572418/Fiber-plus/universal_p4dpqz.svg"
+                            alt="Logo de universal">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/direct.svg" alt="Logo de DirectTv">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/direct_bhequk.svg"
+                            alt="Logo de DirectTv">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/espn.svg" alt="Logo de ESPN">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572416/Fiber-plus/espn_eok1yx.svg"
+                            alt="Logo de ESPN">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/fox.svg" alt="Logo de FOX">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/fox_by6mav.svg"
+                            alt="Logo de FOX">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/hbo.svg" alt="Logo de HBO">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572409/Fiber-plus/hbo_kjcdxx.svg"
+                            alt="Logo de HBO">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/tyc.svg" alt="Logo de TyC sports">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/tyc_ggbm3t.svg"
+                            alt="Logo de TyC sports">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/tnt.svg" alt="Logo de TNT sports">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/tnt_rdjvbc.svg"
+                            alt="Logo de TNT sports">
                     </div>
                     <div class="slide-img">
-                        <img src="/assets/image/universal.svg" alt="Logo de universal">
+                        <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572418/Fiber-plus/universal_p4dpqz.svg"
+                            alt="Logo de universal">
                     </div>
                 </div>
             </div>
             <div class="grillas">
-                <div class="grilla-analoga">
-                    <h3>Grilla análoga</h3>
-                    <p>Contamos con 100 canales text of the printing and typesetting industry.</p>
-                    <div class="btn-grilla">
-                        <div class="ver-grilla">
-                            <button class="btn-ver">Ver grilla</button>
+                <div class="container-grillas">
+                    <div class="bottom-grillas">
+                        <img class="img-grillas"
+                            src="https://res.cloudinary.com/adrastea/image/upload/v1688767519/Fiber-plus/8169814_yqhtzc.jpg"
+                            alt="Grilla digital">
+                        <div class="bottom-grillas-texto">
+                            <h3>Grilla digital</h3>
+                            <p>descargá nuestra grilla para estar al día!</p>
                         </div>
-                        <div class="descargar-grilla">
-                            <button class="btn-descargar">Descargar grilla</button>
+                        <div class="top-grillas-texto">
+                            <div class="ver-grilla">
+                                <button class="btn-ver" onclick="showPopUp()"><i class="uil uil-eye"></i>Ver
+                                    grilla</button>
+                            </div>
+                            <div class="descargar-grilla">
+                                <button class="btn-descargar"><i class="uil uil-download-alt"></i>Descargar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container-grillas">
+                    <div class="bottom-grillas">
+                        <img class="img-grillas"
+                            src="https://res.cloudinary.com/adrastea/image/upload/v1688767519/Fiber-plus/8169814_yqhtzc.jpg"
+                            alt="Grilla análoga">
+                        <div class="bottom-grillas-texto">
+                            <h3>Grilla análoga</h3>
+                            <p>descargá nuestra grilla para estar al día!</p>
+                        </div>
+                        <div class="top-grillas-texto">
+                            <div class="ver-grilla">
+                                <button class="btn-ver" onclick="showPopUp()"><i class="uil uil-eye"></i>Ver
+                                    grilla</button>
+                            </div>
+                            <div class="descargar-grilla">
+                                <button class="btn-descargar"><i class="uil uil-download-alt"></i>Descargar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="grilla-digital">
-                    <h3>Grilla digital</h3>
-                    <p>Contamos con 100 canales text of the printing and typesetting industry.</p>
-                    <div class="btn-grilla">
-                        <div class="ver-grilla">
-                            <button class="btn-ver">Ver grilla</button>
-                        </div>
-                        <div class="descargar-grilla">
-                            <button class="btn-descargar">Descargar grilla</button>
-                        </div>
-                    </div>
+
+                <div class="pop-up-image" id="pop-up-image">
+                    <span onclick="hidePopUp()">&times;</span>
+                    <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572426/Fiber-plus/grilla-analogica_i3o3bv.jpg"
+                        alt="Grilla análoga">
                 </div>
             </div>
         </div>
@@ -261,7 +389,8 @@
                     <div class="container-fundadores">
                         <div class="info-fundadores">
                             <div class="img-fundadores">
-                                <img src="/assets/image/fundador.png" alt="Imagen del fundador 1 de la empresa">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572412/Fiber-plus/fundador_pcydtk.png"
+                                    alt="Imagen del fundador 1 de la empresa">
                             </div>
                             <div>
                                 <p><strong>Christian Rodrídrez</strong></p>
@@ -272,7 +401,8 @@
                         </div>
                         <div class="info-fundadores">
                             <div class="img-fundadores">
-                                <img src="/assets/image/fundador2.png" alt="Imagen del fundador 2 de la empresa">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador2_idfla4.png"
+                                    alt="Imagen del fundador 2 de la empresa">
                             </div>
                             <div>
                                 <p><strong>Sebtastían Gutierrez</strong></p>
@@ -283,7 +413,8 @@
                         </div>
                         <div class="info-fundadores">
                             <div class="img-fundadores">
-                                <img src="/assets/image/fundador3.png" alt="Imagen del fundador 3 de la empresa">
+                                <img src="https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/fundador3_biuc86.png"
+                                    alt="Imagen del fundador 3 de la empresa">
                             </div>
                             <div>
                                 <p><strong>Guillermo Gutierrez</strong></p>
@@ -335,12 +466,32 @@
         </div>
     </section>
     <!--end of footer-->
-    <div>
-        <a href="#" target="_blank" class="whatsapp-button">
-            <i class="uil uil-whatsapp"></i>
-        </a>
-    </div>
-    <script src="../../index.js"></script>
+    <script>
+        // Active modal
+        const modal = document.querySelector('.modal');
+        const btn = document.querySelector('#btn');
+        const closeIcon = document.querySelector('.close');
+
+        btn.addEventListener('click', () => {
+            modal.classList.add('active-modal');
+        });
+
+        closeIcon.addEventListener('click', () => {
+            modal.classList.remove('active-modal');
+        });
+
+        //pop-up image
+        function showPopUp() {
+            var popUp = document.getElementById("pop-up-image");
+            popUp.style.display = "block";
+        }
+
+        function hidePopUp() {
+            var popUp = document.getElementById("pop-up-image");
+            popUp.style.display = "none";
+        }
+    </script>
+    <script src="/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

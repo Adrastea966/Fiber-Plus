@@ -117,3 +117,41 @@ arrowIn.addEventListener('click', () => {
         arrowIn.classList.add('rotate');
     }
 });
+
+//código de acceso con local Storage
+const accessCodeInput = document.querySelector('#access-code');
+const seccionSinCodigo = document.querySelector('.seccion-sin-codigo');
+const seccionConCodigo = document.querySelector('.seccion-con-codigo');
+const codigoCorrecto = "1234";
+
+const accessButton = document.querySelector('#access-button');
+const errorMessage = document.querySelector('#error-message');
+
+accessButton.addEventListener('click', () => {
+    const accessCode = accessCodeInput.value;
+    if (accessCode === codigoCorrecto) {
+        seccionSinCodigo.style.display = 'none';
+        seccionConCodigo.style.display = 'block';
+        errorMessage.style.display = 'none';
+        sessionStorage.setItem('codigoIngresado', 'true');
+    } else {
+        errorMessage.style.display = 'block';
+        errorMessage.textContent = 'Código de acceso incorrecto';
+        sessionStorage.removeItem('codigoIngresado');
+    }
+});
+
+window.addEventListener('load', () => {
+    const codigoIngresado = sessionStorage.getItem('codigoIngresado');
+    if (codigoIngresado === 'true') {
+        seccionSinCodigo.style.display = 'none';
+        seccionConCodigo.style.display = 'block';
+    }
+});
+
+window.addEventListener('beforeunload', () => {
+    const codigoIngresado = sessionStorage.getItem('codigoIngresado');
+    if (codigoIngresado === 'false') {
+        sessionStorage.removeItem('codigoIngresado');
+    }
+});

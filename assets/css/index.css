@@ -16,10 +16,11 @@
     --main-color-dark-mode: #fff;
     --accent-color-dark-mode: #74ffe1;
     --accent-color-variable-dark-mode: #49a08d;
-    --main-background-color-dark-mode: #1a1a1a;
-    --background-color-variable: #1e2323;
+    --main-background-color-dark-mode: #121316;
+    --background-color-variable: #1d2025;
     /*light mode*/
     --main-color-light-mode: #000;
+    /*general*/
     --second-color: #878787;
 }
 
@@ -48,7 +49,6 @@ ul {
 
 /* Principal */
 .principal {
-    width: 100%;
     min-height: 100vh;
     overflow: hidden;
     position: relative;
@@ -68,7 +68,6 @@ ul {
 .container-principal {
     max-width: 170rem;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .logotipo {
@@ -101,7 +100,7 @@ ul {
 
 .descripcion1 {
     animation-delay: 0.2s;
-    font-size: 4.5em;
+    font-size: 4em;
     color: var(--main-color-dark-mode);
 }
 
@@ -213,7 +212,7 @@ ul {
 }
 
 .nav-link-inside:hover {
-    color: black;
+    color: var(--main-color-light-mode);
 }
 
 .list {
@@ -316,7 +315,7 @@ ul {
 .submenu2 {
     display: none;
     position: absolute;
-    background-color: #3a3a3a;
+    background-color: #1d2025;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     overflow: hidden;
@@ -1338,7 +1337,9 @@ input::-webkit-input-placeholder {
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
-    padding-top: 14.5rem;
+    position: absolute;
+    top: 94%;
+    left: 28%;
     gap: 2rem;
 }
 
@@ -1590,7 +1591,7 @@ input::-webkit-input-placeholder {
     width: 350px;
     max-width: 100%;
     height: 300px;
-    background: rgb(59, 59, 59);
+    background: var(--background-color-variable);
     backdrop-filter: blur(60px);
     border-radius: 20px;
     transition: 0.5s;
@@ -1607,7 +1608,7 @@ input::-webkit-input-placeholder {
     top: 20px;
     width: 300px;
     height: 220px;
-    background: #333;
+    background: var(--background-color-variable);
     border-radius: 12px;
     overflow: hidden;
     transition: 0.5s;
@@ -2420,12 +2421,12 @@ input::-webkit-input-placeholder {
     position: relative;
 }
 
-.texto-carrusel{
+.texto-carrusel {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -2456,8 +2457,8 @@ input::-webkit-input-placeholder {
 }
 
 .splide__slide img {
-    filter: brightness(60%); /* Aplicar un filtro de brillo */
-  }
+    filter: brightness(60%);
+}
 
 .my-slider-progress {
     background: var(--second-color);
@@ -2478,18 +2479,18 @@ input::-webkit-input-placeholder {
 }
 
 .splide__arrow--next svg {
-    fill:var(--main-color-dark-mode);
+    fill: var(--main-color-dark-mode);
 }
 
-.splide__arrow--prev{
+.splide__arrow--prev {
     background-color: #ffffff3b;
     backdrop-filter: blur(1.5px);
     font-size: 1.5rem;
     border: none;
 }
 
-.splide__arrow--prev svg{
-    fill:var(--main-color-dark-mode);
+.splide__arrow--prev svg {
+    fill: var(--main-color-dark-mode);
 }
 
 /* asesoria section*/
@@ -2591,10 +2592,10 @@ input::-webkit-input-placeholder {
 }
 
 /*Servicios sepelio*/
-.servicios-sepelio{
+.servicios-sepelio {
     height: 100vh;
     position: relative;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -2631,7 +2632,7 @@ input::-webkit-input-placeholder {
 
 .titulo-agua {
     font-size: 3em;
-    color: var(--main-color-light-mode);
+    color: var(--main-color-dark-mode);
     padding: 5rem 0 2rem 0;
 }
 
@@ -2640,6 +2641,74 @@ input::-webkit-input-placeholder {
 .television {
     width: 100%;
     position: relative;
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 400px;
+    height: 280px;
+    background-color: #ffffff12;
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--second-color);
+    border-radius: 1rem;
+    color: var(--main-color-dark-mode);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.container-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 3rem;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal label {
+    font-size: 1.8em;
+    padding-bottom: 1rem;
+}
+
+.modal i {
+    position: relative;
+    top: 2%;
+    left: 2%;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.modal input {
+    width: 60%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.modal button {
+    padding: 0.5rem;
+    cursor: pointer;
+    background: none;
+    background-color: var(--main-color-dark-mode);
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+}
+
+#error-message {
+    display: none;
+    color: red;
+    width: 250px;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-left: 4rem;
+    padding-top: 2rem;
 }
 
 .seccion-sin-codigo {
@@ -2701,208 +2770,143 @@ input::-webkit-input-placeholder {
     }
 }
 
+/*Grilla*/
 .grillas {
+    height: 90rem;
     display: flex;
-}
-
-.grilla-analoga {
-    width: 50%;
-    height: 80rem;
-    background-image: url('/assets/image/grilla-analogica.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    cursor: pointer;
-    transition: filter 0.3s, transform 0.3s;
+    gap: 5rem;
 }
 
-.grilla-analoga::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.914);
-    backdrop-filter: blur(4px);
-    transition: backdrop-filter 0.3s;
-}
-
-.grilla-analoga:hover {
-    filter: brightness(100%);
-    transform: scale(1.02);
-}
-
-.grilla-analoga:hover::before {
-    backdrop-filter: blur(1px);
-}
-
-.grilla-analoga h3 {
-    position: absolute;
-    font-size: 3em;
-    color: var(--main-color-dark-mode);
-    z-index: 1;
-}
-
-.grilla-analoga p {
-    padding-top: 15rem;
-    position: absolute;
-    font-size: 1.8em;
-    color: var(--second-color);
-    text-align: center;
-    width: 300px;
-}
-
-.grilla-digital {
-    width: 50%;
-    height: 80rem;
-    background-image: url('/assets/image/grilla-analogica.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.container-grillas {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: filter 0.3s, transform 0.3s;
 }
 
-.grilla-digital::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.914);
-    backdrop-filter: blur(4px);
-    transition: backdrop-filter 0.3s;
-}
-
-.grilla-digital:hover {
-    filter: brightness(100%);
-    transform: scale(1.02);
-}
-
-.grilla-digital:hover::before {
-    backdrop-filter: blur(1px);
-}
-
-.grilla-digital h3 {
-    position: absolute;
-    font-size: 3em;
-    color: var(--main-color-dark-mode);
-    z-index: 1;
-}
-
-.grilla-digital p {
-    padding-top: 15rem;
-    position: absolute;
-    font-size: 1.8em;
-    color: var(--second-color);
-    text-align: center;
-    width: 300px;
-}
-
-.btn-grilla {
-    display: flex;
-    padding-top: 28rem;
-    padding-right: 15rem;
-    gap: 13rem;
-}
-
-.btn-descargar {
-    position: absolute;
+.bottom-grillas {
+    width: 600px;
+    height: 400px;
     background-color: transparent;
-    color: var(--main-color-dark-mode);
-    padding: 10px 20px;
-    border: solid 2px var(--main-color-dark-mode);
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.8em;
-    background-image: linear-gradient(to right, #fff 0%, #fff 0%);
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    transition: background-size 0.6s;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
 }
 
-.btn-descargar:hover {
-    background-size: 100% 100%;
-    border: solid 2px var(--main-color-dark-mode);
-    color: var(--main-color-light-mode);
-    font-weight: 600;
+.bottom-grillas-texto {
+    position: relative;
+    top: -30%;
+    left: 2%;
+    width: 575px;
+    height: 100px;
+    background-color: #ffffff1c;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    backdrop-filter: blur(2px);
+    border: 1px solid #ffffff30;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.423);
+    z-index: 2;
+    color: var(--main-color-dark-mode);
+}
+
+.bottom-grillas-texto h3 {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: 2.5em;
+}
+
+.bottom-grillas-texto p {
+    position: absolute;
+    top: 30%;
+    right: 4%;
+    font-size: 1.5em;
+    width: 200px;
+    text-align: right;
+    color: #ffffff5c;
+}
+
+.img-grillas {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    filter: brightness(90%);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.img-grillas:hover {
+    transform: translateY(-10px);
+}
+
+.top-grillas-texto {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    top: 2%;
+    right: 2%;
 }
 
 .btn-ver {
-    position: absolute;
-    background-color: var(--main-color-dark-mode);
-    color: var(--main-color-light-mode);
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 5px;
-    outline: 2px solid #ffffff00;
+    background-color: transparent;
+    color: var(--main-color-dark-mode);
+    padding: 1rem;
+    border: solid 1px var(--main-color-dark-mode);
+    border-radius: 100px;
     cursor: pointer;
-    font-size: 1.8em;
-    transition-property: outline-offset;
-    transition-duration: .10s;
+    font-size: 1.5em;
+    background-color: #ffffff18;
+    backdrop-filter: blur(5px);
+    display: flex;
+    gap: 1rem;
 }
 
-.btn-ver:hover {
-    outline: 2px solid var(--main-color-dark-mode);
-    outline-offset: 4px;
-    transition: ease-in-out 0.2s;
+.btn-descargar {
+    background-color: transparent;
+    color: var(--main-color-dark-mode);
+    padding: 1rem;
+    border: solid 1px var(--main-color-dark-mode);
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1.5em;
+    background-color: #ffffff18;
+    backdrop-filter: blur(5px);
+    display: flex;
+    gap: 1rem;
 }
 
-/*Modal*/
-/*.modal-container {
-    display: none;
+.pop-up-image {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
+    background: rgba(0, 0, 0, 0.642);
+    display: none;
+    z-index: 999;
 }
 
-.modal-content {
+.pop-up-image span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.pop-up-image img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
+    max-width: 90%;
+    max-height: 90%;
 }
-
-.modal-content h3 {
-    margin-top: 0;
-}
-
-.modal-content input {
-    margin-bottom: 10px;
-}
-
-.btn-modal-submit {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-modal-close {
-    background-color: #ccc;
-    color: #333;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}*/
 
 /*MEDIA QUERYS*/
 /* Pantallas grandes - 1280px */
@@ -3048,10 +3052,6 @@ input::-webkit-input-placeholder {
         font-size: 2.5em;
     }
 
-    .container-footer-bottom {
-        padding-top: 16rem;
-    }
-
     .designed-by {
         font-size: 1.5em;
     }
@@ -3119,6 +3119,11 @@ input::-webkit-input-placeholder {
     /*Nosotros*/
     .container-about {
         padding-top: 30rem;
+    }
+
+    /*why*/
+    .why {
+        height: 90rem;
     }
 
     /* Servicios */
@@ -3291,18 +3296,18 @@ input::-webkit-input-placeholder {
     }
 
     /*PAGINA SERVICIOS FÚNEBRES*/
-    .asesoramiento-items{
-        display:flex;
+    .asesoramiento-items {
+        display: flex;
         justify-content: center;
-        gap:2rem;
+        gap: 2rem;
     }
 
-    .servicios-sepelio{
+    .servicios-sepelio {
         height: 130rem;
         padding-top: 11rem;
     }
 
-    .container-cards{
+    .container-cards {
         padding-top: 20rem;
     }
 }
@@ -3397,7 +3402,7 @@ input::-webkit-input-placeholder {
     /* Section why us */
     .why {
         width: 100%;
-        height: 50vh;
+        height: 100rem;
     }
 
     .container-why {
@@ -3549,16 +3554,8 @@ input::-webkit-input-placeholder {
     }
 
     .container-footer-bottom {
-        top: 52%;
-        left: 30%;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        top: 90%;
         flex-direction: column;
-        padding-top: 30rem;
-        padding-right: 10rem;
-        padding-bottom: 0rem;
     }
 
     .designed-by {
@@ -3661,29 +3658,34 @@ input::-webkit-input-placeholder {
     }
 
     /*PAGINA SERVICIOS FUNEBRES*/
-    .reseva-turno-sepelio{
+    .reseva-turno-sepelio {
         width: 500px;
     }
-    
-    .servicios-sepelio{
+
+    .servicios-sepelio {
         height: 190rem;
         padding-top: 11rem;
     }
 
-    .container-cards{
+    .container-cards {
         padding-top: 10rem;
     }
 
-    .container-sepelio{
+    .container-sepelio {
         padding-left: 1rem;
     }
 
-    .imagen-asesoria{
+    .imagen-asesoria {
         height: 300px;
     }
 
-    .sepelio{
+    .sepelio {
         height: 110rem;
+    }
+
+    /*PAGINA TELEVISION*/
+    .pop-up-image img {
+        width: 95%;
     }
 }
 
@@ -3715,44 +3717,44 @@ input::-webkit-input-placeholder {
         width: 350px;
     }
 
-    .texto-carrusel h3{
+    .texto-carrusel h3 {
         font-size: 3em;
     }
 
-    .texto-carrusel p{
+    .texto-carrusel p {
         font-size: 1.8em;
     }
 
-    .imagen-asesoria h3{
+    .imagen-asesoria h3 {
         width: 250px;
         font-size: 2em;
     }
 
-    .asesoria{
+    .asesoria {
         height: 150rem;
     }
 
-    .asesoramiento-items{
-        gap:6rem;
+    .asesoramiento-items {
+        gap: 6rem;
     }
 
-    .reseva-turno-sepelio{
+    .reseva-turno-sepelio {
         width: 350px;
     }
 
-    .item-servicio{
+    .item-servicio {
         width: 250px;
     }
 
-    .item-servicio h3{
-        font-size:1.8em;
+    .item-servicio h3 {
+        font-size: 1.8em;
     }
 
-    .item-servicio p{
-        font-size:1.5em;
+    .item-servicio p {
+        font-size: 1.5em;
     }
 
-    .sepelio{
+    .sepelio {
         height: 130rem;
     }
 }
@@ -3947,6 +3949,7 @@ input::-webkit-input-placeholder {
 
     .container-general {
         padding-top: 5rem;
+        padding-bottom: 2rem;
     }
 
     .datos-ubicacion {
@@ -3994,7 +3997,6 @@ input::-webkit-input-placeholder {
     }
 
     .container-footer-bottom {
-        top: 28%;
         left: 15%;
         gap: 1rem;
     }
@@ -4035,6 +4037,16 @@ input::-webkit-input-placeholder {
         padding-top: 6rem;
         padding-left: 10rem;
         font-size: 1.5em;
+    }
+
+    /*PAGINA TELEVISION*/
+    .bottom-grillas {
+        width: 500px;
+        height: 400px;
+    }
+
+    .bottom-grillas-texto {
+        width: 470px;
     }
 }
 
@@ -4317,6 +4329,27 @@ input::-webkit-input-placeholder {
         align-items: center;
         font-size: 1.5em;
     }
+
+    /*PAGINA TELEVISION*/
+    .grillas {
+        gap: 1rem;
+    }
+
+    .bottom-grillas {
+        width: 400px;
+    }
+
+    .bottom-grillas-texto {
+        width: 380px;
+    }
+
+    .bottom-grillas-texto h3 {
+        font-size: 1.8em;
+    }
+
+    .bottom-grillas-texto p {
+        font-size: 1.2em;
+    }
 }
 
 /* Pantallas chicas - 460px */
@@ -4494,6 +4527,29 @@ input::-webkit-input-placeholder {
         font-size: 2.5em;
         width: 250px;
     }
+
+    /*PAGINA TELEVISION*/
+    .grillas {
+        gap: 1rem;
+    }
+
+    .bottom-grillas {
+        width: 320px;
+    }
+
+    .bottom-grillas-texto {
+        width: 307px;
+    }
+
+    .bottom-grillas-texto h3 {
+        font-size: 1.8em;
+    }
+
+    .bottom-grillas-texto p {
+        width: 120px;
+        font-size: 1.2em;
+    }
+
 }
 
 /* Pantallas chicas - 381px */
@@ -4639,10 +4695,6 @@ input::-webkit-input-placeholder {
     .bottom-footer h3 {
         font-size: 1.5em;
         padding-top: 4rem;
-    }
-
-    .container-footer-bottom {
-        padding-top: 35rem;
     }
 
     .designed-by {
@@ -4893,20 +4945,20 @@ input::-webkit-input-placeholder {
         width: 250px;
     }
 
-    .texto-carrusel h3{
+    .texto-carrusel h3 {
         font-size: 2em;
     }
 
-    .texto-carrusel p{
+    .texto-carrusel p {
         font-size: 1.5em;
     }
 
-    .imagen-asesoria h3{
+    .imagen-asesoria h3 {
         width: 250px;
         font-size: 2em;
     }
 
-    .reseva-turno-sepelio{
+    .reseva-turno-sepelio {
         width: 250px;
     }
 
@@ -4914,31 +4966,53 @@ input::-webkit-input-placeholder {
         font-size: 1.2em;
     }
 
-    .item-servicio{
+    .item-servicio {
         width: 250px;
     }
 
-    .item-servicio h3{
-        font-size:1.8em;
+    .item-servicio h3 {
+        font-size: 1.8em;
     }
 
-    .item-servicio p{
-        font-size:1.5em;
+    .item-servicio p {
+        font-size: 1.5em;
     }
 
-    .sepelio{
+    .sepelio {
         height: 130rem;
     }
 
-    .ase-item h3{
+    .ase-item h3 {
         width: 250px;
     }
 
-    .ase-item p{
+    .ase-item p {
         width: 250px;
     }
 
-    .servicios-sepelio h2{
+    .servicios-sepelio h2 {
         text-align: center;
+    }
+
+    /*PAGINA TELEVISION*/
+    .grillas {
+        gap: 1rem;
+    }
+
+    .bottom-grillas {
+        width: 250px;
+    }
+
+    .bottom-grillas-texto {
+        width: 240px;
+    }
+
+    .bottom-grillas-texto h3 {
+        font-size: 1.5em;
+    }
+
+    .bottom-grillas-texto p {
+        width: 120px;
+        font-size: 1.2em;
     }
 }
