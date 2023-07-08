@@ -49,12 +49,18 @@ ul {
 
 /* Principal */
 .principal {
-    min-height: 100vh;
-    overflow: hidden;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.principal video {
+.box{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.box video {
     position: absolute;
     left: 0;
     top: 0;
@@ -62,12 +68,7 @@ ul {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: brightness(60%);
-}
-
-.container-principal {
-    max-width: 170rem;
-    margin: 0 auto;
+    filter: brightness(50%);
 }
 
 .logotipo {

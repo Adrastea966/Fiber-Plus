@@ -160,7 +160,7 @@
                         <h2>Nuestros planes</h2>
                     </div>
                     <div class="cards-planes">
-                        <div class="card-planes" data-aos="fade-up">
+                        <div class="card-planes">
                             <div class="top-card-planes">
                                 <div class="textos">
                                     <p>Básico</p>
@@ -181,7 +181,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-planes" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-planes">
                             <div class="top-card-planes">
                                 <div class="textos">
                                     <p>Estándar</p>
@@ -202,7 +202,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-planes" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-planes">
                             <div class="top-card-planes">
                                 <div class="textos">
                                     <p>Premium</p>
@@ -330,7 +330,10 @@
                                     grilla</button>
                             </div>
                             <div class="descargar-grilla">
-                                <button class="btn-descargar"><i class="uil uil-download-alt"></i>Descargar</button>
+                                <button class="btn-descargar"
+                                    onclick="downloadFile('https://res.cloudinary.com/adrastea/image/upload/v1688572424/Fiber-plus/grilla-digital_ffxruu.jpg', 'grilla-digital.jpg')">
+                                    <i class="uil uil-download-alt"></i> Descargar
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -351,7 +354,10 @@
                                     grilla</button>
                             </div>
                             <div class="descargar-grilla">
-                                <button class="btn-descargar"><i class="uil uil-download-alt"></i>Descargar</button>
+                                <button class="btn-descargar"
+                                    onclick="downloadFile('https://res.cloudinary.com/adrastea/image/upload/v1688572424/Fiber-plus/grilla-digital_ffxruu.jpg', 'grilla-digital.jpg')">
+                                    <i class="uil uil-download-alt"></i> Descargar
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -489,6 +495,18 @@
         function hidePopUp() {
             var popUp = document.getElementById("pop-up-image");
             popUp.style.display = "none";
+        }
+
+        //Descargar grilla
+        function downloadFile(url, filename) {
+            fetch(url)
+                .then(response => response.blob())
+                .then(blob => {
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = filename;
+                    link.click();
+                });
         }
     </script>
     <script src="/index.js"></script>
