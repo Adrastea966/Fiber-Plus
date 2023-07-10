@@ -7,27 +7,25 @@
     <title>FiberPlus</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body class="dark-mode">
     <!--principal section-->
-    <section class="box principal">
-        <video src="https://res.cloudinary.com/adrastea/video/upload/v1688573354/Fiber-plus/video-principal_vovzhg.mp4"
-        autoplay muted loop></video>
-        <div class="container-principal">
-            <header class="header">
-                <h2 class="logotipo">
-                    FiberPlus
-                </h2>
-                <div class="mode">
-                    <div class="circle-mode"></div>
-                    <div class="icons">
-                        <i class="uil uil-moon"></i>
-                        <i class="uil uil-sun"></i>
-                    </div>
+    <section class="principal">
+        <header class="header">
+            <h2 class="logotipo">
+                FiberPlus
+            </h2>
+            <div class="mode">
+                <div class="circle-mode"></div>
+                <div class="icons">
+                    <i class="uil uil-moon"></i>
+                    <i class="uil uil-sun"></i>
                 </div>
-            </header>
+            </div>
+        </header>
+        <div class="container-principal">
             <div class="paragraph">
                 <div class="descripcion1">
                     <h1>Nuestra fibra óptica</h1>
@@ -44,13 +42,19 @@
                     </button>
                 </div>
             </div>
-            <div class="redes">
-                <a href="#" class="icon icon-ig"><i class="uil uil-instagram"></i></a>
-                <a href="#" class="icon icon-wsp"><i class="uil uil-whatsapp"></i></a>
-                <a href="#" class="icon icon-mail"><i class="uil uil-envelope"></i></a>
-            </div>
         </div>
+        <div class="redes">
+            <a href="#" class="icon icon-ig"><i class="uil uil-instagram"></i></a>
+            <a href="#" class="icon icon-wsp"><i class="uil uil-whatsapp"></i></a>
+            <a href="#" class="icon icon-mail"><i class="uil uil-envelope"></i></a>
+        </div>
+        <video muted autoplay loop>
+            <source
+                src="https://res.cloudinary.com/adrastea/video/upload/v1688573354/Fiber-plus/video-principal_vovzhg.mp4"
+                type="video/mp4"> </video>
+        <div class="capa"></div>
     </section>
+    <!--navbar-->
     <section>
         <nav class="navbar">
             <div class="links">
@@ -58,21 +62,21 @@
                 <a href="#nosotros" class="link1" onmouseenter="showSubMenu1()"
                     onmouseleave="hideSubMenu1()">Nosotros</a>
                 <div class="submenu1" onmouseenter="cancelHideSubMenu1()" onmouseleave="hideSubMenu1()">
-                    <a href="/assets/pages/sobre-la-empresa.html#valores">Valores</a>
-                    <a href="/assets/pages/sobre-la-empresa.html#memorials">Memorials</a>
-                    <a href="/assets/pages/sobre-la-empresa.html#corporativa">Corporativa</a>
-                    <a href="/assets/pages/sobre-la-empresa.html#equipo">Equipo</a>
+                    <a href="assets/pages/sobre-la-empresa.html#valores">Valores</a>
+                    <a href="assets/pages/sobre-la-empresa.html#memorials">Memorials</a>
+                    <a href="assets/pages/sobre-la-empresa.html#corporativa">Corporativa</a>
+                    <a href="assets/pages/sobre-la-empresa.html#equipo">Equipo</a>
                 </div>
                 <a href="#programas" class="link3">Programas</a>
                 <a href="#servicios" class="link2" onmouseenter="showSubMenu2()"
                     onmouseleave="hideSubMenu2()">Servicios</a>
                 <div class="submenu2" onmouseenter="showSubMenu2()" onmouseleave="hideSubMenu2()">
-                    <a href="/assets/pages/servicios-basicos.html">Servicios básicos</a>
-                    <a href="/assets/pages/television.html">Televisión</a>
-                    <a href="/assets/pages/servicios-funebres.html">Fúnebres</a>
-                    <a href="/assets/pages/educacion.html">Educación</a>
-                    <a href="/assets/pages/telefonia.html">Telefonía</a>
-                    <a href="/assets/pages/internet.html">Internet</a>
+                    <a href="assets/pages/servicios-basicos.html">Servicios básicos</a>
+                    <a href="assets/pages/television.html">Televisión</a>
+                    <a href="assets/pages/servicios-funebres.html">Fúnebres</a>
+                    <a href="assets/pages/educacion.html">Educación</a>
+                    <a href="assets/pages/telefonia.html">Telefonía</a>
+                    <a href="assets/pages/internet.html">Internet</a>
                 </div>
                 <a href="#contacto" class="link4">Contacto</a>
             </div>
@@ -94,19 +98,19 @@
                     </div>
                     <ul class="list-show">
                         <li class="list-inside">
-                            <a href="/assets/pages/sobre-la-empresa.html#equipo"
+                            <a href="./assets/pages/sobre-la-empresa.html#equipo"
                                 class="nav-link nav-link-inside">Equipo</a>
                         </li>
                         <li class="list-inside">
-                            <a href="/assets/pages/sobre-la-empresa.html#corporativa"
+                            <a href="./assets/pages/sobre-la-empresa.html#corporativa"
                                 class="nav-link nav-link-inside">Corporativa</a>
                         </li>
                         <li class="list-inside">
-                            <a href="/assets/pages/sobre-la-empresa.html#memorials"
+                            <a href="./assets/pages/sobre-la-empresa.html#memorials"
                                 class="nav-link nav-link-inside">Memorials</a>
                         </li>
                         <li class="list-inside">
-                            <a href="/assets/pages/sobre-la-empresa.html#valores"
+                            <a href="./assets/pages/sobre-la-empresa.html#valores"
                                 class="nav-link nav-link-inside">Valores</a>
                         </li>
                     </ul>
@@ -125,23 +129,23 @@
                     </div>
                     <ul class="list-show">
                         <li class="list-inside">
-                            <a href="/assets/pages/internet.html" class="nav-link nav-link-inside">Internet</a>
+                            <a href="./assets/pages/internet.html" class="nav-link nav-link-inside">Internet</a>
                         </li>
                         <li class="list-inside">
-                            <a href="/assets/pages/telefonia.html" class="nav-link nav-link-inside">Telefonía</a>
+                            <a href="./assets/pages/telefonia.html" class="nav-link nav-link-inside">Telefonía</a>
                         </li>
                         <li class="list-inside">
-                            <a href="/assets/pages/educacion.html" class="nav-link nav-link-inside">Educación</a>
+                            <a href="./assets/pages/educacion.html" class="nav-link nav-link-inside">Educación</a>
                         </li>
                         <li class="list-inside">
-                            <a href="/assets/pages/servicios-funebres.html"
+                            <a href="./assets/pages/servicios-funebres.html"
                                 class="nav-link nav-link-inside">Fúnebres</a>
                         </li>
                         <li class="list-inside">
-                            <a href="/assets/pages/television.html" class="nav-link nav-link-inside">Televisión</a>
+                            <a href="./assets/pages/television.html" class="nav-link nav-link-inside">Televisión</a>
                         </li>
                         <li class="list-inside">
-                            <a href="/assets/pages/servicios-basicos.html" class="nav-link nav-link-inside">Servicios
+                            <a href="./assets/pages/servicios-basicos.html" class="nav-link nav-link-inside">Servicios
                                 básicos</a>
                         </li>
                     </ul>
@@ -155,6 +159,7 @@
             </ul>
         </div>
     </section>
+    <!--end of navbar-->
     <!--end of principal section-->
     <!--about section-->
     <section class="nosotros" id="nosotros">
@@ -167,7 +172,7 @@
                     laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="info">
-                    <button class="btn-info"><a href="/assets/pages/sobre-la-empresa.html">Más info</a></button>
+                    <button class="btn-info"><a href="./assets/pages/sobre-la-empresa.html">Más info</a></button>
                 </div>
             </div>
             <div class="image-about">
@@ -230,7 +235,7 @@
                 <div class="footer-card">
                     <i class="uil uil-rss"></i>
                     <div class="services">
-                        <button class="btn-servicio"><a href="/assets/pages/internet.html">Ver servicio</a></button>
+                        <button class="btn-servicio"><a href="./assets/pages/internet.html">Ver servicio</a></button>
                     </div>
                 </div>
             </div>
@@ -247,7 +252,7 @@
                 <div class="footer-card">
                     <i class="uil uil-phone"></i>
                     <div class="services">
-                        <button class="btn-servicio"><a href="/assets/pages/telefonia.html">Ver servicio</a></button>
+                        <button class="btn-servicio"><a href="./assets/pages/telefonia.html">Ver servicio</a></button>
                     </div>
                 </div>
             </div>
@@ -264,7 +269,7 @@
                 <div class="footer-card">
                     <i class="uil uil-tv-retro"></i>
                     <div class="services">
-                        <button class="btn-servicio"><a href="/assets/pages/television.html">Ver servicio</a></button>
+                        <button class="btn-servicio"><a href="./assets/pages/television.html">Ver servicio</a></button>
                     </div>
                 </div>
             </div>
@@ -281,7 +286,7 @@
                 <div class="footer-card">
                     <i class="uil uil-book-open"></i>
                     <div class="services">
-                        <button class="btn-servicio"><a href="/assets/pages/servicios-funebres.html">Ver
+                        <button class="btn-servicio"><a href="./assets/pages/servicios-funebres.html">Ver
                                 servicio</a></button>
                     </div>
                 </div>
@@ -299,7 +304,7 @@
                 <div class="footer-card">
                     <i class="uil uil-graduation-cap"></i>
                     <div class="services">
-                        <button class="btn-servicio"><a href="/assets/pages/educacion.html">Ver servicio</a></button>
+                        <button class="btn-servicio"><a href="./assets/pages/educacion.html">Ver servicio</a></button>
                     </div>
                 </div>
             </div>
@@ -316,7 +321,7 @@
                 <div class="footer-card">
                     <i class="uil uil-water"></i>
                     <div class="services">
-                        <button class="btn-servicio"><a href="/assets/pages/servicios-basicos.html">Ver
+                        <button class="btn-servicio"><a href="./assets/pages/servicios-basicos.html">Ver
                                 servicio</a></button>
                     </div>
                 </div>
@@ -336,10 +341,10 @@
                 </p>
                 <div class="buttons">
                     <div class="info2">
-                        <button class="btn-info"><a href="/assets/pages/television.html">Más info</a></button>
+                        <button class="btn-info"><a href="./assets/pages/television.html">Más info</a></button>
                     </div>
                     <div class="info2">
-                        <button class="btn-info2"><a href="/assets/pages/television.html">Ver planes</a></button>
+                        <button class="btn-info2"><a href="./assets/pages/television.html">Ver planes</a></button>
                     </div>
                 </div>
             </div>
