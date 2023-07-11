@@ -3038,7 +3038,6 @@ input::-webkit-input-placeholder {
     }
 
     /* Footer */
-
     .section-footer {
         gap: 10rem;
     }
@@ -3074,7 +3073,6 @@ input::-webkit-input-placeholder {
 
     /*Imagen educacion*/
     .container-imagen-educacion {
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3083,7 +3081,7 @@ input::-webkit-input-placeholder {
 
     .imagen-educacion {
         width: 100%;
-        height: 500px;
+        height: 300px;
     }
 }
 
@@ -3737,7 +3735,7 @@ input::-webkit-input-placeholder {
 
     /* Footer */
     .container-footer-bottom {
-        left: 15%;
+        left: 10%;
         gap: 1rem;
     }
 
@@ -3836,8 +3834,6 @@ input::-webkit-input-placeholder {
     .form textarea {
         font-size: 1.2em;
     }
-
-    /*footer*/
 
     /*PÁGINA SOBRE LA EMPRESA*/
     /*seccion empresa*/
@@ -4198,8 +4194,17 @@ input::-webkit-input-placeholder {
     }
 
     /*Footer*/
+
+    .footer{
+       margin: 1rem;
+    }
+
     .div2{
         top: 30%;
+    }
+
+    .div1{
+        padding-left: 0;
     }
 
     .tel {
@@ -4213,15 +4218,11 @@ input::-webkit-input-placeholder {
     .bottom-footer{
         position: absolute;
         left:60%;
-        top: 30%;
+        top: 50%;
         align-items: center;
         display:flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    .bottom-footer h3 {
-        font-size: 1.5em;
     }
 
     .container-fundadores{
@@ -4238,12 +4239,12 @@ input::-webkit-input-placeholder {
     }
 
     .container-footer-bottom{
-        left: 4%;
+        left: 0;
     }
 }
 
 /* Pantallas chicas - 381px */
-@media screen and (max-width:381px) {
+@media screen and (max-width:381px) { 
 
     /*principal*/
     .descripcion1 {
@@ -4352,26 +4353,17 @@ input::-webkit-input-placeholder {
         padding-top: 10rem;
     }
 
-    .div2 h3 {
-        font-size: 1.5em;
-    }
-
-    .div3 h3 {
-        font-size: 1.5em;
-    }
-
     .icon2 {
         width: 30px;
         height: 30px;
     }
 
     .top-footer h3 {
-        font-size: 1.5em;
         text-align: left;
     }
 
     .container-footer-bottom{
-        left: 15%;
+        left: 10%;
     }
 
     .designed-by {
