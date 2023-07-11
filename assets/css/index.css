@@ -1690,6 +1690,7 @@ input::-webkit-input-placeholder {
 .items-valores p {
     width: 200px;
     font-size: 1.6em;
+    text-align: center;
     color: var(--main-color-dark-mode);
 }
 
