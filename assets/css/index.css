@@ -1749,16 +1749,39 @@ input::-webkit-input-placeholder {
     background-image: url(https://res.cloudinary.com/adrastea/image/upload/v1688572426/Fiber-plus/memorials1_rrue5t.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     width: 100%;
     height: 100%;
     padding: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    filter: brightness(20%);
 }
 
-.persona1-memorials:hover {
-    filter: brightness(100%);
+.persona1-memorials::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c5;
+    transition: 0.3s ease-in-out;
+}
+
+.persona1-memorials p {
+    width: 70rem;
+    color: var(--main-color-dark-mode);
+    font-style: italic;
+    position: relative;
+    padding-top: 6rem;
+    padding-left: 2rem;
+    font-size: 1.8em;
+    z-index: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.persona1-memorials:hover::before {
+    background-color: transparent;
 }
 
 .persona1-memorials:hover p {
@@ -1769,16 +1792,39 @@ input::-webkit-input-placeholder {
     background-image: url(https://res.cloudinary.com/adrastea/image/upload/v1688572438/Fiber-plus/memorials2_g52ugn.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     width: 100%;
     height: 100%;
     padding: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    filter: brightness(20%);
 }
 
-.persona2-memorials:hover {
-    filter: brightness(100%);
+.persona2-memorials::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c5;
+    transition: 0.3s ease-in-out;
+}
+
+.persona2-memorials p {
+    width: 70rem;
+    color: var(--main-color-dark-mode);
+    font-style: italic;
+    position: relative;
+    padding-top: 6rem;
+    padding-left: 2rem;
+    font-size: 1.8em;
+    z-index: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.persona2-memorials:hover::before {
+    background-color: transparent;
 }
 
 .persona2-memorials:hover p {
@@ -1789,48 +1835,43 @@ input::-webkit-input-placeholder {
     background-image: url(https://res.cloudinary.com/adrastea/image/upload/v1688572439/Fiber-plus/memorials3_yxdfsr.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     width: 100%;
     height: 100%;
     padding: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    filter: brightness(20%);
 }
 
-.persona3-memorials:hover {
-    filter: brightness(100%);
-}
-
-.persona3-memorials:hover p {
-    visibility: hidden;
-}
-
-.persona1-memorials p {
-    width: 70rem;
-    color: var(--main-color-dark-mode);
-    font-style: italic;
-    padding-top: 6rem;
-    padding-left: 2rem;
-    font-size: 1.8em;
-}
-
-.persona2-memorials p {
-    width: 70rem;
-    color: var(--main-color-dark-mode);
-    font-style: italic;
-    padding-top: 6rem;
-    padding-left: 2rem;
-    font-size: 1.8em;
+.persona3-memorials::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c5;
+    transition: 0.3s ease-in-out;
 }
 
 .persona3-memorials p {
     width: 70rem;
     color: var(--main-color-dark-mode);
     font-style: italic;
+    position: relative;
     padding-top: 6rem;
-    padding-left: 2cqh;
+    padding-left: 2rem;
     font-size: 1.8em;
-    visibility: visible;
+    z-index: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.persona3-memorials:hover::before {
+    background-color: transparent;
+}
+
+.persona3-memorials:hover p {
+    visibility: hidden;
 }
 
 /* PÁGINA INTERNET -------------------------------------------------------------------- */
@@ -4034,6 +4075,10 @@ input::-webkit-input-placeholder {
 
     /*PÁGINA SOBRE LA EMPRESA*/
     /*seccion empresa*/
+    .descripcion-equipo{
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+
     .descripcion-equipo .p {
         font-size: 1.5em;
     }
@@ -4051,6 +4096,10 @@ input::-webkit-input-placeholder {
     }
 
     /*equipo*/
+    .container-equipo{
+        padding-bottom: 5rem;
+    }
+
     .content p {
         font-size: 1.2em;
     }
@@ -4081,6 +4130,11 @@ input::-webkit-input-placeholder {
         width: 40rem;
         font-size: 1.2em;
         padding-right: 6rem;
+    }
+
+    /*valores*/
+    .valores{
+        padding-bottom: 5rem;
     }
 
     /*PAGINA INTERNET*/
@@ -4195,13 +4249,17 @@ input::-webkit-input-placeholder {
     }
 
     /*Footer*/
-
     .footer{
        margin: 1rem;
     }
 
     .div2{
         top: 30%;
+        left: 0;
+    }
+
+    .div3{
+        top: 4.5%;
     }
 
     .div1{
@@ -4219,7 +4277,7 @@ input::-webkit-input-placeholder {
     .bottom-footer{
         position: absolute;
         left:60%;
-        top: 50%;
+        top: 70%;
         align-items: center;
         display:flex;
         flex-direction: column;
@@ -4240,7 +4298,7 @@ input::-webkit-input-placeholder {
     }
 
     .container-footer-bottom{
-        left: 0;
+        left: -5%;
     }
 }
 
