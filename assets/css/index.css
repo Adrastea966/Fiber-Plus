@@ -229,7 +229,7 @@ video{
 
 .list {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1351,7 +1351,7 @@ input::-webkit-input-placeholder {
     color: var(--main-color-dark-mode);
 }
 
-/* PÁGINA SOBRE LA EMPRESA */
+/* PÁGINA SOBRE LA EMPRESA -------------------------------------------------------------------- */
 /*seccion empresa*/
 .empresa {
     position: relative;
@@ -1831,7 +1831,7 @@ input::-webkit-input-placeholder {
     visibility: visible;
 }
 
-/* PÁGINA INTERNET */
+/* PÁGINA INTERNET -------------------------------------------------------------------- */
 /*seccion planes*/
 .planes {
     max-width: 150rem;
@@ -2123,7 +2123,7 @@ input::-webkit-input-placeholder {
     }
 }
 
-/* PÁGINA TELEFONÍA */
+/* PÁGINA TELEFONÍA -------------------------------------------------------------------- */
 /*seccion planes*/
 .planes-tel {
     max-width: 150rem;
@@ -2136,7 +2136,7 @@ input::-webkit-input-placeholder {
     padding-top: 10rem;
 }
 
-/* PÁGINA EDUCACION */
+/* PÁGINA EDUCACION -------------------------------------------------------------------- */
 /*seccion educacion*/
 .educacion {
     width: 100%;
@@ -4192,7 +4192,7 @@ input::-webkit-input-placeholder {
 
     .bottom-footer{
         position: relative;
-        left:125%;
+        left:180%;
         top: 100%;
     }
 
@@ -4208,6 +4208,10 @@ input::-webkit-input-placeholder {
 
     .info-fundadores p {
         font-size: 1.2em;
+    }
+
+    .container-footer-bottom{
+        left: 4%;
     }
 }
 
@@ -4327,6 +4331,9 @@ input::-webkit-input-placeholder {
         text-align: left;
     }
 
+    .container-footer-bottom{
+        left: 15%;
+    }
 
     .designed-by {
         font-size: 1.2em;
