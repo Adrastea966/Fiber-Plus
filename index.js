@@ -1,19 +1,134 @@
-// Dark-light mode
-window.addEventListener('DOMContentLoaded', () => {
+//Dark - light mode 
+const toggleMode = () => {
   const slider = document.querySelector('.mode');
   const moonIcon = document.querySelector('.uil-moon');
   const sunIcon = document.querySelector('.uil-sun');
+  const imageElements = document.querySelectorAll('.img-light, .slide-img img');
+
+  const checkLocalStorage = () => {
+    const mode = localStorage.getItem('mode');
+    if (mode === 'light') {
+      document.body.classList.add('light');
+      moonIcon.style.display = 'none';
+      sunIcon.style.display = 'block';
+      imageElements.forEach((imageElement) => {
+        if (imageElement.classList.contains('img-light')) {
+          imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689179582/Fiber-plus/Phone-light-mode_urmyeb.png';
+        } else {
+          switch (imageElement.alt) {
+            case 'Logo de DirectTv':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187089/Fiber-plus/direct_b6qfxm.png';
+              break;
+            case 'Logo de ESPN':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187089/Fiber-plus/espn-light_emj18g.png';
+              break;
+            case 'Logo de FOX':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187089/Fiber-plus/fox-light_m1mgju.png';
+              break;
+            case 'Logo de HBO':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187090/Fiber-plus/hbo-light_dezpsy.png';
+              break;
+            case 'Logo de TyC sports':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187089/Fiber-plus/tyc-light_eu4rcs.png';
+              break;
+            case 'Logo de TNT sports':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187089/Fiber-plus/tn-light_zonqyw.png';
+              break;
+            case 'Logo de universal':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187089/Fiber-plus/universal-light_ndvg2g.png';
+              break;
+            default:
+              break;
+          }
+        }
+      });
+    }
+  };
+
+  checkLocalStorage();
 
   slider.addEventListener('click', () => {
-      if (moonIcon.style.display === 'none') {
-          moonIcon.style.display = 'block';
-          sunIcon.style.display = 'none';
-      } else {
-          moonIcon.style.display = 'none';
-          sunIcon.style.display = 'block';
-      }
+    document.body.classList.toggle('light');
+    if (document.body.classList.contains('light')) {
+      moonIcon.style.display = 'none';
+      sunIcon.style.display = 'block';
+      localStorage.setItem('mode', 'light');
+      imageElements.forEach((imageElement) => {
+        if (imageElement.classList.contains('img-light')) {
+          imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689179582/Fiber-plus/Phone-light-mode_urmyeb.png';
+        } else {
+          switch (imageElement.alt) {
+            case 'Logo de DirectTv':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187089/Fiber-plus/direct_b6qfxm.png';
+              break;
+            case 'Logo de ESPN':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187089/Fiber-plus/espn-light_emj18g.png';
+              break;
+            case 'Logo de FOX':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187089/Fiber-plus/fox-light_m1mgju.png';
+              break;
+            case 'Logo de HBO':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187090/Fiber-plus/hbo-light_dezpsy.png';
+              break;
+            case 'Logo de TyC sports':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187089/Fiber-plus/tyc-light_eu4rcs.png';
+              break;
+            case 'Logo de TNT sports':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187089/Fiber-plus/tn-light_zonqyw.png';
+              break;
+            case 'Logo de universal':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689187089/Fiber-plus/universal-light_ndvg2g.png';
+              break;
+            default:
+              break;
+          }
+        }
+      });
+    } else {
+      moonIcon.style.display = 'block';
+      sunIcon.style.display = 'none';
+      localStorage.setItem('mode', 'dark');
+      imageElements.forEach((imageElement) => {
+        if (imageElement.classList.contains('img-light')) {
+          imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1689095835/Fiber-plus/Phone_tc7fpf.png';
+        } else {
+          switch (imageElement.alt) {
+            case 'Logo de DirectTv':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/direct_bhequk.svg';
+              break;
+            case 'Logo de ESPN':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1688572416/Fiber-plus/espn_eok1yx.svg';
+              break;
+            case 'Logo de FOX':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/fox_by6mav.svg';
+              break;
+            case 'Logo de HBO':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1688572409/Fiber-plus/hbo_kjcdxx.svg';
+              break;
+            case 'Logo de TyC sports':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1688572410/Fiber-plus/tyc_ggbm3t.svg';
+              break;
+            case 'Logo de TNT sports':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1688572408/Fiber-plus/tnt_rdjvbc.svg';
+              break;
+            case 'Logo de universal':
+              imageElement.src = 'https://res.cloudinary.com/adrastea/image/upload/v1688572418/Fiber-plus/universal_p4dpqz.svg';
+              break;
+            default:
+              break;
+          }
+        }
+      });
+    }
   });
-});
+
+  if (!localStorage.getItem('mode')) {
+    const defaultMode = document.body.classList.contains('light') ? 'light' : 'dark';
+    localStorage.setItem('mode', defaultMode);
+  }
+};
+
+toggleMode();
 
 //Submenu
 let timeoutId;
@@ -79,79 +194,41 @@ let arrows = document.querySelectorAll('.list-arrow');
 let menuResponsive = document.querySelector('.list')
 
 listElements.forEach(listElement => {
-    listElement.addEventListener('click', () => {
+  listElement.addEventListener('click', () => {
 
-        listElement.classList.toggle('arrow');
+    listElement.classList.toggle('arrow');
 
-        let height = 0;
-        let menu = listElement.nextElementSibling;
-        if (menu.clientHeight == "0") {
-            height = menu.scrollHeight;
-        }
+    let height = 0;
+    let menu = listElement.nextElementSibling;
+    if (menu.clientHeight == "0") {
+      height = menu.scrollHeight;
+    }
 
-        menu.style.height = `${height}px`;
+    menu.style.height = `${height}px`;
 
-    })
+  })
 });
 
 arrowIn.addEventListener('click', () => {
-    if (navResponsive.style.width === '300px') {
-        navResponsive.style.width = '50px';
-        menuResponsive.style.visibility='hidden';
-        navLinks.forEach(link => {
-            link.style.opacity = '0';
-        });
-        arrows.forEach(arrow => {
-            arrow.style.display = 'none';
-        });
-        arrowIn.classList.remove('rotate');
-    } else {
-        navResponsive.style.width = '300px';
-        menuResponsive.style.visibility='visible';
-        navLinks.forEach(link => {
-            link.style.opacity = '1';
-        });
-        arrows.forEach(arrow => {
-            arrow.style.display = 'block';
-        });
-        arrowIn.classList.add('rotate');
-    }
-});
+  navResponsive.classList.toggle('active');
 
-//código de acceso con local Storage
-const accessCodeInput = document.querySelector('#access-code');
-const seccionSinCodigo = document.querySelector('.seccion-sin-codigo');
-const seccionConCodigo = document.querySelector('.seccion-con-codigo');
-const codigoCorrecto = "1234";
-
-const accessButton = document.querySelector('#access-button');
-const errorMessage = document.querySelector('#error-message');
-
-accessButton.addEventListener('click', () => {
-    const accessCode = accessCodeInput.value;
-    if (accessCode === codigoCorrecto) {
-        seccionSinCodigo.style.display = 'none';
-        seccionConCodigo.style.display = 'block';
-        errorMessage.style.display = 'none';
-        sessionStorage.setItem('codigoIngresado', 'true');
-    } else {
-        errorMessage.style.display = 'block';
-        errorMessage.textContent = 'Código de acceso incorrecto';
-        sessionStorage.removeItem('codigoIngresado');
-    }
-});
-
-window.addEventListener('load', () => {
-    const codigoIngresado = sessionStorage.getItem('codigoIngresado');
-    if (codigoIngresado === 'true') {
-        seccionSinCodigo.style.display = 'none';
-        seccionConCodigo.style.display = 'block';
-    }
-});
-
-window.addEventListener('beforeunload', () => {
-    const codigoIngresado = sessionStorage.getItem('codigoIngresado');
-    if (codigoIngresado === 'false') {
-        sessionStorage.removeItem('codigoIngresado');
-    }
+  if (navResponsive.classList.contains('active')) {
+    menuResponsive.style.visibility = 'visible';
+    navLinks.forEach(link => {
+      link.style.opacity = '1';
+    });
+    arrows.forEach(arrow => {
+      arrow.style.display = 'block';
+    });
+    arrowIn.classList.add('rotate');
+  } else {
+    menuResponsive.style.visibility = 'hidden';
+    navLinks.forEach(link => {
+      link.style.opacity = '0';
+    });
+    arrows.forEach(arrow => {
+      arrow.style.display = 'none';
+    });
+    arrowIn.classList.remove('rotate');
+  }
 });

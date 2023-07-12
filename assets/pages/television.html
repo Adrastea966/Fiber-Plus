@@ -7,6 +7,7 @@
     <title>Televisión| planes</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="../../index.js" defer></script>
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
@@ -68,7 +69,8 @@
                 </div>
                 <ul class="list-show">
                     <li class="list-inside">
-                        <a href="../../assets/pages/sobre-la-empresa.html#equipo" class="nav-link nav-link-inside">Equipo</a>
+                        <a href="../../assets/pages/sobre-la-empresa.html#equipo"
+                            class="nav-link nav-link-inside">Equipo</a>
                     </li>
                     <li class="list-inside">
                         <a href="../../assets/pages/sobre-la-empresa.html#corporativa"
@@ -107,7 +109,8 @@
                         <a href="../../assets/pages/educacion.html" class="nav-link nav-link-inside">Educación</a>
                     </li>
                     <li class="list-inside">
-                        <a href="../../assets/pages/servicios-funebres.html" class="nav-link nav-link-inside">Fúnebres</a>
+                        <a href="../../assets/pages/servicios-funebres.html"
+                            class="nav-link nav-link-inside">Fúnebres</a>
                     </li>
                     <li class="list-inside">
                         <a href="#" class="nav-link nav-link-inside">Televisión</a>
@@ -128,9 +131,9 @@
     </div>
     <!--end of navbar-->
     <section class="television">
-        <div class="circle circle-12"></div>
         <!--seccion que se ve inicialmente-->
         <div class="seccion-sin-codigo">
+            <div class="circle circle-tel-vis"></div>
             <h2 class="texto-sin-codigo">Ingresá con tu código de membresía para <br> ver nuestra grilla de programación
             </h2>
             <div class="container-btn">
@@ -147,7 +150,9 @@
                     <label for="access-code">Ingresa el código de acceso:</label>
                     <input type="text" id="access-code">
                     <button id="access-button">Acceder</button>
-                    <p id="error-message"></p>
+                    <div class="mensaje-error" style="display:none;">
+                        <p id="error-message"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -470,44 +475,6 @@
         </div>
     </section>
     <!--end of footer-->
-    <script>
-        // Active modal
-        const modal = document.querySelector('.modal');
-        const btn = document.querySelector('#btn');
-        const closeIcon = document.querySelector('.close');
-
-        btn.addEventListener('click', () => {
-            modal.classList.add('active-modal');
-        });
-
-        closeIcon.addEventListener('click', () => {
-            modal.classList.remove('active-modal');
-        });
-
-        //pop-up image
-        function showPopUp() {
-            var popUp = document.getElementById("pop-up-image");
-            popUp.style.display = "block";
-        }
-
-        function hidePopUp() {
-            var popUp = document.getElementById("pop-up-image");
-            popUp.style.display = "none";
-        }
-
-        //Descargar grilla
-        function downloadFile(url, filename) {
-            fetch(url)
-                .then(response => response.blob())
-                .then(blob => {
-                    const link = document.createElement('a');
-                    link.href = URL.createObjectURL(blob);
-                    link.download = filename;
-                    link.click();
-                });
-        }
-    </script>
-    <script src="../../index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

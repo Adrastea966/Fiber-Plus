@@ -10,6 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="../../effect-line.js" defer></script>
+    <script src="../../index.js" defer></script>
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
@@ -408,22 +410,6 @@
         </div>
     </section>
     <!--end of footer-->
-    <script>
-        var controller = new ScrollMagic.Controller();
-        var scene = new ScrollMagic.Scene({
-                triggerElement: "#imagen-educacion-section",
-                triggerHook: "onEnter",
-                offset: 200 //offset
-            })
-            .setTween(".linea-blanca", {
-                opacity: 0,
-                x: "100%",
-                ease: "power4.out",
-                duration: 5 
-            })
-            .addTo(controller);
-    </script>
-    <script src="../../index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

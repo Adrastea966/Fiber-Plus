@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/splide.min.css">
+    <script src="../../carrusel.js" defer></script>
+    <script src="../../index.js" defer></script>
     <script src="../../splide.min.js"></script>
     <link rel="stylesheet" href="../css/index.css">
 </head>
@@ -401,23 +403,6 @@
         </div>
     </section>
     <!--end of footer-->
-    <script>
-        var splide = new Splide('.splide', {
-            type: 'loop',
-            autoplay: true,
-            pagination: false
-        });
-        var bar = document.querySelector('.my-slider-progress-bar');
-
-        splide.on('mounted move', function () {
-            var end = splide.length;
-            var rate = Math.min((splide.index + 1) / end, 1);
-            bar.style.width = String(100 * rate) + '%';
-        });
-
-        splide.mount();
-    </script>
-    <script src="../../index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
