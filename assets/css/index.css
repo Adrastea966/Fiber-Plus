@@ -86,6 +86,10 @@ video {
     mix-blend-mode: overlay;
 }
 
+body.light .capa{
+    background: #e5e5e5;
+}
+
 .container-principal {
     position: relative;
     display: flex;
@@ -104,7 +108,7 @@ video {
     transform: translate(-50%, -50%);
     font-size: 2.5rem;
     color: var(--main-color-dark-mode);
-    z-index: 2;
+    z-index: 3;
 }
 
 body.light .logotipo {
@@ -244,7 +248,7 @@ body.light .navbar {
 }
 
 body.light .nav-link {
-    color: var(--background-color-variable);
+    color: var(--second-color);
 }
 
 .nav-link-inside {
@@ -283,7 +287,7 @@ body.light .list {
 }
 
 body.light .list-icon {
-    color: var(--background-color-variable);
+    color: var(--second-color);
 }
 
 .list-item {
@@ -306,11 +310,11 @@ body.light .list-icon {
 }
 
 .arrow-in {
-    pointer-events: auto; /* Permite la interacción específicamente para el elemento arrow-in */
+    pointer-events: auto; 
 }
 
 body.light .arrow-in {
-    color: var(--background-color-variable);
+    color: var(--second-color);
 }
 
 .list-item-click {
@@ -337,7 +341,7 @@ body.light .arrow-in {
 }
 
 body.light .list-arrow {
-    color: var(--background-color-variable);
+    color: var(--second-color);
 }
 
 .list-show {
@@ -355,7 +359,7 @@ body.light .list-arrow {
 }
 
 body.light .list-show {
-    border-left: 2px solid var(--background-color-variable);
+    border-left: 2px solid var(--second-color);
 }
 
 .rotate {
@@ -539,13 +543,13 @@ body.light .submenu2 a:hover {
 }
 
 body.light .circle-mode {
-    border: solid 2px var(--background-color-variable);
+    border: solid 2px var(--second-color);
 }
 
 .circle-mode {
     width: 45px;
     height: 45px;
-    border: solid 1px var(--main-color-dark-mode);
+    border: solid 1px var(--second-color);
     border-radius: 50%;
     position: relative;
 }
@@ -560,7 +564,7 @@ body.light .circle-mode {
 }
 
 body.light .icons {
-    color: var(--background-color-variable);
+    color: var(--second-color);
 }
 
 .uil-sun {
